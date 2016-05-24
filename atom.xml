@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-24T04:50:58.828Z</updated>
+  <updated>2016-05-24T07:12:53.253Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,14 +20,37 @@
     <link href="http://yoursite.com/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/"/>
     <id>http://yoursite.com/2016/05/24/Debian-8-安装-SunJdk/</id>
     <published>2016-05-24T04:50:58.000Z</published>
-    <updated>2016-05-24T04:50:58.828Z</updated>
+    <updated>2016-05-24T07:12:53.253Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。&lt;br&gt;Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。&lt;br&gt;某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。&lt;br&gt;大家可以看看下面的链接。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://packages.debian.org/stretch/java-package&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;java-package&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;安装步骤。&quot;&gt;&lt;a href=&quot;#安装步骤。&quot; class=&quot;headerlink&quot; title=&quot;安装步骤。&quot;&gt;&lt;/a&gt;安装步骤。&lt;/h2&gt;&lt;p&gt;1 Download java jdk from oracle &lt;a href=&quot;http://www.oracle.com/technetwork/java/javase/downloads&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;website&lt;/a&gt;&lt;br&gt;2 Install java-package from debian repos using command “apt-get install java-package”&lt;br&gt;3 Run this command to create .deb file “make-jpkg jdk-8u45-linux-x64.tar.gz”&lt;br&gt;4 Install .deb file using “dpkg -i oracle-java8-jdk_8u45_amd64.deb”&lt;br&gt;5 Run this command to check java version “java -version”&lt;/p&gt;
+&lt;p&gt;这样就能apt管理这个jdk了。&lt;/p&gt;
+&lt;h2 id=&quot;多Jdk的管理&quot;&gt;&lt;a href=&quot;#多Jdk的管理&quot; class=&quot;headerlink&quot; title=&quot;多Jdk的管理&quot;&gt;&lt;/a&gt;多Jdk的管理&lt;/h2&gt;&lt;p&gt;某些Debian用户由于需求需要安装多个Jdk（openJdk和SunJdk），但是这几个之间怎么协同管理呢？如何做到android-studio在打开的时候自动匹配使用sunjdk呢？看下面这个命令&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sudo update-alternatives –config java&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;通过这个命令系统会让您选择默认Jdk是那一个我们选择Sun的Jdk然后就会默认使用sunjdk了。&lt;br&gt;这个命令是可以设定优先级的  自己看看帮助喽！&lt;br&gt;不会的可以留言我。。。&lt;/p&gt;
+</content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要
+    
     </summary>
     
+      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+    
+      <category term="安装Jdk" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85Jdk/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+    
+      <category term="SunJdk" scheme="http://yoursite.com/tags/SunJdk/"/>
     
   </entry>
   
@@ -75,9 +98,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
     
