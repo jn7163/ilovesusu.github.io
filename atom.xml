@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-24T04:15:35.474Z</updated>
+  <updated>2016-05-24T04:50:58.828Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,22 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian 8+ 安装 SunJdk</title>
+    <link href="http://yoursite.com/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/"/>
+    <id>http://yoursite.com/2016/05/24/Debian-8-安装-SunJdk/</id>
+    <published>2016-05-24T04:50:58.000Z</published>
+    <updated>2016-05-24T04:50:58.828Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Debian安装QQ</title>
