@@ -176,7 +176,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Debian/">Debian</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/wine/">wine</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/安装QQ/">安装QQ</a></li></ul>
                     </div>
                 </section>
                 
@@ -258,6 +258,84 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-Debian安装QQ" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/24/Debian安装QQ/" class="article-date">
+      <time datetime="2016-05-24T04:04:32.000Z" itemprop="datePublished">2016-05-24</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>#Debian安装QQ（Testing与Stable基本稳定）</p>
+<p>##第一步、开启Debian 对i386的支持</p>
+<p>因为这个包是专门为32位制作的包，所以需要使用一些i386的包。64位操作系统就需要开启i386的支持。</p>
+<blockquote>
+<p>$sudo dpkg –add-architecture i386</p>
+</blockquote>
+<p>##第二步、更新系统本地源内容</p>
+<p>在开启i386的支持后需要将本地的源列表进行更新。（温馨提示：不更新会找不到包哦！）</p>
+<blockquote>
+<p>$sudo apt-get update</p>
+</blockquote>
+<p>##第三步、安装wine</p>
+<p>这时候安装wine的时候就会自动将32位的链接库文件进行安装了，有些不自动安装的就需要用户手动 apt-get install xxx 了</p>
+<blockquote>
+<p>$sudo apt-get install wine</p>
+</blockquote>
+<p>##第四步、安装下方百度云链接下载的 QQ *** .deb包(***表示软件包名称)</p>
+<blockquote>
+<p>$dpkg -i ***.deb</p>
+</blockquote>
+<p><a href="链接: http://pan.baidu.com/s/1kVgxs3t">QQ安装包</a> 密码: 89n9</p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wine/">wine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装QQ/">安装QQ</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
