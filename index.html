@@ -259,6 +259,67 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Android-四大组件之ContentProvider-1" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/05/25/Android-四大组件之ContentProvider-1/" class="article-date">
+      <time datetime="2016-05-25T09:33:10.000Z" itemprop="datePublished">2016-05-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Debian-GNU-Linux/">Debian GNU/Linux</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-Debian-8-安装-SunJdk" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -286,18 +347,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。<br>Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。<br>某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。<br>大家可以看看下面的链接。</p>
-<blockquote>
-<p><a href="https://packages.debian.org/stretch/java-package" target="_blank" rel="external">java-package</a></p>
-</blockquote>
-<h2 id="安装步骤。"><a href="#安装步骤。" class="headerlink" title="安装步骤。"></a>安装步骤。</h2><p>1 Download java jdk from oracle <a href="http://www.oracle.com/technetwork/java/javase/downloads" target="_blank" rel="external">website</a><br>2 Install java-package from debian repos using command “apt-get install java-package”<br>3 Run this command to create .deb file “make-jpkg jdk-8u45-linux-x64.tar.gz”<br>4 Install .deb file using “dpkg -i oracle-java8-jdk_8u45_amd64.deb”<br>5 Run this command to check java version “java -version”</p>
-<p>这样就能apt管理这个jdk了。</p>
-<h2 id="多Jdk的管理"><a href="#多Jdk的管理" class="headerlink" title="多Jdk的管理"></a>多Jdk的管理</h2><p>某些Debian用户由于需求需要安装多个Jdk（openJdk和SunJdk），但是这几个之间怎么协同管理呢？如何做到android-studio在打开的时候自动匹配使用sunjdk呢？看下面这个命令</p>
-<blockquote>
-<p>sudo update-alternatives –config java</p>
-</blockquote>
-<p>通过这个命令系统会让您选择默认Jdk是那一个我们选择Sun的Jdk然后就会默认使用sunjdk了。<br>这个命令是可以设定优先级的  自己看看帮助喽！<br>不会的可以留言我。。。</p>
-
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。</p>
+          
       
     </div>
     
@@ -314,6 +365,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/SunJdk/">SunJdk</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装Jdk/">安装Jdk</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2016/05/24/Debian-8-安装-SunJdk/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -358,28 +413,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>#Debian安装QQ（Testing与Stable基本稳定）</p>
-<p>##第一步、开启Debian 对i386的支持</p>
-<p>因为这个包是专门为32位制作的包，所以需要使用一些i386的包。64位操作系统就需要开启i386的支持。</p>
-<blockquote>
-<p>$sudo dpkg –add-architecture i386</p>
-</blockquote>
-<p>##第二步、更新系统本地源内容</p>
-<p>在开启i386的支持后需要将本地的源列表进行更新。（温馨提示：不更新会找不到包哦！）</p>
-<blockquote>
-<p>$sudo apt-get update</p>
-</blockquote>
-<p>##第三步、安装wine</p>
-<p>这时候安装wine的时候就会自动将32位的链接库文件进行安装了，有些不自动安装的就需要用户手动 apt-get install xxx 了</p>
-<blockquote>
-<p>$sudo apt-get install wine</p>
-</blockquote>
-<p>##第四步、安装下方百度云链接下载的 QQ *** .deb包(***表示软件包名称)</p>
-<blockquote>
-<p>$dpkg -i ***.deb</p>
-</blockquote>
-<p><a href="链接: http://pan.baidu.com/s/1kVgxs3t">QQ安装包</a> 密码: 89n9</p>
-
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Debian GNU/Linux是一个优秀的操作系统，但是TX没有开发Linux下的QQ（之前TX发布的QQ.deb已经不能使用，webqq又半死不活），在这种情况下就需要教大家怎么在Debian上使用QQ了。</p>
+          
       
     </div>
     
@@ -396,6 +431,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wine/">wine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装QQ/">安装QQ</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2016/05/24/Debian安装QQ/#more">more >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>

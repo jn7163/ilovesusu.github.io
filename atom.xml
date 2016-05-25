@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-24T07:12:53.253Z</updated>
+  <updated>2016-05-25T09:33:11.007Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,13 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Android 四大组件之ContentProvider(1)</title>
+    <link href="http://yoursite.com/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/"/>
+    <id>http://yoursite.com/2016/05/25/Android-四大组件之ContentProvider-1/</id>
+    <published>2016-05-25T09:33:10.000Z</published>
+    <updated>2016-05-25T09:33:11.007Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Debian 8+ 安装 SunJdk</title>
     <link href="http://yoursite.com/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/"/>
     <id>http://yoursite.com/2016/05/24/Debian-8-安装-SunJdk/</id>
     <published>2016-05-24T04:50:58.000Z</published>
-    <updated>2016-05-24T07:12:53.253Z</updated>
+    <updated>2016-05-25T10:04:34.663Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。&lt;br&gt;Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。&lt;br&gt;某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。&lt;br&gt;大家可以看看下面的链接。&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。&lt;br&gt;某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。&lt;br&gt;大家可以看看下面的链接。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&quot;https://packages.debian.org/stretch/java-package&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;java-package&lt;/a&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -37,7 +59,7 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。&lt;/p&gt;
     
     </summary>
     
@@ -59,9 +81,10 @@
     <link href="http://yoursite.com/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/"/>
     <id>http://yoursite.com/2016/05/24/Debian安装QQ/</id>
     <published>2016-05-24T04:04:32.000Z</published>
-    <updated>2016-05-24T04:15:35.474Z</updated>
+    <updated>2016-05-25T10:11:11.795Z</updated>
     
-    <content type="html">&lt;p&gt;#Debian安装QQ（Testing与Stable基本稳定）&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Debian GNU/Linux是一个优秀的操作系统，但是TX没有开发Linux下的QQ（之前TX发布的QQ.deb已经不能使用，webqq又半死不活），在这种情况下就需要教大家怎么在Debian上使用QQ了。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
 &lt;p&gt;##第一步、开启Debian 对i386的支持&lt;/p&gt;
 &lt;p&gt;因为这个包是专门为32位制作的包，所以需要使用一些i386的包。64位操作系统就需要开启i386的支持。&lt;/p&gt;
 &lt;blockquote&gt;
@@ -86,10 +109,7 @@
     
     <summary type="html">
     
-      &lt;p&gt;#Debian安装QQ（Testing与Stable基本稳定）&lt;/p&gt;
-&lt;p&gt;##第一步、开启Debian 对i386的支持&lt;/p&gt;
-&lt;p&gt;因为这个包是专门为32位制作的包，所以需要使用一些i386的包。64位操作系统就需要开启i386的支持。&lt;/p&gt;
-&lt;blockquot
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Debian GNU/Linux是一个优秀的操作系统，但是TX没有开发Linux下的QQ（之前TX发布的QQ.deb已经不能使用，webqq又半死不活），在这种情况下就需要教大家怎么在Debian上使用QQ了。&lt;/p&gt;
     
     </summary>
     
