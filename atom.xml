@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-25T09:33:11.007Z</updated>
+  <updated>2016-05-26T15:01:10.626Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,22 +16,208 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Android 基础之SQLite的使用</title>
+    <link href="http://yoursite.com/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://yoursite.com/2016/05/26/Android-基础之Sqlite的使用/</id>
+    <published>2016-05-26T12:12:35.000Z</published>
+    <updated>2016-05-26T15:01:10.626Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;SQLite数据库的特点：&quot;&gt;&lt;a href=&quot;#SQLite数据库的特点：&quot; class=&quot;headerlink&quot; title=&quot;SQLite数据库的特点：&quot;&gt;&lt;/a&gt;SQLite数据库的特点：&lt;/h2&gt;&lt;p&gt;（1）Android通过 SQLite 数据库引擎来实现结构化数据的存储。在一个数据库应用程序中，任何类都可以通过名字对已经创建的数据库进行访问，但是在应用程序之外就不可以。&lt;br&gt;（2）SQLite 数据库是一种用C语言编写的嵌入式数据库，它是一个轻量级的数据库，最初为嵌入式设计的。它是在一些基础简单的语句处理上要比oracle / mysql快很多，而且其对内存的要求很低，在内存中只需要几百KB的存储空间。这是Android中采用 SQLite 数据库的主要原因。&lt;br&gt;（3）SQLite 支持事务处理功能。Transaction&lt;br&gt;（4）SQLite 处理速度比MySQL等著名的开源数据库系统更快。它没有服务器进程。&lt;br&gt;（5）SQLite 通过文件保存数据库，该文件是跨平台的，可以自由复制。一个文件就是一个数据库。数据库名即文件名。&lt;br&gt;（6）JDBC会消耗太多系统资源，所以JDBC对于手机并不合适，因此Android提供了新的API来使用 SQLite 数据库。&lt;br&gt;（7）SQLite最大的特点是你可以把各种类型的数据保存到任何字段中，而不用关心字段声明的数据类型是什么。 例如：可以在Integer类型的字段中存放字符串，或者在布尔型字段中存放浮点数，或者在字符型字段中存放日期型值。&lt;/p&gt;
+&lt;h2 id=&quot;Android对SQLite的操作&quot;&gt;&lt;a href=&quot;#Android对SQLite的操作&quot; class=&quot;headerlink&quot; title=&quot;Android对SQLite的操作&quot;&gt;&lt;/a&gt;Android对SQLite的操作&lt;/h2&gt;&lt;p&gt;Android中提供了很多操作SQLite类和方法。&lt;br&gt;下面将详讲解两个&lt;strong&gt;常用类&lt;/strong&gt;的使用，以及如何&lt;strong&gt;保证数据&lt;/strong&gt;的&lt;strong&gt;一致性&lt;/strong&gt;。&lt;/p&gt;
+&lt;h3 id=&quot;SQLiteDatabase类&quot;&gt;&lt;a href=&quot;#SQLiteDatabase类&quot; class=&quot;headerlink&quot; title=&quot;SQLiteDatabase类&quot;&gt;&lt;/a&gt;SQLiteDatabase类&lt;/h3&gt;&lt;p&gt;SQLiteDatabase等同于JDBC中Connection和Statement的结合体。SQLiteDatabase既&lt;br&gt;代表与数据库的连接，又只能用于执行sql语句操作。&lt;/p&gt;
+&lt;p&gt;####操作 SQLite 数据库的步骤：（关键）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;1 创建 SQLiteDatabase 对象，它代表与数据库的连接；&lt;br&gt;2 创建数据库中的表（执行CREATE）；&lt;br&gt;3 调用SQLiteDatabase 对象执行数据库操作（执行DML）；&lt;br&gt;4 查询后的结果集Cursor进行处理。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;打开数据库方法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;根据路径打开数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; SQLiteDatabase &lt;span class=&quot;title&quot;&gt;openDatabase&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String path, SQLiteDatabase.CursorFactory factory, &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; flags)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数介绍：&lt;br&gt;-- &lt;strong&gt;参数① path&lt;/strong&gt; : path 要打开 或者 需要创建的 数据库文件的路径;&lt;br&gt;-- &lt;strong&gt;参数② factory&lt;/strong&gt; : 当打开的数据库执行查询语句的时候 会创建一个Cursor对象, 这时会调用Cursor工厂类 factory, 可以填写null默认值;&lt;br&gt;-- &lt;strong&gt;参数③ flag&lt;/strong&gt; :&lt;br&gt;&lt;strong&gt;OPEN_READWRITE&lt;/strong&gt; 打开一个读写数据库, 如果磁盘满了, 之前写入的也作废;&lt;br&gt;&lt;strong&gt;READ_OPENONLY&lt;/strong&gt; 打开只读数据库, 这时读取数据库的可靠方法;&lt;br&gt;&lt;strong&gt;CREATE_IF_NECESSARY&lt;/strong&gt; 打开数据库, 如果数据库不存在, 就创建这个数据库;&lt;br&gt;&lt;strong&gt;NO_LOCALIZED_CALLATORS&lt;/strong&gt; 打开数据库 不根据本地语言顺序进行排序, 使用这种模式创建数据库, 排序器不会被创建, 使用这个数据库 和 创建这个数据库的时候必须都使用这个标识, 如果这个标识被使用了, 那么setLocal()方法将不会起到任何作用;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;根据文件打开或则创建数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; SQLiteDatabase &lt;span class=&quot;title&quot;&gt;openOrCreateDatabase&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(File file, SQLiteDatabase.CursorFactory factory)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;根据路径打开或创建数据库&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; SQLiteDatabase &lt;span class=&quot;title&quot;&gt;openOrCreateDatabase&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String path, SQLiteDatabase.CursorFactory factory)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;操作数据库&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;执行SQL语句动态参数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;execSQL&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String sql, Object[] bindArgs)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数介绍 :&lt;br&gt;-- &lt;strong&gt;参数① sql&lt;/strong&gt;: 要执行的SQL语句, 只能执行一条, 多条语句用分号隔开不管用, 参数使用 “?” 占位符代替;&lt;br&gt;-- &lt;strong&gt;参数② bingArgs&lt;/strong&gt;: 替换上面SQL语句中的 “?” 占位符, 按照数组中的顺序依次替换;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;执行固定SQL语句&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;execSQL&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String sql)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;插入数据&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;insert&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String table, String nullColumnHack, ContentValues values)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;-- &lt;strong&gt;参数① table&lt;/strong&gt; : 数据库中的表名, 要插入数据的表;&lt;br&gt;-- &lt;strong&gt;参数② nullColumnHack&lt;/strong&gt; : 该参数是可选的, 数据库表中不允许插入一行空的数据, 插入数据至少有一列不为null才能插入, 如果后面的values是null, 并且不知道列的名称, 那么插入操作会失败, 为了避免这种情况, 就出现了本参数, 为了防止 values为null的情况;&lt;br&gt;-- &lt;strong&gt;参数③ values&lt;/strong&gt; : 相当于一个Map集合,键 是列名,值 是对应列名要插入的数据;&lt;br&gt;&lt;strong&gt;插入原则&lt;/strong&gt; : 不管 第三个 ContentValues参数 是否为null, 执行insert()方法都会添加一条记录, 如果values参数为null, 会添加一个除主键之外其它字段都为null的记录;&lt;br&gt;实例：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建表数据, 键 为 列名, 值 为 对应的表数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ContentValues values = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ContentValues();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;values.put(&lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;乔帮主&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;values.put(&lt;span class=&quot;string&quot;&gt;&quot;age&quot;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;54&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//向表中插入数据, 如果values为null, 就会添加一个&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;long&lt;/span&gt; rowsNum = db.insert(&lt;span class=&quot;string&quot;&gt;&quot;apple_info&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;, values);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;上面代码转成SQL语句 :&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;insert into &lt;span class=&quot;title&quot;&gt;apple_info&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(name, age)&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;values&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;string&quot;&gt;&#39;乔帮主&#39;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;54&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;更新数据&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;update&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String table, ContentValues values, String whereClause, String[] whereArgs)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;-- &lt;strong&gt;参数① table&lt;/strong&gt; : 数据库表名称;&lt;br&gt;-- &lt;strong&gt;参数② values&lt;/strong&gt; : 该值类似Map集合, 键 是 列名, 值 是 要更新的数据, 这个值可以为null, 如果为null 这些数据会被清空;&lt;br&gt;-- &lt;strong&gt;参数③ whereClause&lt;/strong&gt;: where选择语句, 选择那些行进行数据的更新, 如果该参数为 null, 就会修改所有行;&lt;br&gt;-- &lt;strong&gt;参数④ whereArgs&lt;/strong&gt; : where选择语句的参数, 逐个替换 whereClause 中的占位符;&lt;br&gt;实例：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;//创建表数据, 键 为 列名, 值 为 对应的表数据&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;ContentValues values = &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; ContentValues();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;values.put(&lt;span class=&quot;string&quot;&gt;&quot;name&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;乔帮主&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;values.put(&lt;span class=&quot;string&quot;&gt;&quot;age&quot;&lt;/span&gt;, &lt;span class=&quot;number&quot;&gt;54&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; result = db.update(&lt;span class=&quot;string&quot;&gt;&quot;apple_info&quot;&lt;/span&gt;, values, &lt;span class=&quot;string&quot;&gt;&quot;name=?&quot;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; String[]&amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;乔帮主&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;上面代码转成SQL语句 :&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;update apple_info set name=&lt;span class=&quot;string&quot;&gt;&#39;乔帮主&#39;&lt;/span&gt;, age=&lt;span class=&quot;number&quot;&gt;56&lt;/span&gt; where name=&lt;span class=&quot;string&quot;&gt;&#39;乔帮主&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;删除数据&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;delete&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String table, String whereClause, String[] whereArgs)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数介绍 :&lt;br&gt;-- &lt;strong&gt;参数① table&lt;/strong&gt; : 要操作的数据库表名;&lt;br&gt;-- &lt;strong&gt;参数② whereClause&lt;/strong&gt; : where选择语句, 选择哪些行要被删除, 如果为null, 就删除所有行;&lt;br&gt;-- &lt;strong&gt;参数③ whereArgs&lt;/strong&gt; : where语句的参数, 逐个替换where语句中的 “?” 占位符;&lt;br&gt;实例：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;int&lt;/span&gt; result = db.delete(&lt;span class=&quot;string&quot;&gt;&quot;apple_info&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;name=?&quot;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; String[]&amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;乔帮主&quot;&lt;/span&gt;&amp;#125;);&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;上面代码转成SQL语句 :&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;delete apple_info where name=&lt;span class=&quot;string&quot;&gt;&#39;乔帮主&#39;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;查询&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; Cursor &lt;span class=&quot;title&quot;&gt;query&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(&lt;span class=&quot;keyword&quot;&gt;boolean&lt;/span&gt; distinct, String table, String[] columns,String selection, String[] selectionArgs,String groupBy, String having,String orderBy, String limit,CancellationSignal cancellationSignal)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数介绍 :&lt;br&gt;-- &lt;strong&gt;参数① distinct&lt;/strong&gt; : 是否去重复, true 去重复;&lt;br&gt;-- &lt;strong&gt;参数② table&lt;/strong&gt; : 要查询的表名;&lt;br&gt;-- &lt;strong&gt;参数③ columns&lt;/strong&gt; : 要查询的列名, 如果为null, 就会查询所有的列;&lt;br&gt;-- &lt;strong&gt;参数④ whereClause&lt;/strong&gt; : 条件查询子句, 在这里可以使用占位符 “?”;&lt;br&gt;-- &lt;strong&gt;参数⑤ whereArgs&lt;/strong&gt; : whereClause查询子句中的传入的参数值, 逐个替换 “?” 占位符;&lt;br&gt;-- &lt;strong&gt;参数⑥ groupBy&lt;/strong&gt; : 控制分组, 如果为null 将不会分组;&lt;br&gt;-- &lt;strong&gt;参数⑦ having&lt;/strong&gt; : 对分组进行过滤;&lt;br&gt;-- &lt;strong&gt;参数⑧ orderBy&lt;/strong&gt; : 对记录进行排序;&lt;br&gt;-- &lt;strong&gt;参数⑨ limite&lt;/strong&gt; : 用于分页, 如果为null, 就认为不进行分页查询;&lt;br&gt;-- &lt;strong&gt;参数⑩ cancellationSignal&lt;/strong&gt; : 进程中取消操作的信号, 如果操作被取消, 当查询命令执行时会抛出 OperationCanceledException 异常;&lt;br&gt;实例：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;Cursor cursor = db.query(&lt;span class=&quot;keyword&quot;&gt;true&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;apple_info&quot;&lt;/span&gt;,&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; String[]&amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;_id, name, age&quot;&lt;/span&gt;&amp;#125;,&lt;span class=&quot;string&quot;&gt;&quot;name like ?&quot;&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; String[]&amp;#123;&lt;span class=&quot;string&quot;&gt;&quot;乔%&quot;&lt;/span&gt;&amp;#125;,&lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;, &lt;span class=&quot;keyword&quot;&gt;null&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;_id desc&quot;&lt;/span&gt;, &lt;span class=&quot;string&quot;&gt;&quot;5, 10&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;cursor.close();&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;上面代码转成SQL语句需要使用rawQuery方法，要实现以上所有的功能需要自己写一个SQL语句:&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; Cursor &lt;span class=&quot;title&quot;&gt;rawQuery&lt;/span&gt; &lt;span class=&quot;params&quot;&gt;(String sql, String[] selectionArgs)&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;参数解析 :&lt;br&gt;-- &lt;strong&gt;参数① sql&lt;/strong&gt; : 要执行的SQL语句, 可以使用 “?” 作为占位符;&lt;br&gt;-- &lt;strong&gt;参数② selectionArgs&lt;/strong&gt; : sql语句中的参数, 按照次序依次替换占位符 “?”;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&quot;Cursor对象的操作&quot;&gt;&lt;a href=&quot;#Cursor对象的操作&quot; class=&quot;headerlink&quot; title=&quot;Cursor对象的操作&quot;&gt;&lt;/a&gt;Cursor对象的操作&lt;/h3&gt;&lt;p&gt;当执行的是select语句，返回一个Cursor对象。Cursor类似于JDBC中的ResultSet结果集，内置移动游标等方法：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;方法名&lt;/th&gt;
+&lt;th&gt;简介&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;move(int offset)&lt;/td&gt;
+&lt;td&gt;按偏移量来移动&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moveToFirst()&lt;/td&gt;
+&lt;td&gt;将记录指针移动到第一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moveToLast ()&lt;/td&gt;
+&lt;td&gt;将记录指针移动到最后一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moveToNext ()&lt;/td&gt;
+&lt;td&gt;将记录指针移动到下一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moveToPosition(int position)&lt;/td&gt;
+&lt;td&gt;将记录指针移动到指定的一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;moveToPrevious()&lt;/td&gt;
+&lt;td&gt;将记录指针移动到上一行&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getCount()&lt;/td&gt;
+&lt;td&gt;返回Cursor的行数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getColumnName(int index)&lt;/td&gt;
+&lt;td&gt;根据列的索引返回其相应的列名称&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getColumnIndex(String name)&lt;/td&gt;
+&lt;td&gt;根据列的名字返回其相应的索引&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getColumnNames()&lt;/td&gt;
+&lt;td&gt;返回一个保存有所有列名称的字符串数组&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getColumnCount()&lt;/td&gt;
+&lt;td&gt;返回列的总数&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;close()&lt;/td&gt;
+&lt;td&gt;关闭游标结果集，释放资源&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;getType()&lt;/td&gt;
+&lt;td&gt;获取字段的数据类型。分别有0、1、2、3、4这几个结果。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&quot;数据库事务Database-Transaction&quot;&gt;&lt;a href=&quot;#数据库事务Database-Transaction&quot; class=&quot;headerlink&quot; title=&quot;数据库事务Database Transaction&quot;&gt;&lt;/a&gt;数据库事务Database Transaction&lt;/h3&gt;&lt;p&gt;在数据库开发中，事务处理是非常重要的。&lt;br&gt;首先Android数据库操作（特别是写操作）是非常慢的，将所有操作打包成一个事务能大大提高处理速度。&lt;br&gt;其次是保证数据的一致性，一个事务中的所有操作可以看作一个原子操作，成功或者失败。如果全部成功，则事务提交完成；而事务内部如果有失败操作，整个事务操作会回滚，从而保证数据的一致性。&lt;br&gt;Android中事务的调用：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;10&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;11&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;try&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	db.beginTransaction();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//在这里执行多个数据库操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//执行过程中可能会抛出异常&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    db.setTransactionSuccessful();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//在setTransactionSuccessful和endTransaction之间不进行任何数据库操作&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125; &lt;span class=&quot;keyword&quot;&gt;catch&lt;/span&gt; (Exception e)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125; &lt;span class=&quot;keyword&quot;&gt;finally&lt;/span&gt; &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &lt;span class=&quot;comment&quot;&gt;//当所有操作执行完成后结束一个事务&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    db.endTransaction();&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;一定要调用&lt;code&gt;db.setTransactionSuccessful();&lt;/code&gt;事务才会成功提交完成&lt;br&gt;事务是可以嵌套的&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;SQLiteOpenHelper类&quot;&gt;&lt;a href=&quot;#SQLiteOpenHelper类&quot; class=&quot;headerlink&quot; title=&quot;SQLiteOpenHelper类&quot;&gt;&lt;/a&gt;SQLiteOpenHelper类&lt;/h3&gt;&lt;p&gt;SQLiteOpenHelper是系统提供的一个管理数据库表创建和版本管理（尤其是版本更新）的抽象类，我们必须通过继承SQLiteOpenHelper来实现自己的工具类。&lt;/p&gt;
+&lt;h2 id=&quot;封装DBHelper类&quot;&gt;&lt;a href=&quot;#封装DBHelper类&quot; class=&quot;headerlink&quot; title=&quot;封装DBHelper类&quot;&gt;&lt;/a&gt;封装DBHelper类&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="SQLite" scheme="http://yoursite.com/tags/SQLite/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Android 四大组件之ContentProvider(1)</title>
     <link href="http://yoursite.com/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/"/>
     <id>http://yoursite.com/2016/05/25/Android-四大组件之ContentProvider-1/</id>
     <published>2016-05-25T09:33:10.000Z</published>
-    <updated>2016-05-25T09:33:11.007Z</updated>
+    <updated>2016-05-26T12:06:23.477Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;二级菜单&quot;&gt;&lt;a href=&quot;#二级菜单&quot; class=&quot;headerlink&quot; title=&quot;二级菜单&quot;&gt;&lt;/a&gt;二级菜单&lt;/h2&gt;</content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+    
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian 开发" scheme="http://yoursite.com/tags/Debian-%E5%BC%80%E5%8F%91/"/>
+    
+      <category term="Android 四大组件" scheme="http://yoursite.com/tags/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6/"/>
+    
+      <category term="ContentProvider" scheme="http://yoursite.com/tags/ContentProvider/"/>
     
   </entry>
   
