@@ -168,6 +168,7 @@ require([], function (){
         };
     })
 
+
     // Hide Labels
     if(yiliaConfig.isArchive || yiliaConfig.isTag || yiliaConfig.isCategory) {
         $(document).ready(function() {
