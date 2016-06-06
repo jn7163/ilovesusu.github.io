@@ -7,15 +7,15 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/Debian-GNU-Linux/</loc>
-        <lastmod>2016-06-01T13:25:05.422Z</lastmod>
+        <loc>http://yoursite.com/categories/Android/</loc>
+        <lastmod>2016-06-02T17:26:17.809Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://yoursite.com/categories/Android/</loc>
-        <lastmod>2016-06-02T17:26:17.809Z</lastmod>
+        <loc>http://yoursite.com/categories/Debian-GNU-Linux/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

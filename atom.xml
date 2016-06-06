@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-02T17:26:17.809Z</updated>
+  <updated>2016-06-06T13:56:40.906Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,60 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</title>
+    <link href="http://yoursite.com/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://yoursite.com/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/</id>
+    <published>2016-06-06T13:48:17.000Z</published>
+    <updated>2016-06-06T13:56:40.906Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在Debian GNU/Linux下， eclipse svn插件subclipse安装一般会遇到这个问题”Failed to load JavaHL Library”在这里写下解决方案。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;Failed-to-load-JavaHL-Library&quot;&gt;&lt;a href=&quot;#Failed-to-load-JavaHL-Library&quot; class=&quot;headerlink&quot; title=&quot;Failed to load JavaHL Library&quot;&gt;&lt;/a&gt;Failed to load JavaHL Library&lt;/h2&gt;&lt;p&gt;&lt;em&gt;These are the &lt;strong&gt;errors&lt;/strong&gt; that were encountered:&lt;br&gt;no libsvnjavahl-1 in java.library.path&lt;br&gt;no svnjavahl-1 in java.library.path&lt;br&gt;no svnjavahl in java.library.path&lt;br&gt;java.library.path = /usr/lib/jni&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;这里有官方的解决这个问题的指导：&lt;a href=&quot;http://subclipse.tigris.org/wiki/JavaHL&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://subclipse.tigris.org/wiki/JavaHL&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;按照以前的装法&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;sudo apt-get install libsvn-java&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;该命令会下载安装libsvnjavahl-1.so文件。&lt;/p&gt;
+&lt;p&gt; (64位操作系统该文件在/usr/lib/x86_64-linux-gnu/jni/目录下，如果是32位操作体系则在/usr/lib/i386-linux-gnu/jni/目录下)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;eclipse.ini中增加参数（该文件在eclipse目录中）&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;-vmargs&lt;br&gt; -Dosgi.requiredJavaVersion=1.5&lt;br&gt; -Djava.library.path=/usr/lib/jni&lt;br&gt; 其实eclipse默认使用的library path就是/usr/lib/jni目录，该目录下还有其他java native的实现。所以不能为了解决subclipse的问题，而修改-Djava.library.path的值，应该把需要的文件软链接到默认的library path下（即/usr/lib/jni下）。所以请按照第三步来做。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;把libsvnjavahl-1.so文件软链接到/usr/lib/jni下&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;64位操作系统&lt;/strong&gt;请用这个命令：&lt;br&gt; sudo ln -s /usr/lib/x86_64-linux-gnu/jni/libsvnjavahl-1.so /usr/lib/jni/libsvnjavahl-1.so&lt;br&gt; &lt;strong&gt;32位操作系统&lt;/strong&gt;请用这个命令：&lt;br&gt; sudo ln -s /usr/lib/i386-linux-gnu/jni/libsvnjavahl-1.so /usr/lib/jni/libsvnjavahl-1.so&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;重启eclipse&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;在Debian GNU/Linux下， eclipse svn插件subclipse安装一般会遇到这个问题”Failed to load JavaHL Library”在这里写下解决方案。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+    
+      <category term="eclipse" scheme="http://yoursite.com/tags/eclipse/"/>
+    
+      <category term="subclipse" scheme="http://yoursite.com/tags/subclipse/"/>
+    
+      <category term="JavaHL Library" scheme="http://yoursite.com/tags/JavaHL-Library/"/>
+    
+  </entry>
   
   <entry>
     <title>Android 基础之侧滑菜单的使用</title>
@@ -133,9 +187,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
-    
       <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
     
       <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
     
@@ -193,9 +247,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
-    
       <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
     
       <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
     
@@ -222,9 +276,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
-    
       <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
     
       <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
     
@@ -469,9 +523,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="安装Jdk" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85Jdk/"/>
-    
       <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+    
+      <category term="安装Jdk" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85Jdk/"/>
     
       <category term="SunJdk" scheme="http://yoursite.com/tags/SunJdk/"/>
     
@@ -519,9 +573,9 @@
     
       <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
-    
       <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+    
+      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
     
       <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
     

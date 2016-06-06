@@ -44,20 +44,6 @@
     </url>
 
     <url>
-        <loc>http://yoursite.com/tags/Debian/</loc>
-        <lastmod>2016-06-01T13:25:05.422Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://yoursite.com/tags/Testing-Stable/</loc>
-        <lastmod>2016-06-01T13:25:05.422Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/</loc>
         <lastmod>2016-06-01T13:25:05.422Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -130,6 +116,41 @@
     <url>
         <loc>http://yoursite.com/tags/MaterialDrawer/</loc>
         <lastmod>2016-06-02T17:26:17.809Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/Debian/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/Testing-Stable/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/eclipse/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/subclipse/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://yoursite.com/tags/JavaHL-Library/</loc>
+        <lastmod>2016-06-06T13:56:40.906Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
