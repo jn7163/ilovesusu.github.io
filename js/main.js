@@ -145,6 +145,11 @@ require([], function (){
 
     }
 
+    // TOC
+    if (yiliaConfig.toc) {
+        require(['toc'], function(){ })
+    }
+
     //是否新窗口打开链接
     if(yiliaConfig.open_in_new == true){
         $(".article a[href]").attr("target", "_blank")
@@ -167,7 +172,6 @@ require([], function (){
             $("#scroll > a:nth-child(2)").hide();
         };
     })
-
 
     // Hide Labels
     if(yiliaConfig.isArchive || yiliaConfig.isTag || yiliaConfig.isCategory) {
