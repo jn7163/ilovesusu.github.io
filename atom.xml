@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-06-08T18:09:28.651Z</updated>
+  <updated>2016-06-29T14:44:30.716Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android 编码规范</title>
+    <link href="http://yoursite.com/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://yoursite.com/2016/06/29/Android-编码规范/</id>
+    <published>2016-06-29T14:38:17.000Z</published>
+    <updated>2016-06-29T14:44:30.716Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;编码规范&quot;&gt;&lt;a href=&quot;#编码规范&quot; class=&quot;headerlink&quot; title=&quot;编码规范&quot;&gt;&lt;/a&gt;编码规范&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;代码缩进使用4个空格，不是Tab键。&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;统一使用UTF-8编码，避免乱码问题。&lt;/p&gt;
+&lt;p&gt; 强烈推荐使用Android Studio或者Intellij IDEA。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;类的命名规范： 如果是Android SDK提供的Android应用组成部分，那么类名应该是类的作用的英文全称或者缩写＋ Android SDK基类的名字。&lt;/p&gt;
+&lt;p&gt; 例子：Activity类名字应该是 类似 MainActivity, NaviActivity （Navigation， 导航缩写Navi）, TextActivity, BookActivity Service类名字缩写应该是类似 DownloadService…&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;每个类完成后应该有作者姓名和联系方式的注释，对自己的代码负责。如&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;comment&quot;&gt;/**&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * User: dxg&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Date: 13-1-29&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Time: 上午10:08&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; * Email: 0x73757375@gmail.com&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt; */&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;class&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;DataBack&lt;/span&gt; &lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		...&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt; 不一定安照这个格式，但是请写上名字和联系方式。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;变量与函数命名&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;禁止使用拼音&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;循环变量及简单的数学运算，可以使用约定俗成的 i, j, k , x, y, z, 其他变量名字请用英文全称或能看出意思的英文缩写。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;为了让他人可以容易看懂你的代码，请在关键地方做好注释&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;其他&quot;&gt;&lt;a href=&quot;#其他&quot; class=&quot;headerlink&quot; title=&quot;其他&quot;&gt;&lt;/a&gt;其他&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;其他内容参见谷歌编码规范&lt;/p&gt;
+&lt;p&gt; 中文&lt;a href=&quot;http://blog.sina.com.cn/s/blog_48d491300100zwzg.html#use-todo-comments&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://blog.sina.com.cn/s/blog_48d491300100zwzg.html#use-todo-comments&lt;/a&gt;&lt;br&gt; 英文&lt;a href=&quot;http://source.android.com/source/code-style.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://source.android.com/source/code-style.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;其他未写明的欢迎补充，现有的有疑惑的欢迎提问，有缺点的欢迎质疑讨论修改。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+    
+    
+      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+    
+      <category term="编码规范" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    
+  </entry>
   
   <entry>
     <title>终于，输给了时间</title>

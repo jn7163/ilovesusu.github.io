@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title><![CDATA[Android 编码规范]]></title>
+      <url>http://yoursite.com/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。<br><a id="more"></a></p>
+<h2 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h2><ol>
+<li>代码缩进使用4个空格，不是Tab键。</li>
+<li><p>统一使用UTF-8编码，避免乱码问题。</p>
+<p> 强烈推荐使用Android Studio或者Intellij IDEA。</p>
+</li>
+<li><p>类的命名规范： 如果是Android SDK提供的Android应用组成部分，那么类名应该是类的作用的英文全称或者缩写＋ Android SDK基类的名字。</p>
+<p> 例子：Activity类名字应该是 类似 MainActivity, NaviActivity （Navigation， 导航缩写Navi）, TextActivity, BookActivity Service类名字缩写应该是类似 DownloadService…</p>
+</li>
+<li><p>每个类完成后应该有作者姓名和联系方式的注释，对自己的代码负责。如</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span><br><span class="line"> * User: dxg</span><br><span class="line"> * Date: 13-1-29</span><br><span class="line"> * Time: 上午10:08</span><br><span class="line"> * Email: 0x73757375@gmail.com</span><br><span class="line"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">DataBack</span> </span>&#123;</span><br><span class="line">		...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p> 不一定安照这个格式，但是请写上名字和联系方式。</p>
+</li>
+<li><p>变量与函数命名</p>
+<ul>
+<li><em>禁止使用拼音</em></li>
+<li>循环变量及简单的数学运算，可以使用约定俗成的 i, j, k , x, y, z, 其他变量名字请用英文全称或能看出意思的英文缩写。</li>
+</ul>
+</li>
+<li><p>为了让他人可以容易看懂你的代码，请在关键地方做好注释</p>
+</li>
+</ol>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ol>
+<li><p>其他内容参见谷歌编码规范</p>
+<p> 中文<a href="http://blog.sina.com.cn/s/blog_48d491300100zwzg.html#use-todo-comments" target="_blank" rel="external">http://blog.sina.com.cn/s/blog_48d491300100zwzg.html#use-todo-comments</a><br> 英文<a href="http://source.android.com/source/code-style.html" target="_blank" rel="external">http://source.android.com/source/code-style.html</a></p>
+</li>
+<li><p>其他未写明的欢迎补充，现有的有疑惑的欢迎提问，有缺点的欢迎质疑讨论修改。</p>
+</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[终于，输给了时间]]></title>
       <url>http://yoursite.com/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>何种妥协，各种抱歉，始终仍输给了时间。<br><a id="more"></a><br>昨天在朋友的空间里逛了一晚上，看他们写着自己的心事，自己却想不起自己的心绪。突然就那么的怀恋起来那些过往。</p>
