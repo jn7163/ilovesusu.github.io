@@ -4,6 +4,64 @@
   
     
     <entry>
+      <title><![CDATA[新版apt简单使用指南]]></title>
+      <url>http://yoursite.com/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。<br><a id="more"></a></p>
+<h2 id="新版apt使用（列表）"><a href="#新版apt使用（列表）" class="headerlink" title="新版apt使用（列表）"></a>新版apt使用（列表）</h2><p>下面我们列出 Debian 中使用 APT 命令与老版本 Debian 中软件包管理的用法对比：</p>
+<table>
+<thead>
+<tr>
+<th>新的apt管理工具</th>
+<th>老版本apt管理工具</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>apt install 包名</td>
+<td>替代 apt-get install 包名</td>
+</tr>
+<tr>
+<td>apt remove 包名</td>
+<td>替代 apt-get remove 包名</td>
+</tr>
+<tr>
+<td>apt search 包名</td>
+<td>替代 apt-cache search 包名</td>
+</tr>
+<tr>
+<td>apt show 包名</td>
+<td>替代 apt-cache show 包名</td>
+</tr>
+<tr>
+<td>apt update</td>
+<td>替代 apt-get update</td>
+</tr>
+<tr>
+<td>apt upgrade</td>
+<td>替代 apt-get upgrade</td>
+</tr>
+<tr>
+<td>apt list –installed</td>
+<td>替代 dpkg -l</td>
+</tr>
+<tr>
+<td>apt edit-sources</td>
+<td>替代 sudo nano /etc/apt/sources.list</td>
+</tr>
+<tr>
+<td>apt autoremove</td>
+<td>替代 apt-get autoremove</td>
+</tr>
+<tr>
+<td>apt purge 包名</td>
+<td>替代 apt-get purge 包名</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Android 编码规范]]></title>
       <url>http://yoursite.com/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。<br><a id="more"></a></p>
