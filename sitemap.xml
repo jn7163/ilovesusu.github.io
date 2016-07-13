@@ -2,22 +2,22 @@
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <sitemap>
-        <loc>http://yoursite.com/post-sitemap.xml</loc>
+        <loc>http://ilovesusu.github.io/post-sitemap.xml</loc>
         <lastmod>2016-06-30T14:17:23.037Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/page-sitemap.xml</loc>
+        <loc>http://ilovesusu.github.io/page-sitemap.xml</loc>
         <lastmod>2016-05-26T10:22:18.962Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/category-sitemap.xml</loc>
+        <loc>http://ilovesusu.github.io/category-sitemap.xml</loc>
         <lastmod>2016-06-08T18:09:28.651Z</lastmod>
     </sitemap>
 
     <sitemap>
-        <loc>http://yoursite.com/tag-sitemap.xml</loc>
+        <loc>http://ilovesusu.github.io/tag-sitemap.xml</loc>
         <lastmod>2016-05-25T10:04:34.663Z</lastmod>
     </sitemap>
 

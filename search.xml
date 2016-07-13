@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[新版apt简单使用指南]]></title>
-      <url>http://yoursite.com/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+      <url>http://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。<br><a id="more"></a></p>
 <h2 id="新版apt使用（列表）"><a href="#新版apt使用（列表）" class="headerlink" title="新版apt使用（列表）"></a>新版apt使用（列表）</h2><p>下面我们列出 Debian 中使用 APT 命令与老版本 Debian 中软件包管理的用法对比：</p>
 <table>
@@ -63,7 +63,7 @@
     
     <entry>
       <title><![CDATA[Android 编码规范]]></title>
-      <url>http://yoursite.com/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+      <url>http://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。<br><a id="more"></a></p>
 <h2 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h2><ol>
 <li>代码缩进使用4个空格，不是Tab键。</li>
@@ -98,7 +98,7 @@
     
     <entry>
       <title><![CDATA[终于，输给了时间]]></title>
-      <url>http://yoursite.com/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/</url>
+      <url>http://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>何种妥协，各种抱歉，始终仍输给了时间。<br><a id="more"></a><br>昨天在朋友的空间里逛了一晚上，看他们写着自己的心事，自己却想不起自己的心绪。突然就那么的怀恋起来那些过往。</p>
 <p>是的，我以为自己经历了那么多，我会很坚强的去面对那些过去的，现在的，以及将来的那些人那些事。可是当我再一次想起我们有过的那些曾经，我依然忍不住轻声的哭出来。</p>
 <p>  不可致否，我乃然想着他们，甚至深深的！是的，好久了，心里在也没有走进来一个人。好想有个人抱抱，因为我感觉自己真的好冷，好累！</p>
@@ -135,7 +135,7 @@
     
     <entry>
       <title><![CDATA[eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案]]></title>
-      <url>http://yoursite.com/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <url>http://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Debian GNU/Linux下， eclipse svn插件subclipse安装一般会遇到这个问题”Failed to load JavaHL Library”在这里写下解决方案。<br><a id="more"></a></p>
 <h2 id="Failed-to-load-JavaHL-Library"><a href="#Failed-to-load-JavaHL-Library" class="headerlink" title="Failed to load JavaHL Library"></a>Failed to load JavaHL Library</h2><p><em>These are the <strong>errors</strong> that were encountered:<br>no libsvnjavahl-1 in java.library.path<br>no svnjavahl-1 in java.library.path<br>no svnjavahl in java.library.path<br>java.library.path = /usr/lib/jni</em></p>
 <p>这里有官方的解决这个问题的指导：<a href="http://subclipse.tigris.org/wiki/JavaHL" target="_blank" rel="external">http://subclipse.tigris.org/wiki/JavaHL</a></p>
@@ -165,7 +165,7 @@
     
     <entry>
       <title><![CDATA[Android 基础之侧滑菜单的使用]]></title>
-      <url>http://yoursite.com/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <url>http://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>相信很多朋友都见过可以侧滑的Android应用,比如QQ,知乎,谷歌音乐,CSDN等。这个现在几乎所有流行应用都在使用,今天看看这个是怎么实现的.</p>
 <a id="more"></a>
 <h2 id="DrawerLayout"><a href="#DrawerLayout" class="headerlink" title="DrawerLayout"></a>DrawerLayout</h2><blockquote>
@@ -238,35 +238,35 @@
     
     <entry>
       <title><![CDATA[Android 四大组件之Activity]]></title>
-      <url>http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/</url>
+      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 动画合集]]></title>
-      <url>http://yoursite.com/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/</url>
+      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 四大组件之Service服务]]></title>
-      <url>http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</url>
+      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 四大组件之BroadcastReceiver]]></title>
-      <url>http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</url>
+      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 基础之SQLite的使用]]></title>
-      <url>http://yoursite.com/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <url>http://ilovesusu.github.io/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。</p>
 <a id="more"></a>
 <h2 id="SQLite数据库的特点："><a href="#SQLite数据库的特点：" class="headerlink" title="SQLite数据库的特点："></a>SQLite数据库的特点：</h2><p>（1）Android通过 SQLite 数据库引擎来实现结构化数据的存储。在一个数据库应用程序中，任何类都可以通过名字对已经创建的数据库进行访问，但是在应用程序之外就不可以。<br>（2）SQLite 数据库是一种用C语言编写的嵌入式数据库，它是一个轻量级的数据库，最初为嵌入式设计的。它是在一些基础简单的语句处理上要比oracle / mysql快很多，而且其对内存的要求很低，在内存中只需要几百KB的存储空间。这是Android中采用 SQLite 数据库的主要原因。<br>（3）SQLite 支持事务处理功能。Transaction<br>（4）SQLite 处理速度比MySQL等著名的开源数据库系统更快。它没有服务器进程。<br>（5）SQLite 通过文件保存数据库，该文件是跨平台的，可以自由复制。一个文件就是一个数据库。数据库名即文件名。<br>（6）JDBC会消耗太多系统资源，所以JDBC对于手机并不合适，因此Android提供了新的API来使用 SQLite 数据库。<br>（7）SQLite最大的特点是你可以把各种类型的数据保存到任何字段中，而不用关心字段声明的数据类型是什么。 例如：可以在Integer类型的字段中存放字符串，或者在布尔型字段中存放浮点数，或者在字符型字段中存放日期型值。</p>
@@ -427,14 +427,14 @@
     
     <entry>
       <title><![CDATA[Android 四大组件之ContentProvider(1)]]></title>
-      <url>http://yoursite.com/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/</url>
+      <url>http://ilovesusu.github.io/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Debian 8+ 安装 SunJdk]]></title>
-      <url>http://yoursite.com/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/</url>
+      <url>http://ilovesusu.github.io/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。</p>
 <a id="more"></a>
 <p>Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。<br>某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。<br>大家可以看看下面的链接。</p>
@@ -453,7 +453,7 @@
     
     <entry>
       <title><![CDATA[Debian安装QQ]]></title>
-      <url>http://yoursite.com/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/</url>
+      <url>http://ilovesusu.github.io/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/</url>
       <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Debian GNU/Linux是一个优秀的操作系统，但是TX没有开发Linux下的QQ（之前TX发布的QQ.deb已经不能使用，webqq又半死不活），在这种情况下就需要教大家怎么在Debian上使用QQ了。</p>
 <a id="more"></a>
 <p>##第一步、开启Debian 对i386的支持</p>
@@ -481,7 +481,7 @@
     
     <entry>
       <title><![CDATA[Hello World]]></title>
-      <url>http://yoursite.com/2016/05/23/hello-world/</url>
+      <url>http://ilovesusu.github.io/2016/05/23/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>

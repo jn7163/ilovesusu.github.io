@@ -4,9 +4,9 @@
   <subtitle>专注于Android、Java、移动互联网、Linux、网络安全</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://ilovesusu.github.io/"/>
   <updated>2016-06-30T14:17:23.037Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://ilovesusu.github.io/</id>
   
   <author>
     <name>Doudou</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>新版apt简单使用指南</title>
-    <link href="http://yoursite.com/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>http://yoursite.com/2016/06/30/新版apt简单使用指南/</id>
+    <link href="http://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/</id>
     <published>2016-06-30T14:14:03.000Z</published>
     <updated>2016-06-30T14:17:23.037Z</updated>
     
@@ -82,21 +82,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="APT 使用" scheme="http://yoursite.com/tags/APT-%E4%BD%BF%E7%94%A8/"/>
+      <category term="APT 使用" scheme="http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>Android 编码规范</title>
-    <link href="http://yoursite.com/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    <id>http://yoursite.com/2016/06/29/Android-编码规范/</id>
+    <link href="http://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>http://ilovesusu.github.io/2016/06/29/Android-编码规范/</id>
     <published>2016-06-29T14:38:17.000Z</published>
     <updated>2016-06-29T14:44:30.716Z</updated>
     
@@ -137,19 +137,19 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="编码规范" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="编码规范" scheme="http://ilovesusu.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title>终于，输给了时间</title>
-    <link href="http://yoursite.com/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/"/>
-    <id>http://yoursite.com/2016/06/09/终于，输给了时间/</id>
+    <link href="http://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/"/>
+    <id>http://ilovesusu.github.io/2016/06/09/终于，输给了时间/</id>
     <published>2016-06-08T17:07:09.000Z</published>
     <updated>2016-06-08T18:09:28.651Z</updated>
     
@@ -192,21 +192,21 @@
     
     </summary>
     
-      <category term="心情随笔" scheme="http://yoursite.com/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+      <category term="心情随笔" scheme="http://ilovesusu.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="爱情" scheme="http://yoursite.com/tags/%E7%88%B1%E6%83%85/"/>
+      <category term="爱情" scheme="http://ilovesusu.github.io/tags/%E7%88%B1%E6%83%85/"/>
     
-      <category term="友情" scheme="http://yoursite.com/tags/%E5%8F%8B%E6%83%85/"/>
+      <category term="友情" scheme="http://ilovesusu.github.io/tags/%E5%8F%8B%E6%83%85/"/>
     
-      <category term="随便" scheme="http://yoursite.com/tags/%E9%9A%8F%E4%BE%BF/"/>
+      <category term="随便" scheme="http://ilovesusu.github.io/tags/%E9%9A%8F%E4%BE%BF/"/>
     
   </entry>
   
   <entry>
     <title>eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</title>
-    <link href="http://yoursite.com/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://yoursite.com/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/</id>
+    <link href="http://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://ilovesusu.github.io/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/</id>
     <published>2016-06-06T13:48:17.000Z</published>
     <updated>2016-06-06T13:56:40.906Z</updated>
     
@@ -242,25 +242,25 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="eclipse" scheme="http://yoursite.com/tags/eclipse/"/>
+      <category term="eclipse" scheme="http://ilovesusu.github.io/tags/eclipse/"/>
     
-      <category term="subclipse" scheme="http://yoursite.com/tags/subclipse/"/>
+      <category term="subclipse" scheme="http://ilovesusu.github.io/tags/subclipse/"/>
     
-      <category term="JavaHL Library" scheme="http://yoursite.com/tags/JavaHL-Library/"/>
+      <category term="JavaHL Library" scheme="http://ilovesusu.github.io/tags/JavaHL-Library/"/>
     
   </entry>
   
   <entry>
     <title>Android 基础之侧滑菜单的使用</title>
-    <link href="http://yoursite.com/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2016/06/02/Android-基础之侧滑菜单的使用/</id>
+    <link href="http://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://ilovesusu.github.io/2016/06/02/Android-基础之侧滑菜单的使用/</id>
     <published>2016-06-02T14:01:26.000Z</published>
     <updated>2016-06-02T17:26:17.809Z</updated>
     
@@ -339,25 +339,25 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="侧滑菜单" scheme="http://yoursite.com/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/"/>
+      <category term="侧滑菜单" scheme="http://ilovesusu.github.io/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/"/>
     
-      <category term="DrawerLayout" scheme="http://yoursite.com/tags/DrawerLayout/"/>
+      <category term="DrawerLayout" scheme="http://ilovesusu.github.io/tags/DrawerLayout/"/>
     
-      <category term="SlidingMenu" scheme="http://yoursite.com/tags/SlidingMenu/"/>
+      <category term="SlidingMenu" scheme="http://ilovesusu.github.io/tags/SlidingMenu/"/>
     
-      <category term="MaterialDrawer" scheme="http://yoursite.com/tags/MaterialDrawer/"/>
+      <category term="MaterialDrawer" scheme="http://ilovesusu.github.io/tags/MaterialDrawer/"/>
     
   </entry>
   
   <entry>
     <title>Android 四大组件之Activity</title>
-    <link href="http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/"/>
-    <id>http://yoursite.com/2016/06/01/Android-四大组件之Activity/</id>
+    <link href="http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/"/>
+    <id>http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/</id>
     <published>2016-06-01T13:25:05.000Z</published>
     <updated>2016-06-01T13:25:05.422Z</updated>
     
@@ -370,23 +370,23 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
+      <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
   </entry>
   
   <entry>
     <title>Android 动画合集</title>
-    <link href="http://yoursite.com/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/"/>
-    <id>http://yoursite.com/2016/06/01/Android-动画合集/</id>
+    <link href="http://ilovesusu.github.io/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/"/>
+    <id>http://ilovesusu.github.io/2016/06/01/Android-动画合集/</id>
     <published>2016-06-01T13:24:16.000Z</published>
     <updated>2016-06-01T13:30:16.021Z</updated>
     
@@ -399,25 +399,25 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="Animation 合集" scheme="http://yoursite.com/tags/Animation-%E5%90%88%E9%9B%86/"/>
+      <category term="Animation 合集" scheme="http://ilovesusu.github.io/tags/Animation-%E5%90%88%E9%9B%86/"/>
     
-      <category term="View Animation" scheme="http://yoursite.com/tags/View-Animation/"/>
+      <category term="View Animation" scheme="http://ilovesusu.github.io/tags/View-Animation/"/>
     
-      <category term="Drawable Animation" scheme="http://yoursite.com/tags/Drawable-Animation/"/>
+      <category term="Drawable Animation" scheme="http://ilovesusu.github.io/tags/Drawable-Animation/"/>
     
-      <category term="Property Animation" scheme="http://yoursite.com/tags/Property-Animation/"/>
+      <category term="Property Animation" scheme="http://ilovesusu.github.io/tags/Property-Animation/"/>
     
   </entry>
   
   <entry>
     <title>Android 四大组件之Service服务</title>
-    <link href="http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/"/>
-    <id>http://yoursite.com/2016/06/01/Android-四大组件之Service服务/</id>
+    <link href="http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/"/>
+    <id>http://ilovesusu.github.io/2016/06/01/Android-四大组件之Service服务/</id>
     <published>2016-06-01T13:23:20.000Z</published>
     <updated>2016-06-01T13:23:20.224Z</updated>
     
@@ -430,23 +430,23 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
+      <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
   </entry>
   
   <entry>
     <title>Android 四大组件之BroadcastReceiver</title>
-    <link href="http://yoursite.com/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/"/>
-    <id>http://yoursite.com/2016/06/01/Android-四大组件之BroadcastReceiver/</id>
+    <link href="http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/"/>
+    <id>http://ilovesusu.github.io/2016/06/01/Android-四大组件之BroadcastReceiver/</id>
     <published>2016-06-01T13:22:58.000Z</published>
     <updated>2016-06-01T13:22:58.676Z</updated>
     
@@ -459,23 +459,23 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
+      <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
   </entry>
   
   <entry>
     <title>Android 基础之SQLite的使用</title>
-    <link href="http://yoursite.com/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://yoursite.com/2016/05/26/Android-基础之Sqlite的使用/</id>
+    <link href="http://ilovesusu.github.io/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/</id>
     <published>2016-05-26T12:12:35.000Z</published>
     <updated>2016-05-26T15:14:04.642Z</updated>
     
@@ -642,19 +642,19 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://yoursite.com/tags/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="SQLite" scheme="http://yoursite.com/tags/SQLite/"/>
+      <category term="SQLite" scheme="http://ilovesusu.github.io/tags/SQLite/"/>
     
   </entry>
   
   <entry>
     <title>Android 四大组件之ContentProvider(1)</title>
-    <link href="http://yoursite.com/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/"/>
-    <id>http://yoursite.com/2016/05/25/Android-四大组件之ContentProvider-1/</id>
+    <link href="http://ilovesusu.github.io/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/"/>
+    <id>http://ilovesusu.github.io/2016/05/25/Android-四大组件之ContentProvider-1/</id>
     <published>2016-05-25T09:33:10.000Z</published>
     <updated>2016-05-26T12:06:23.477Z</updated>
     
@@ -667,21 +667,21 @@
     
     </summary>
     
-      <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Debian 开发" scheme="http://yoursite.com/tags/Debian-%E5%BC%80%E5%8F%91/"/>
+      <category term="Debian 开发" scheme="http://ilovesusu.github.io/tags/Debian-%E5%BC%80%E5%8F%91/"/>
     
-      <category term="Android 四大组件" scheme="http://yoursite.com/tags/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6/"/>
+      <category term="Android 四大组件" scheme="http://ilovesusu.github.io/tags/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6/"/>
     
-      <category term="ContentProvider" scheme="http://yoursite.com/tags/ContentProvider/"/>
+      <category term="ContentProvider" scheme="http://ilovesusu.github.io/tags/ContentProvider/"/>
     
   </entry>
   
   <entry>
     <title>Debian 8+ 安装 SunJdk</title>
-    <link href="http://yoursite.com/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/"/>
-    <id>http://yoursite.com/2016/05/24/Debian-8-安装-SunJdk/</id>
+    <link href="http://ilovesusu.github.io/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/"/>
+    <id>http://ilovesusu.github.io/2016/05/24/Debian-8-安装-SunJdk/</id>
     <published>2016-05-24T04:50:58.000Z</published>
     <updated>2016-05-25T10:04:34.663Z</updated>
     
@@ -706,23 +706,23 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="安装Jdk" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85Jdk/"/>
+      <category term="安装Jdk" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85Jdk/"/>
     
-      <category term="SunJdk" scheme="http://yoursite.com/tags/SunJdk/"/>
+      <category term="SunJdk" scheme="http://ilovesusu.github.io/tags/SunJdk/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装QQ</title>
-    <link href="http://yoursite.com/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/"/>
-    <id>http://yoursite.com/2016/05/24/Debian安装QQ/</id>
+    <link href="http://ilovesusu.github.io/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/"/>
+    <id>http://ilovesusu.github.io/2016/05/24/Debian安装QQ/</id>
     <published>2016-05-24T04:04:32.000Z</published>
     <updated>2016-05-25T10:11:11.795Z</updated>
     
@@ -756,23 +756,23 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://yoursite.com/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://yoursite.com/tags/Debian/"/>
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://yoursite.com/tags/%E5%AE%89%E8%A3%85QQ/"/>
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
-      <category term="Testing/Stable" scheme="http://yoursite.com/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="wine" scheme="http://yoursite.com/tags/wine/"/>
+      <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2016/05/23/hello-world/"/>
-    <id>http://yoursite.com/2016/05/23/hello-world/</id>
+    <link href="http://ilovesusu.github.io/2016/05/23/hello-world/"/>
+    <id>http://ilovesusu.github.io/2016/05/23/hello-world/</id>
     <published>2016-05-23T09:42:50.149Z</published>
     <updated>2016-05-23T09:42:50.149Z</updated>
     
