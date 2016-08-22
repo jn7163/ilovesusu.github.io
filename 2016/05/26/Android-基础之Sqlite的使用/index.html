@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="前言在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta name="description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 基础之SQLite的使用">
 <meta property="og:url" content="http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/index.html">
 <meta property="og:site_name" content="Doudou的博客">
-<meta property="og:description" content="前言在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
-<meta property="og:updated_time" content="2016-05-26T15:14:04.642Z">
+<meta property="og:description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta property="og:updated_time" content="2016-08-22T06:06:25.793Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 基础之SQLite的使用">
-<meta name="twitter:description" content="前言在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta name="twitter:description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -324,7 +324,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。</p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。</p>
 <a id="more"></a>
 <h2 id="SQLite数据库的特点："><a href="#SQLite数据库的特点：" class="headerlink" title="SQLite数据库的特点："></a>SQLite数据库的特点：</h2><p>（1）Android通过 SQLite 数据库引擎来实现结构化数据的存储。在一个数据库应用程序中，任何类都可以通过名字对已经创建的数据库进行访问，但是在应用程序之外就不可以。<br>（2）SQLite 数据库是一种用C语言编写的嵌入式数据库，它是一个轻量级的数据库，最初为嵌入式设计的。它是在一些基础简单的语句处理上要比oracle / mysql快很多，而且其对内存的要求很低，在内存中只需要几百KB的存储空间。这是Android中采用 SQLite 数据库的主要原因。<br>（3）SQLite 支持事务处理功能。Transaction<br>（4）SQLite 处理速度比MySQL等著名的开源数据库系统更快。它没有服务器进程。<br>（5）SQLite 通过文件保存数据库，该文件是跨平台的，可以自由复制。一个文件就是一个数据库。数据库名即文件名。<br>（6）JDBC会消耗太多系统资源，所以JDBC对于手机并不合适，因此Android提供了新的API来使用 SQLite 数据库。<br>（7）SQLite最大的特点是你可以把各种类型的数据保存到任何字段中，而不用关心字段声明的数据类型是什么。 例如：可以在Integer类型的字段中存放字符串，或者在布尔型字段中存放浮点数，或者在字符型字段中存放日期型值。</p>
 <h2 id="Android对SQLite的操作"><a href="#Android对SQLite的操作" class="headerlink" title="Android对SQLite的操作"></a>Android对SQLite的操作</h2><p>Android中提供了很多操作SQLite类和方法。<br>下面将详讲解两个<strong>常用类</strong>的使用，以及如何<strong>保证数据</strong>的<strong>一致性</strong>。</p>
@@ -490,7 +490,7 @@
         <p><span>本文标题:</span><a href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Doudou</a></p>
         <p><span>发布时间:</span>2016-05-26, 20:12:35</p>
-        <p><span>最后更新:</span>2016-05-26, 23:14:04</p>
+        <p><span>最后更新:</span>2016-08-22, 14:06:25</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/05/26/Android-基础之Sqlite的使用/" title="Android 基础之SQLite的使用">http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/</a>
             <span class="copy-path" data-clipboard-text="原文: http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/　　作者: Doudou" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -525,7 +525,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQLite数据库的特点："><span class="toc-number">2.</span> <span class="toc-text">SQLite数据库的特点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android对SQLite的操作"><span class="toc-number">3.</span> <span class="toc-text">Android对SQLite的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteDatabase类"><span class="toc-number">3.1.</span> <span class="toc-text">SQLiteDatabase类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cursor对象的操作"><span class="toc-number">3.2.</span> <span class="toc-text">Cursor对象的操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库事务Database-Transaction"><span class="toc-number">3.3.</span> <span class="toc-text">数据库事务Database Transaction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteOpenHelper类"><span class="toc-number">3.4.</span> <span class="toc-text">SQLiteOpenHelper类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#封装DBHelper类"><span class="toc-number">4.</span> <span class="toc-text">封装DBHelper类</span></a></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQLite数据库的特点："><span class="toc-number">2.</span> <span class="toc-text">SQLite数据库的特点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android对SQLite的操作"><span class="toc-number">3.</span> <span class="toc-text">Android对SQLite的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteDatabase类"><span class="toc-number">3.1.</span> <span class="toc-text">SQLiteDatabase类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cursor对象的操作"><span class="toc-number">3.2.</span> <span class="toc-text">Cursor对象的操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库事务Database-Transaction"><span class="toc-number">3.3.</span> <span class="toc-text">数据库事务Database Transaction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteOpenHelper类"><span class="toc-number">3.4.</span> <span class="toc-text">SQLiteOpenHelper类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#封装DBHelper类"><span class="toc-number">4.</span> <span class="toc-text">封装DBHelper类</span></a></li></ol>
 </div>
 <style>
     .left-col .switch-btn,
@@ -604,7 +604,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/23/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
 
 
 
