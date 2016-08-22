@@ -6,7 +6,8 @@
     <entry>
       <title><![CDATA[Debian安装VirtualBox增强工具]]></title>
       <url>http://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</url>
-      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><a id="more"></a>
+      <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Debian下安装VirtualBox增强工具可以使得一些操作变的简单例如:剪贴板,文件拖拽…等,但是需要在虚拟机内部安装一些东西,在这里做一个记录,也方便新手,防止下折腾.</p>
+<a id="more"></a>
 <h2 id="安装VirtualBox增强工具"><a href="#安装VirtualBox增强工具" class="headerlink" title="安装VirtualBox增强工具"></a>安装VirtualBox增强工具</h2><p>首先切换到root用户执行下面的三行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">apt-get install gcc make</span><br><span class="line">apt-get install dkms</span><br><span class="line">apt-get install linux-headers-`uname -r`</span><br></pre></td></tr></table></figure></p>
 <p>然后点击VirtualBox的设备菜单下的安装增强工具选项，在Debian虚拟机下的终端中执行命令将cdrom的内容挂在到/mnt下<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mount  /dev/cdrom  /mnt</span><br></pre></td></tr></table></figure></p>
 <p>然后cd到/mnt下，执行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./VBoxLinuxAdditions.run</span><br></pre></td></tr></table></figure></p>
