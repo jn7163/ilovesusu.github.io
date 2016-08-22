@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ilovesusu.github.io/"/>
-  <updated>2016-06-30T14:17:23.037Z</updated>
+  <updated>2016-08-22T05:56:52.013Z</updated>
   <id>http://ilovesusu.github.io/</id>
   
   <author>
@@ -14,6 +14,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian安装VirtualBox增强工具</title>
+    <link href="http://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>http://ilovesusu.github.io/2016/08/22/Debian安装VirtualBox增强工具/</id>
+    <published>2016-08-22T05:50:43.000Z</published>
+    <updated>2016-08-22T05:56:52.013Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;安装VirtualBox增强工具&quot;&gt;&lt;a href=&quot;#安装VirtualBox增强工具&quot; class=&quot;headerlink&quot; title=&quot;安装VirtualBox增强工具&quot;&gt;&lt;/a&gt;安装VirtualBox增强工具&lt;/h2&gt;&lt;p&gt;首先切换到root用户执行下面的三行命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;apt-get install gcc make&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt-get install dkms&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;apt-get install linux-headers-`uname -r`&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后点击VirtualBox的设备菜单下的安装增强工具选项，在Debian虚拟机下的终端中执行命令将cdrom的内容挂在到/mnt下&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;mount  /dev/cdrom  /mnt&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;然后cd到/mnt下，执行命令&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;./VBoxLinuxAdditions.run&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装VirtualBox增强工具" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
   
   <entry>
     <title>新版apt简单使用指南</title>
