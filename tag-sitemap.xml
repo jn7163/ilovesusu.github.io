@@ -9,6 +9,13 @@
     </url>
 
     <url>
+        <loc>http://ilovesusu.github.io/tags/SQLite/</loc>
+        <lastmod>2016-08-22T06:06:25.793Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://ilovesusu.github.io/tags/Animation-%E5%90%88%E9%9B%86/</loc>
         <lastmod>2016-08-22T06:06:25.793Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -37,20 +44,6 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/tags/SQLite/</loc>
-        <lastmod>2016-08-22T06:06:25.793Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/Android/</loc>
-        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://ilovesusu.github.io/tags/Debian-%E5%BC%80%E5%8F%91/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,6 +59,27 @@
 
     <url>
         <loc>http://ilovesusu.github.io/tags/ContentProvider/</loc>
+        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Android/</loc>
+        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85Jdk/</loc>
+        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/SunJdk/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -94,20 +108,6 @@
 
     <url>
         <loc>http://ilovesusu.github.io/tags/MaterialDrawer/</loc>
-        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85Jdk/</loc>
-        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/SunJdk/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -149,6 +149,13 @@
     </url>
 
     <url>
+        <loc>http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/</loc>
+        <lastmod>2016-08-22T06:06:25.873Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
         <loc>http://ilovesusu.github.io/tags/eclipse/</loc>
         <lastmod>2016-08-22T06:06:25.873Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -164,13 +171,6 @@
 
     <url>
         <loc>http://ilovesusu.github.io/tags/JavaHL-Library/</loc>
-        <lastmod>2016-08-22T06:06:25.873Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/</loc>
         <lastmod>2016-08-22T06:06:25.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
