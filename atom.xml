@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ilovesusu.github.io/"/>
-  <updated>2016-08-22T06:06:25.845Z</updated>
+  <updated>2016-08-23T15:11:31.534Z</updated>
   <id>http://ilovesusu.github.io/</id>
   
   <author>
@@ -14,6 +14,101 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Debian下可用的翻墙工具教程</title>
+    <link href="http://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+    <id>http://ilovesusu.github.io/2016/08/22/Debian下可用的翻墙工具教程/</id>
+    <published>2016-08-22T14:57:12.000Z</published>
+    <updated>2016-08-23T15:11:31.534Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;##博主推荐&lt;/p&gt;
+&lt;h3 id=&quot;XX-Net&quot;&gt;&lt;a href=&quot;#XX-Net&quot; class=&quot;headerlink&quot; title=&quot;XX-Net&quot;&gt;&lt;/a&gt;XX-Net&lt;/h3&gt;&lt;p&gt;XX-Net是一个免费的桌面应用程序，提供快速，可靠和安全地访问开放的互联网对送检地区的用户。它使用谷歌应用程序引擎（GAE）通过防火墙代理服务器。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/XX-net/XX-Net&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/XX-net/XX-Net&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Shadowsocks&quot;&gt;&lt;a href=&quot;#Shadowsocks&quot; class=&quot;headerlink&quot; title=&quot;Shadowsocks&quot;&gt;&lt;/a&gt;Shadowsocks&lt;/h3&gt;&lt;p&gt;快速隧道代理，可以帮助你绕过防火墙&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/ziggear/shadowsocks&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/ziggear/shadowsocks&lt;/a&gt; (非官方,备份自&lt;a href=&quot;https://github.com/shadowsocks/shadowsocks&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/shadowsocks/shadowsocks&lt;/a&gt;)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3 id=&quot;Lantern&quot;&gt;&lt;a href=&quot;#Lantern&quot; class=&quot;headerlink&quot; title=&quot;Lantern&quot;&gt;&lt;/a&gt;Lantern&lt;/h3&gt;&lt;p&gt;人人可享的开放网络Lantern是一个免费的应用程序。它能帮助你随时随地快速、可靠、安全地访问互联网。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/getlantern/lantern&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://github.com/getlantern/lantern&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;##使用方式&lt;/p&gt;
+&lt;p&gt;在各自项目的github的Wiki里都写的很清楚了,要是实在不会的可以在问章下方留言,我会在博客中帮你写解决方案.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;例如:&lt;br&gt;OS:Debian&lt;br&gt;Software:xx-net&lt;br&gt;issue:Chrome无法导入证书 | 缺少lib-xx…….&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;像上面的写法我看到都会帮你的.&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="科学上网" scheme="http://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="翻墙" scheme="http://ilovesusu.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+    
+      <category term="免费vpn" scheme="http://ilovesusu.github.io/tags/%E5%85%8D%E8%B4%B9vpn/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Chrome中好用的插件收集(陆续更新)</title>
+    <link href="http://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>http://ilovesusu.github.io/2016/08/22/Chrome中好用的插件收集-陆续更新/</id>
+    <published>2016-08-22T13:03:09.000Z</published>
+    <updated>2016-08-22T13:33:43.627Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;谷歌浏览器 Google Chrome 最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chorme WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。&lt;/p&gt;
+&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;Chrome-插件总结&quot;&gt;&lt;a href=&quot;#Chrome-插件总结&quot; class=&quot;headerlink&quot; title=&quot;Chrome 插件总结&quot;&gt;&lt;/a&gt;Chrome 插件总结&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;请使用 「番·羽·士·啬·工·具」下载使用下述插件&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;Proxy SwitchyOmega：浏览器代理设置神器，前身为 Proxy SwitchySharp，可以轻松快捷地管理多个代理，并能快速地在代理之间切换。可以设置规则或使用 PAC 自动智能对指定的网站使用代理，一句话 番·羽·土·啬 必备.&lt;/li&gt;
+&lt;li&gt;Google翻译:可以比较轻松的翻译网页中的内容.&lt;/li&gt;
+&lt;li&gt;表情帝:表情帝 for QQ空间——让您发表状态、回复好友时能够添加各种搞怪、卡哇伊表情,再也不用担心没有好表情了.&lt;/li&gt;
+&lt;li&gt;百度贴吧助手:百度贴吧自动签到，自定义表情，阅读魔法书，翻转帖子中图片，设置朋友昵称，自定义背景图，一键换号，大召唤系统，吧务工具扫描广告贴，等等&lt;/li&gt;
+&lt;li&gt;JSON-handle:自动格式化网页上的json,android开发者应该会喜欢&lt;/li&gt;
+&lt;li&gt;二维码(QR码)生成器(QR Code Generator):可以将喜欢但是没有看完的网页的网址生成一个二维码,手机扫描就可以在路上看了.&lt;/li&gt;
+&lt;li&gt;Octotree:Code tree for GitHub and GitLab&lt;/li&gt;
+&lt;li&gt;视频广告拦截:这个没有什么推荐的必要,将视频广告拦截六个字放在Chrome 网上应用店搜索就能有很多自己慢慢选择吧!&lt;/li&gt;
+&lt;li&gt;RSS Feed Reader:让你的工具栏上显示一个简单RSS订阅.&lt;/li&gt;
+&lt;li&gt;阅读模式:提供与Safari阅读模式功能一致的插件，浏览文章页时候可进入友好的阅读模式，并自定义阅读功能.&lt;/li&gt;
+&lt;li&gt;OneTab:节省高达95％的内存，并减轻标签页混乱现象.将打开的标签页按照打开的时间产生一个tag并很方便的管理他们.&lt;/li&gt;
+&lt;li&gt;Chrome 远程桌面:通过互联网安全访问其他计算机，或允许其他用户通过互联网安全访问您的计算机。&lt;/li&gt;
+&lt;li&gt;Secure Shell:终端模拟器和SSH客户端。&lt;/li&gt;
+&lt;li&gt;Postman：一个相当强大好用的 REST API &amp;amp; HTTP 请求调试工具，它能够发送任何类型的HTTP requests (GET, HEAD, POST, PUT..)，附带任何数量的参数+ headers；支持不同的认证机制（basic, digest, OAuth），接收到的响应语法高亮（HTML，JSON或XML）；Postman 可以简化测试和调试HTTP请求，是每个 Web 开发人员都值得安装的扩展。&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;谷歌浏览器 Google Chrome 最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chorme WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Chrome" scheme="http://ilovesusu.github.io/categories/Chrome/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="Chrome" scheme="http://ilovesusu.github.io/tags/Chrome/"/>
+    
+  </entry>
   
   <entry>
     <title>Debian安装VirtualBox增强工具</title>

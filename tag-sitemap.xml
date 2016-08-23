@@ -135,14 +135,7 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/tags/Debian/</loc>
-        <lastmod>2016-08-22T06:06:25.873Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/Testing-Stable/</loc>
+        <loc>http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/</loc>
         <lastmod>2016-08-22T06:06:25.873Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -191,8 +184,36 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/</loc>
-        <lastmod>2016-08-22T06:06:25.873Z</lastmod>
+        <loc>http://ilovesusu.github.io/tags/Chrome/</loc>
+        <lastmod>2016-08-22T13:33:43.627Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Debian/</loc>
+        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Testing-Stable/</loc>
+        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/%E7%BF%BB%E5%A2%99/</loc>
+        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/%E5%85%8D%E8%B4%B9vpn/</loc>
+        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

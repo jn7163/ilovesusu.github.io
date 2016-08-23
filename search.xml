@@ -4,6 +4,59 @@
   
     
     <entry>
+      <title><![CDATA[Debian下可用的翻墙工具教程]]></title>
+      <url>http://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</url>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。<br><a id="more"></a></p>
+<p>##博主推荐</p>
+<h3 id="XX-Net"><a href="#XX-Net" class="headerlink" title="XX-Net"></a>XX-Net</h3><p>XX-Net是一个免费的桌面应用程序，提供快速，可靠和安全地访问开放的互联网对送检地区的用户。它使用谷歌应用程序引擎（GAE）通过防火墙代理服务器。</p>
+<blockquote>
+<p><a href="https://github.com/XX-net/XX-Net" target="_blank" rel="external">https://github.com/XX-net/XX-Net</a></p>
+</blockquote>
+<h3 id="Shadowsocks"><a href="#Shadowsocks" class="headerlink" title="Shadowsocks"></a>Shadowsocks</h3><p>快速隧道代理，可以帮助你绕过防火墙</p>
+<blockquote>
+<p><a href="https://github.com/ziggear/shadowsocks" target="_blank" rel="external">https://github.com/ziggear/shadowsocks</a> (非官方,备份自<a href="https://github.com/shadowsocks/shadowsocks" target="_blank" rel="external">https://github.com/shadowsocks/shadowsocks</a>)</p>
+</blockquote>
+<h3 id="Lantern"><a href="#Lantern" class="headerlink" title="Lantern"></a>Lantern</h3><p>人人可享的开放网络Lantern是一个免费的应用程序。它能帮助你随时随地快速、可靠、安全地访问互联网。</p>
+<blockquote>
+<p><a href="https://github.com/getlantern/lantern" target="_blank" rel="external">https://github.com/getlantern/lantern</a></p>
+</blockquote>
+<p>##使用方式</p>
+<p>在各自项目的github的Wiki里都写的很清楚了,要是实在不会的可以在问章下方留言,我会在博客中帮你写解决方案.</p>
+<blockquote>
+<p>例如:<br>OS:Debian<br>Software:xx-net<br>issue:Chrome无法导入证书 | 缺少lib-xx…….</p>
+</blockquote>
+<p>像上面的写法我看到都会帮你的.</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Chrome中好用的插件收集(陆续更新)]]></title>
+      <url>http://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>谷歌浏览器 Google Chrome 最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chorme WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。</p>
+<a id="more"></a>
+<h2 id="Chrome-插件总结"><a href="#Chrome-插件总结" class="headerlink" title="Chrome 插件总结"></a>Chrome 插件总结</h2><blockquote>
+<p>请使用 「番·羽·士·啬·工·具」下载使用下述插件</p>
+</blockquote>
+<ol>
+<li>Proxy SwitchyOmega：浏览器代理设置神器，前身为 Proxy SwitchySharp，可以轻松快捷地管理多个代理，并能快速地在代理之间切换。可以设置规则或使用 PAC 自动智能对指定的网站使用代理，一句话 番·羽·土·啬 必备.</li>
+<li>Google翻译:可以比较轻松的翻译网页中的内容.</li>
+<li>表情帝:表情帝 for QQ空间——让您发表状态、回复好友时能够添加各种搞怪、卡哇伊表情,再也不用担心没有好表情了.</li>
+<li>百度贴吧助手:百度贴吧自动签到，自定义表情，阅读魔法书，翻转帖子中图片，设置朋友昵称，自定义背景图，一键换号，大召唤系统，吧务工具扫描广告贴，等等</li>
+<li>JSON-handle:自动格式化网页上的json,android开发者应该会喜欢</li>
+<li>二维码(QR码)生成器(QR Code Generator):可以将喜欢但是没有看完的网页的网址生成一个二维码,手机扫描就可以在路上看了.</li>
+<li>Octotree:Code tree for GitHub and GitLab</li>
+<li>视频广告拦截:这个没有什么推荐的必要,将视频广告拦截六个字放在Chrome 网上应用店搜索就能有很多自己慢慢选择吧!</li>
+<li>RSS Feed Reader:让你的工具栏上显示一个简单RSS订阅.</li>
+<li>阅读模式:提供与Safari阅读模式功能一致的插件，浏览文章页时候可进入友好的阅读模式，并自定义阅读功能.</li>
+<li>OneTab:节省高达95％的内存，并减轻标签页混乱现象.将打开的标签页按照打开的时间产生一个tag并很方便的管理他们.</li>
+<li>Chrome 远程桌面:通过互联网安全访问其他计算机，或允许其他用户通过互联网安全访问您的计算机。</li>
+<li>Secure Shell:终端模拟器和SSH客户端。</li>
+<li>Postman：一个相当强大好用的 REST API &amp; HTTP 请求调试工具，它能够发送任何类型的HTTP requests (GET, HEAD, POST, PUT..)，附带任何数量的参数+ headers；支持不同的认证机制（basic, digest, OAuth），接收到的响应语法高亮（HTML，JSON或XML）；Postman 可以简化测试和调试HTTP请求，是每个 Web 开发人员都值得安装的扩展。</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Debian安装VirtualBox增强工具]]></title>
       <url>http://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在Debian下安装VirtualBox增强工具可以使得一些操作变的简单例如:剪贴板,文件拖拽…等,但是需要在虚拟机内部安装一些东西,在这里做一个记录,也方便新手,防止下折腾.</p>
