@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ilovesusu.github.io/"/>
-  <updated>2016-08-23T15:11:31.534Z</updated>
+  <updated>2016-08-24T07:48:50.427Z</updated>
   <id>http://ilovesusu.github.io/</id>
   
   <author>
@@ -14,6 +14,68 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Android Studio更新时不小心点了ignore（忽略）解决方案</title>
+    <link href="http://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>http://ilovesusu.github.io/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/</id>
+    <published>2016-08-24T07:41:49.000Z</published>
+    <updated>2016-08-24T07:48:50.427Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;前几天android studio2.1.3正式版更新了，当时正在做项目，不想立即更新，就想等下再更新，准备点“稍后更新”，可是鬼使神差地点了ignore（忽略）.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;手残恢复方案&quot;&gt;&lt;a href=&quot;#手残恢复方案&quot; class=&quot;headerlink&quot; title=&quot;手残恢复方案&quot;&gt;&lt;/a&gt;手残恢复方案&lt;/h2&gt;&lt;p&gt;今天想更新，可是点check for update时，却提示我我目前使用的就是最新的呢!&lt;/p&gt;
+&lt;p&gt;我使用的是Debian所以在我的家目录下有一个文件夹叫做.Androidstudio2.1,在里面找一个叫”options/updates.xml“的文件.删除updates.xml文件中的“ignoredBuildNumbers”部分并保存.(这时候需要关闭android studio.)&lt;br&gt;就是把update.xml文件中的忽略消息给删了&lt;br&gt;然后重新打开studio，check for update&lt;br&gt;嘿嘿.现在又可以更新了&lt;/p&gt;
+&lt;p&gt;看来手残的病得治疗啊!&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;前几天android studio2.1.3正式版更新了，当时正在做项目，不想立即更新，就想等下再更新，准备点“稍后更新”，可是鬼使神差地点了ignore（忽略）.&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android Studio中好用的插件收集(陆续更新)</title>
+    <link href="http://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>http://ilovesusu.github.io/2016/08/24/Android-Studio中好用的插件收集-陆续更新/</id>
+    <published>2016-08-24T06:36:21.000Z</published>
+    <updated>2016-08-24T08:11:52.891Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;推荐几款实用的Android Studio 插件&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Gsonformat:可根据json数据快速生成java实体类&lt;/li&gt;
+&lt;li&gt;Lifecycle Sorter:可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，快捷键Ctrl + alt + K&lt;/li&gt;
+&lt;li&gt;Android Code Generator Plugin:自动生成findViewById&lt;/li&gt;
+&lt;li&gt;Genymotion:这个就不用说了吧&lt;/li&gt;
+&lt;li&gt;CodeGlance:一款生成代码缩略图，快速定位的插件，强烈推荐！&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;推荐几款实用的Android Studio 插件&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="Android studio" scheme="http://ilovesusu.github.io/tags/Android-studio/"/>
+    
+  </entry>
   
   <entry>
     <title>Debian下可用的翻墙工具教程</title>
@@ -501,9 +563,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
@@ -561,9 +623,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
@@ -590,9 +652,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
@@ -887,9 +949,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     

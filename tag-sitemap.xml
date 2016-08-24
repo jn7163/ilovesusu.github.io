@@ -191,20 +191,6 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/tags/Debian/</loc>
-        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/tags/Testing-Stable/</loc>
-        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://ilovesusu.github.io/tags/%E7%BF%BB%E5%A2%99/</loc>
         <lastmod>2016-08-23T15:11:31.534Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -214,6 +200,27 @@
     <url>
         <loc>http://ilovesusu.github.io/tags/%E5%85%8D%E8%B4%B9vpn/</loc>
         <lastmod>2016-08-23T15:11:31.534Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Debian/</loc>
+        <lastmod>2016-08-24T08:11:52.891Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Testing-Stable/</loc>
+        <lastmod>2016-08-24T08:11:52.891Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/tags/Android-studio/</loc>
+        <lastmod>2016-08-24T08:11:52.891Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

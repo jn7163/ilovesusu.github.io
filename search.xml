@@ -4,6 +4,30 @@
   
     
     <entry>
+      <title><![CDATA[Android Studio更新时不小心点了ignore（忽略）解决方案]]></title>
+      <url>http://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>前几天android studio2.1.3正式版更新了，当时正在做项目，不想立即更新，就想等下再更新，准备点“稍后更新”，可是鬼使神差地点了ignore（忽略）.<br><a id="more"></a></p>
+<h2 id="手残恢复方案"><a href="#手残恢复方案" class="headerlink" title="手残恢复方案"></a>手残恢复方案</h2><p>今天想更新，可是点check for update时，却提示我我目前使用的就是最新的呢!</p>
+<p>我使用的是Debian所以在我的家目录下有一个文件夹叫做.Androidstudio2.1,在里面找一个叫”options/updates.xml“的文件.删除updates.xml文件中的“ignoredBuildNumbers”部分并保存.(这时候需要关闭android studio.)<br>就是把update.xml文件中的忽略消息给删了<br>然后重新打开studio，check for update<br>嘿嘿.现在又可以更新了</p>
+<p>看来手残的病得治疗啊!</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[Android Studio中好用的插件收集(陆续更新)]]></title>
+      <url>http://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>推荐几款实用的Android Studio 插件<br><a id="more"></a></p>
+<ol>
+<li>Gsonformat:可根据json数据快速生成java实体类</li>
+<li>Lifecycle Sorter:可以根据Activity或者fragment的生命周期对其生命周期方法位置进行先后排序，快捷键Ctrl + alt + K</li>
+<li>Android Code Generator Plugin:自动生成findViewById</li>
+<li>Genymotion:这个就不用说了吧</li>
+<li>CodeGlance:一款生成代码缩略图，快速定位的插件，强烈推荐！</li>
+</ol>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Debian下可用的翻墙工具教程]]></title>
       <url>http://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。<br><a id="more"></a></p>
