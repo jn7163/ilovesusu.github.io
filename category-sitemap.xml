@@ -21,22 +21,22 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
-        <lastmod>2016-08-23T15:11:31.534Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://ilovesusu.github.io/categories/Debian-GNU-Linux/</loc>
-        <lastmod>2016-08-24T07:48:50.427Z</lastmod>
+        <lastmod>2016-08-25T09:35:12.547Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>http://ilovesusu.github.io/categories/Android/</loc>
-        <lastmod>2016-08-24T08:11:52.891Z</lastmod>
+        <lastmod>2016-08-25T09:35:33.515Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/</loc>
+        <lastmod>2016-08-25T09:36:01.187Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
