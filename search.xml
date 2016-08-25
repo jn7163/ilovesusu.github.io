@@ -6,8 +6,12 @@
     <entry>
       <title><![CDATA[Debian 真丶NvidiaGraphicsDrivers安装]]></title>
       <url>http://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/</url>
-      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><a id="more"></a>
-<h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.<br><a id="more"></a></p>
+<h2 id="新手误解"><a href="#新手误解" class="headerlink" title="新手误解"></a>新手误解</h2><ol>
+<li>我是否需要为我的笔记本/台式机安装Nvidia驱动,是不是Debian已经自动安装好了驱动呢?</li>
+<li>关于对NvidiaGraphicsDrivers Wiki的误解<h2 id="黑屏解决方案-写在前面"><a href="#黑屏解决方案-写在前面" class="headerlink" title="黑屏解决方案(写在前面)"></a>黑屏解决方案(写在前面)</h2><h2 id="想切换双显卡的解决方案"><a href="#想切换双显卡的解决方案" class="headerlink" title="想切换双显卡的解决方案"></a>想切换双显卡的解决方案</h2></li>
+</ol>
+<h3 id="bumblebee简介"><a href="#bumblebee简介" class="headerlink" title="bumblebee简介"></a>bumblebee简介</h3><h3 id="安装bumblebee"><a href="#安装bumblebee" class="headerlink" title="安装bumblebee"></a>安装bumblebee</h3>]]></content>
     </entry>
     
     <entry>
