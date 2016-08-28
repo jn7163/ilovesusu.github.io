@@ -856,6 +856,12 @@ a {
   -moz-background-size: 90%;
   background-size: 90%;
 }
+#header .header-nav .social .Telegram {
+  background: url("/img/Telegram.png") center no-repeat #5cb2dc;
+  -webkit-background-size: 90%;
+  -moz-background-size: 90%;
+  background-size: 90%;
+}
 #header .header-nav .social .GitHub {
   background: url("//cdn.bootcss.com/logos/0.2.0/github-octocat.svg") no-repeat #fff;
   -webkit-background-size: 90%;
