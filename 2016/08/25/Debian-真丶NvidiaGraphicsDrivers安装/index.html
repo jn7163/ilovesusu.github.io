@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/index.html">
 <meta property="og:site_name" content="Susu的博客">
 <meta property="og:description" content="简介我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.">
-<meta property="og:updated_time" content="2016-08-25T10:18:22.479Z">
+<meta property="og:updated_time" content="2016-08-25T15:17:02.490Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debian 真丶NvidiaGraphicsDrivers安装">
 <meta name="twitter:description" content="简介我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.">
@@ -327,9 +327,13 @@
         <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.<br><a id="more"></a></p>
 <h2 id="新手误解"><a href="#新手误解" class="headerlink" title="新手误解"></a>新手误解</h2><ol>
 <li>我是否需要为我的笔记本/台式机安装Nvidia驱动,是不是Debian已经自动安装好了驱动呢?</li>
-<li>关于对NvidiaGraphicsDrivers Wiki的误解<h2 id="黑屏解决方案-写在前面"><a href="#黑屏解决方案-写在前面" class="headerlink" title="黑屏解决方案(写在前面)"></a>黑屏解决方案(写在前面)</h2><h2 id="想切换双显卡的解决方案"><a href="#想切换双显卡的解决方案" class="headerlink" title="想切换双显卡的解决方案"></a>想切换双显卡的解决方案</h2></li>
+<li>关于对NvidiaGraphicsDrivers Wiki的误解</li>
 </ol>
-<h3 id="bumblebee简介"><a href="#bumblebee简介" class="headerlink" title="bumblebee简介"></a>bumblebee简介</h3><h3 id="安装bumblebee"><a href="#安装bumblebee" class="headerlink" title="安装bumblebee"></a>安装bumblebee</h3>
+<h2 id="黑屏解决方案-写在前面"><a href="#黑屏解决方案-写在前面" class="headerlink" title="黑屏解决方案(写在前面)"></a>黑屏解决方案(写在前面)</h2><p>大兄弟,如果你已经黑屏了，那么ctrl+alt+F1进入终端，然后使用root身份登陆,然后执行下面的代码.(sudo 是为普通用户准备的)</p>
+<blockquote>
+<p>sudo apt-get purge nvidia*<br>sudo rm /etc/X11/xorg.conf</p>
+</blockquote>
+<h2 id="想双显卡切换的解决方案"><a href="#想双显卡切换的解决方案" class="headerlink" title="想双显卡切换的解决方案"></a>想双显卡切换的解决方案</h2><h3 id="bumblebee简介"><a href="#bumblebee简介" class="headerlink" title="bumblebee简介"></a>bumblebee简介</h3><h3 id="安装bumblebee"><a href="#安装bumblebee" class="headerlink" title="安装bumblebee"></a>安装bumblebee</h3>
       
     </div>
     
@@ -340,7 +344,7 @@
         <p><span>本文标题:</span><a href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Susu</a></p>
         <p><span>发布时间:</span>2016-08-25, 15:58:48</p>
-        <p><span>最后更新:</span>2016-08-25, 18:18:22</p>
+        <p><span>最后更新:</span>2016-08-25, 23:17:02</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/" title="Debian 真丶NvidiaGraphicsDrivers安装">http://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/</a>
             <span class="copy-path" data-clipboard-text="原文: http://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -354,6 +358,12 @@
 
 
     <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2016/08/26/跨平台远程协助软件推荐/">
+                    跨平台远程协助软件推荐
+                </a>
+            </div>
         
         
             <div id="article-nav-older" class="article-nav-title">
@@ -369,7 +379,7 @@
 
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新手误解"><span class="toc-number">2.</span> <span class="toc-text">新手误解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑屏解决方案-写在前面"><span class="toc-number">3.</span> <span class="toc-text">黑屏解决方案(写在前面)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想切换双显卡的解决方案"><span class="toc-number">4.</span> <span class="toc-text">想切换双显卡的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bumblebee简介"><span class="toc-number">4.1.</span> <span class="toc-text">bumblebee简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装bumblebee"><span class="toc-number">4.2.</span> <span class="toc-text">安装bumblebee</span></a></li></ol></li></ol>
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新手误解"><span class="toc-number">2.</span> <span class="toc-text">新手误解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑屏解决方案-写在前面"><span class="toc-number">3.</span> <span class="toc-text">黑屏解决方案(写在前面)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#想双显卡切换的解决方案"><span class="toc-number">4.</span> <span class="toc-text">想双显卡切换的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bumblebee简介"><span class="toc-number">4.1.</span> <span class="toc-text">bumblebee简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装bumblebee"><span class="toc-number">4.2.</span> <span class="toc-text">安装bumblebee</span></a></li></ol></li></ol>
 </div>
 <style>
     .left-col .switch-btn,
@@ -439,7 +449,9 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2016/08/26/跨平台远程协助软件推荐/" title="上一篇: 跨平台远程协助软件推荐">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
@@ -451,7 +463,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
 
 
 

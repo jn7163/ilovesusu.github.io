@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ilovesusu.github.io/"/>
-  <updated>2016-08-25T10:18:22.479Z</updated>
+  <updated>2016-08-26T05:41:47.298Z</updated>
   <id>http://ilovesusu.github.io/</id>
   
   <author>
@@ -16,18 +16,48 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>跨平台远程协助软件推荐</title>
+    <link href="http://ilovesusu.github.io/2016/08/26/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>http://ilovesusu.github.io/2016/08/26/跨平台远程协助软件推荐/</id>
+    <published>2016-08-26T05:41:16.000Z</published>
+    <updated>2016-08-26T05:41:47.298Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;二级菜单&quot;&gt;&lt;a href=&quot;#二级菜单&quot; class=&quot;headerlink&quot; title=&quot;二级菜单&quot;&gt;&lt;/a&gt;二级菜单&lt;/h2&gt;&lt;p&gt;分享：免费小巧远程协助利器：AnyDesk 专业版许可证密钥KEY：7K2CV32ER6T8F8I，我一个个朋友花美刀买的KEY，可以做企业商业用途！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;
+    
+    </summary>
+    
+      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+    
+    
+      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Debian 真丶NvidiaGraphicsDrivers安装</title>
     <link href="http://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/"/>
     <id>http://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/</id>
     <published>2016-08-25T07:58:48.000Z</published>
-    <updated>2016-08-25T10:18:22.479Z</updated>
+    <updated>2016-08-25T15:17:02.490Z</updated>
     
     <content type="html">&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;新手误解&quot;&gt;&lt;a href=&quot;#新手误解&quot; class=&quot;headerlink&quot; title=&quot;新手误解&quot;&gt;&lt;/a&gt;新手误解&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;我是否需要为我的笔记本/台式机安装Nvidia驱动,是不是Debian已经自动安装好了驱动呢?&lt;/li&gt;
-&lt;li&gt;关于对NvidiaGraphicsDrivers Wiki的误解&lt;h2 id=&quot;黑屏解决方案-写在前面&quot;&gt;&lt;a href=&quot;#黑屏解决方案-写在前面&quot; class=&quot;headerlink&quot; title=&quot;黑屏解决方案(写在前面)&quot;&gt;&lt;/a&gt;黑屏解决方案(写在前面)&lt;/h2&gt;&lt;h2 id=&quot;想切换双显卡的解决方案&quot;&gt;&lt;a href=&quot;#想切换双显卡的解决方案&quot; class=&quot;headerlink&quot; title=&quot;想切换双显卡的解决方案&quot;&gt;&lt;/a&gt;想切换双显卡的解决方案&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;关于对NvidiaGraphicsDrivers Wiki的误解&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3 id=&quot;bumblebee简介&quot;&gt;&lt;a href=&quot;#bumblebee简介&quot; class=&quot;headerlink&quot; title=&quot;bumblebee简介&quot;&gt;&lt;/a&gt;bumblebee简介&lt;/h3&gt;&lt;h3 id=&quot;安装bumblebee&quot;&gt;&lt;a href=&quot;#安装bumblebee&quot; class=&quot;headerlink&quot; title=&quot;安装bumblebee&quot;&gt;&lt;/a&gt;安装bumblebee&lt;/h3&gt;</content>
+&lt;h2 id=&quot;黑屏解决方案-写在前面&quot;&gt;&lt;a href=&quot;#黑屏解决方案-写在前面&quot; class=&quot;headerlink&quot; title=&quot;黑屏解决方案(写在前面)&quot;&gt;&lt;/a&gt;黑屏解决方案(写在前面)&lt;/h2&gt;&lt;p&gt;大兄弟,如果你已经黑屏了，那么ctrl+alt+F1进入终端，然后使用root身份登陆,然后执行下面的代码.(sudo 是为普通用户准备的)&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sudo apt-get purge nvidia*&lt;br&gt;sudo rm /etc/X11/xorg.conf&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;想双显卡切换的解决方案&quot;&gt;&lt;a href=&quot;#想双显卡切换的解决方案&quot; class=&quot;headerlink&quot; title=&quot;想双显卡切换的解决方案&quot;&gt;&lt;/a&gt;想双显卡切换的解决方案&lt;/h2&gt;&lt;h3 id=&quot;bumblebee简介&quot;&gt;&lt;a href=&quot;#bumblebee简介&quot; class=&quot;headerlink&quot; title=&quot;bumblebee简介&quot;&gt;&lt;/a&gt;bumblebee简介&lt;/h3&gt;&lt;h3 id=&quot;安装bumblebee&quot;&gt;&lt;a href=&quot;#安装bumblebee&quot; class=&quot;headerlink&quot; title=&quot;安装bumblebee&quot;&gt;&lt;/a&gt;安装bumblebee&lt;/h3&gt;</content>
     
     <summary type="html">
     
