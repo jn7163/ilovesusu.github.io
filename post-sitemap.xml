@@ -103,6 +103,14 @@
     </url>
 
     <url>
+        <loc>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</loc>
+        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>http://ilovesusu.github.io/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -111,7 +119,7 @@
     </url>
 
     <url>
-        <loc>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</loc>
+        <loc>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
@@ -128,14 +136,6 @@
 
     <url>
         <loc>http://ilovesusu.github.io/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/</loc>
-        <lastmod>2016-08-22T06:06:25.817Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</loc>
         <lastmod>2016-08-22T06:06:25.817Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
