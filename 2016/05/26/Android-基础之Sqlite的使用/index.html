@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta name="description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x5728;Android&amp;#x5E73;&amp;#x53F0;&amp;#x4E0A;&amp;#xFF0C;&amp;#x96C6;&amp;#x6210;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&amp;#x5D4C;&amp;#x5165;&amp;#x5F0F;&amp;#x5173;&amp;#x7CFB;&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x2014;&amp;#x2014;SQLite&amp;#x">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android 基础之SQLite的使用">
 <meta property="og:url" content="http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/index.html">
 <meta property="og:site_name" content="Susu的博客">
-<meta property="og:description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta property="og:description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x5728;Android&amp;#x5E73;&amp;#x53F0;&amp;#x4E0A;&amp;#xFF0C;&amp;#x96C6;&amp;#x6210;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&amp;#x5D4C;&amp;#x5165;&amp;#x5F0F;&amp;#x5173;&amp;#x7CFB;&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x2014;&amp;#x2014;SQLite&amp;#x">
 <meta property="og:updated_time" content="2016-08-22T06:06:25.793Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Android 基础之SQLite的使用">
-<meta name="twitter:description" content="简介在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。">
+<meta name="twitter:description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x5728;Android&amp;#x5E73;&amp;#x53F0;&amp;#x4E0A;&amp;#xFF0C;&amp;#x96C6;&amp;#x6210;&amp;#x4E86;&amp;#x4E00;&amp;#x4E2A;&amp;#x5D4C;&amp;#x5165;&amp;#x5F0F;&amp;#x5173;&amp;#x7CFB;&amp;#x578B;&amp;#x6570;&amp;#x636E;&amp;#x5E93;&amp;#x2014;&amp;#x2014;SQLite&amp;#x">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -148,13 +148,13 @@
                 <div class="tips-box hide">
                     <div class="tips-arrow"></div>
                     <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
+                        <li>Menu</li>
+                        <li>Tags</li>
                         
-                        <li>友情链接</li>
+                        <li>Friends</li>
                         
                         
-                        <li>关于我</li>
+                        <li>About Me</li>
                         
                     </ul>
                 </div>
@@ -288,7 +288,7 @@
             </nav>
         </header>                
     </div>
-    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+    <link class="menu-list" tags="Tags" friends="Friends" about="About Me"/>
 </nav>
       <div class="body-wrap"><article id="post-Android-基础之Sqlite的使用" class="article article-type-post" itemscope itemprop="blogPost">
   
@@ -332,162 +332,162 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。</p>
+        <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x5728;Android&#x5E73;&#x53F0;&#x4E0A;&#xFF0C;&#x96C6;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x5D4C;&#x5165;&#x5F0F;&#x5173;&#x7CFB;&#x578B;&#x6570;&#x636E;&#x5E93;&#x2014;&#x2014;SQLite&#x3002; SQLite3&#x652F;&#x6301; NULL&#x3001;INTEGER&#x3001;REAL&#xFF08;&#x6D6E;&#x70B9;&#x6570;&#x5B57;&#xFF09;&#x3001;TEXT(&#x5B57;&#x7B26;&#x4E32;&#x6587;&#x672C;)&#x548C;BLOB(&#x4E8C;&#x8FDB;&#x5236;&#x5BF9;&#x8C61;)&#x7B49;&#x4E94;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF1B; &#x867D;&#x7136;&#x5B83;&#x652F;&#x6301;&#x7684;&#x7C7B;&#x578B;&#x53EA;&#x6709;&#x4E94;&#x79CD;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x4E0A;sqlite3&#x4E5F;&#x63A5;&#x53D7;varchar(n)&#x3001;char(n)&#x3001;decimal(p,s) &#x7B49;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x53EA;&#x4E0D;&#x8FC7;&#x5728;&#x8FD0;&#x7B97;&#x6216;&#x4FDD;&#x5B58;&#x65F6;&#x4F1A;&#x8F6C;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x4E94;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;</p>
 <a id="more"></a>
-<h2 id="SQLite数据库的特点："><a href="#SQLite数据库的特点：" class="headerlink" title="SQLite数据库的特点："></a>SQLite数据库的特点：</h2><p>（1）Android通过 SQLite 数据库引擎来实现结构化数据的存储。在一个数据库应用程序中，任何类都可以通过名字对已经创建的数据库进行访问，但是在应用程序之外就不可以。<br>（2）SQLite 数据库是一种用C语言编写的嵌入式数据库，它是一个轻量级的数据库，最初为嵌入式设计的。它是在一些基础简单的语句处理上要比oracle / mysql快很多，而且其对内存的要求很低，在内存中只需要几百KB的存储空间。这是Android中采用 SQLite 数据库的主要原因。<br>（3）SQLite 支持事务处理功能。Transaction<br>（4）SQLite 处理速度比MySQL等著名的开源数据库系统更快。它没有服务器进程。<br>（5）SQLite 通过文件保存数据库，该文件是跨平台的，可以自由复制。一个文件就是一个数据库。数据库名即文件名。<br>（6）JDBC会消耗太多系统资源，所以JDBC对于手机并不合适，因此Android提供了新的API来使用 SQLite 数据库。<br>（7）SQLite最大的特点是你可以把各种类型的数据保存到任何字段中，而不用关心字段声明的数据类型是什么。 例如：可以在Integer类型的字段中存放字符串，或者在布尔型字段中存放浮点数，或者在字符型字段中存放日期型值。</p>
-<h2 id="Android对SQLite的操作"><a href="#Android对SQLite的操作" class="headerlink" title="Android对SQLite的操作"></a>Android对SQLite的操作</h2><p>Android中提供了很多操作SQLite类和方法。<br>下面将详讲解两个<strong>常用类</strong>的使用，以及如何<strong>保证数据</strong>的<strong>一致性</strong>。</p>
-<h3 id="SQLiteDatabase类"><a href="#SQLiteDatabase类" class="headerlink" title="SQLiteDatabase类"></a>SQLiteDatabase类</h3><p>SQLiteDatabase等同于JDBC中Connection和Statement的结合体。SQLiteDatabase既<br>代表与数据库的连接，又只能用于执行sql语句操作。</p>
-<p>####操作 SQLite 数据库的步骤：（关键）</p>
+<h2 id="SQLite&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x70B9;&#xFF1A;"><a href="#SQLite&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x70B9;&#xFF1A;" class="headerlink" title="SQLite&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x70B9;&#xFF1A;"></a>SQLite&#x6570;&#x636E;&#x5E93;&#x7684;&#x7279;&#x70B9;&#xFF1A;</h2><p>&#xFF08;1&#xFF09;Android&#x901A;&#x8FC7; SQLite &#x6570;&#x636E;&#x5E93;&#x5F15;&#x64CE;&#x6765;&#x5B9E;&#x73B0;&#x7ED3;&#x6784;&#x5316;&#x6570;&#x636E;&#x7684;&#x5B58;&#x50A8;&#x3002;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x4EFB;&#x4F55;&#x7C7B;&#x90FD;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540D;&#x5B57;&#x5BF9;&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x4F46;&#x662F;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E4B;&#x5916;&#x5C31;&#x4E0D;&#x53EF;&#x4EE5;&#x3002;<br>&#xFF08;2&#xFF09;SQLite &#x6570;&#x636E;&#x5E93;&#x662F;&#x4E00;&#x79CD;&#x7528;C&#x8BED;&#x8A00;&#x7F16;&#x5199;&#x7684;&#x5D4C;&#x5165;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6700;&#x521D;&#x4E3A;&#x5D4C;&#x5165;&#x5F0F;&#x8BBE;&#x8BA1;&#x7684;&#x3002;&#x5B83;&#x662F;&#x5728;&#x4E00;&#x4E9B;&#x57FA;&#x7840;&#x7B80;&#x5355;&#x7684;&#x8BED;&#x53E5;&#x5904;&#x7406;&#x4E0A;&#x8981;&#x6BD4;oracle / mysql&#x5FEB;&#x5F88;&#x591A;&#xFF0C;&#x800C;&#x4E14;&#x5176;&#x5BF9;&#x5185;&#x5B58;&#x7684;&#x8981;&#x6C42;&#x5F88;&#x4F4E;&#xFF0C;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x53EA;&#x9700;&#x8981;&#x51E0;&#x767E;KB&#x7684;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x3002;&#x8FD9;&#x662F;Android&#x4E2D;&#x91C7;&#x7528; SQLite &#x6570;&#x636E;&#x5E93;&#x7684;&#x4E3B;&#x8981;&#x539F;&#x56E0;&#x3002;<br>&#xFF08;3&#xFF09;SQLite &#x652F;&#x6301;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#x529F;&#x80FD;&#x3002;Transaction<br>&#xFF08;4&#xFF09;SQLite &#x5904;&#x7406;&#x901F;&#x5EA6;&#x6BD4;MySQL&#x7B49;&#x8457;&#x540D;&#x7684;&#x5F00;&#x6E90;&#x6570;&#x636E;&#x5E93;&#x7CFB;&#x7EDF;&#x66F4;&#x5FEB;&#x3002;&#x5B83;&#x6CA1;&#x6709;&#x670D;&#x52A1;&#x5668;&#x8FDB;&#x7A0B;&#x3002;<br>&#xFF08;5&#xFF09;SQLite &#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x662F;&#x8DE8;&#x5E73;&#x53F0;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x7531;&#x590D;&#x5236;&#x3002;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x3002;&#x6570;&#x636E;&#x5E93;&#x540D;&#x5373;&#x6587;&#x4EF6;&#x540D;&#x3002;<br>&#xFF08;6&#xFF09;JDBC&#x4F1A;&#x6D88;&#x8017;&#x592A;&#x591A;&#x7CFB;&#x7EDF;&#x8D44;&#x6E90;&#xFF0C;&#x6240;&#x4EE5;JDBC&#x5BF9;&#x4E8E;&#x624B;&#x673A;&#x5E76;&#x4E0D;&#x5408;&#x9002;&#xFF0C;&#x56E0;&#x6B64;Android&#x63D0;&#x4F9B;&#x4E86;&#x65B0;&#x7684;API&#x6765;&#x4F7F;&#x7528; SQLite &#x6570;&#x636E;&#x5E93;&#x3002;<br>&#xFF08;7&#xFF09;SQLite&#x6700;&#x5927;&#x7684;&#x7279;&#x70B9;&#x662F;&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x5404;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x6570;&#x636E;&#x4FDD;&#x5B58;&#x5230;&#x4EFB;&#x4F55;&#x5B57;&#x6BB5;&#x4E2D;&#xFF0C;&#x800C;&#x4E0D;&#x7528;&#x5173;&#x5FC3;&#x5B57;&#x6BB5;&#x58F0;&#x660E;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x662F;&#x4EC0;&#x4E48;&#x3002; &#x4F8B;&#x5982;&#xFF1A;&#x53EF;&#x4EE5;&#x5728;Integer&#x7C7B;&#x578B;&#x7684;&#x5B57;&#x6BB5;&#x4E2D;&#x5B58;&#x653E;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x5E03;&#x5C14;&#x578B;&#x5B57;&#x6BB5;&#x4E2D;&#x5B58;&#x653E;&#x6D6E;&#x70B9;&#x6570;&#xFF0C;&#x6216;&#x8005;&#x5728;&#x5B57;&#x7B26;&#x578B;&#x5B57;&#x6BB5;&#x4E2D;&#x5B58;&#x653E;&#x65E5;&#x671F;&#x578B;&#x503C;&#x3002;</p>
+<h2 id="Android&#x5BF9;SQLite&#x7684;&#x64CD;&#x4F5C;"><a href="#Android&#x5BF9;SQLite&#x7684;&#x64CD;&#x4F5C;" class="headerlink" title="Android&#x5BF9;SQLite&#x7684;&#x64CD;&#x4F5C;"></a>Android&#x5BF9;SQLite&#x7684;&#x64CD;&#x4F5C;</h2><p>Android&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;&#x5F88;&#x591A;&#x64CD;&#x4F5C;SQLite&#x7C7B;&#x548C;&#x65B9;&#x6CD5;&#x3002;<br>&#x4E0B;&#x9762;&#x5C06;&#x8BE6;&#x8BB2;&#x89E3;&#x4E24;&#x4E2A;<strong>&#x5E38;&#x7528;&#x7C7B;</strong>&#x7684;&#x4F7F;&#x7528;&#xFF0C;&#x4EE5;&#x53CA;&#x5982;&#x4F55;<strong>&#x4FDD;&#x8BC1;&#x6570;&#x636E;</strong>&#x7684;<strong>&#x4E00;&#x81F4;&#x6027;</strong>&#x3002;</p>
+<h3 id="SQLiteDatabase&#x7C7B;"><a href="#SQLiteDatabase&#x7C7B;" class="headerlink" title="SQLiteDatabase&#x7C7B;"></a>SQLiteDatabase&#x7C7B;</h3><p>SQLiteDatabase&#x7B49;&#x540C;&#x4E8E;JDBC&#x4E2D;Connection&#x548C;Statement&#x7684;&#x7ED3;&#x5408;&#x4F53;&#x3002;SQLiteDatabase&#x65E2;<br>&#x4EE3;&#x8868;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#xFF0C;&#x53C8;&#x53EA;&#x80FD;&#x7528;&#x4E8E;&#x6267;&#x884C;sql&#x8BED;&#x53E5;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>####&#x64CD;&#x4F5C; SQLite &#x6570;&#x636E;&#x5E93;&#x7684;&#x6B65;&#x9AA4;&#xFF1A;&#xFF08;&#x5173;&#x952E;&#xFF09;</p>
 <blockquote>
-<p>1 创建 SQLiteDatabase 对象，它代表与数据库的连接；<br>2 创建数据库中的表（执行CREATE）；<br>3 调用SQLiteDatabase 对象执行数据库操作（执行DML）；<br>4 查询后的结果集Cursor进行处理。</p>
+<p>1 &#x521B;&#x5EFA; SQLiteDatabase &#x5BF9;&#x8C61;&#xFF0C;&#x5B83;&#x4EE3;&#x8868;&#x4E0E;&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#xFF1B;<br>2 &#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#xFF08;&#x6267;&#x884C;CREATE&#xFF09;&#xFF1B;<br>3 &#x8C03;&#x7528;SQLiteDatabase &#x5BF9;&#x8C61;&#x6267;&#x884C;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#xFF08;&#x6267;&#x884C;DML&#xFF09;&#xFF1B;<br>4 &#x67E5;&#x8BE2;&#x540E;&#x7684;&#x7ED3;&#x679C;&#x96C6;Cursor&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
 </blockquote>
 <ol>
-<li><p>打开数据库方法</p>
+<li><p>&#x6253;&#x5F00;&#x6570;&#x636E;&#x5E93;&#x65B9;&#x6CD5;</p>
 <ol>
-<li><p>根据路径打开数据库</p>
+<li><p>&#x6839;&#x636E;&#x8DEF;&#x5F84;&#x6253;&#x5F00;&#x6570;&#x636E;&#x5E93;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SQLiteDatabase <span class="title">openDatabase</span> <span class="params">(String path, SQLiteDatabase.CursorFactory factory, <span class="keyword">int</span> flags)</span></span></span><br></pre></td></tr></table></figure>
-<p>参数介绍：<br>-- <strong>参数① path</strong> : path 要打开 或者 需要创建的 数据库文件的路径;<br>-- <strong>参数② factory</strong> : 当打开的数据库执行查询语句的时候 会创建一个Cursor对象, 这时会调用Cursor工厂类 factory, 可以填写null默认值;<br>-- <strong>参数③ flag</strong> :<br><strong>OPEN_READWRITE</strong> 打开一个读写数据库, 如果磁盘满了, 之前写入的也作废;<br><strong>READ_OPENONLY</strong> 打开只读数据库, 这时读取数据库的可靠方法;<br><strong>CREATE_IF_NECESSARY</strong> 打开数据库, 如果数据库不存在, 就创建这个数据库;<br><strong>NO_LOCALIZED_CALLATORS</strong> 打开数据库 不根据本地语言顺序进行排序, 使用这种模式创建数据库, 排序器不会被创建, 使用这个数据库 和 创建这个数据库的时候必须都使用这个标识, 如果这个标识被使用了, 那么setLocal()方法将不会起到任何作用;</p>
+<p>&#x53C2;&#x6570;&#x4ECB;&#x7ECD;&#xFF1A;<br>-- <strong>&#x53C2;&#x6570;&#x2460; path</strong> : path &#x8981;&#x6253;&#x5F00; &#x6216;&#x8005; &#x9700;&#x8981;&#x521B;&#x5EFA;&#x7684; &#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x7684;&#x8DEF;&#x5F84;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; factory</strong> : &#x5F53;&#x6253;&#x5F00;&#x7684;&#x6570;&#x636E;&#x5E93;&#x6267;&#x884C;&#x67E5;&#x8BE2;&#x8BED;&#x53E5;&#x7684;&#x65F6;&#x5019; &#x4F1A;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Cursor&#x5BF9;&#x8C61;, &#x8FD9;&#x65F6;&#x4F1A;&#x8C03;&#x7528;Cursor&#x5DE5;&#x5382;&#x7C7B; factory, &#x53EF;&#x4EE5;&#x586B;&#x5199;null&#x9ED8;&#x8BA4;&#x503C;;<br>-- <strong>&#x53C2;&#x6570;&#x2462; flag</strong> :<br><strong>OPEN_READWRITE</strong> &#x6253;&#x5F00;&#x4E00;&#x4E2A;&#x8BFB;&#x5199;&#x6570;&#x636E;&#x5E93;, &#x5982;&#x679C;&#x78C1;&#x76D8;&#x6EE1;&#x4E86;, &#x4E4B;&#x524D;&#x5199;&#x5165;&#x7684;&#x4E5F;&#x4F5C;&#x5E9F;;<br><strong>READ_OPENONLY</strong> &#x6253;&#x5F00;&#x53EA;&#x8BFB;&#x6570;&#x636E;&#x5E93;, &#x8FD9;&#x65F6;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x7684;&#x53EF;&#x9760;&#x65B9;&#x6CD5;;<br><strong>CREATE_IF_NECESSARY</strong> &#x6253;&#x5F00;&#x6570;&#x636E;&#x5E93;, &#x5982;&#x679C;&#x6570;&#x636E;&#x5E93;&#x4E0D;&#x5B58;&#x5728;, &#x5C31;&#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;;<br><strong>NO_LOCALIZED_CALLATORS</strong> &#x6253;&#x5F00;&#x6570;&#x636E;&#x5E93; &#x4E0D;&#x6839;&#x636E;&#x672C;&#x5730;&#x8BED;&#x8A00;&#x987A;&#x5E8F;&#x8FDB;&#x884C;&#x6392;&#x5E8F;, &#x4F7F;&#x7528;&#x8FD9;&#x79CD;&#x6A21;&#x5F0F;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;, &#x6392;&#x5E8F;&#x5668;&#x4E0D;&#x4F1A;&#x88AB;&#x521B;&#x5EFA;, &#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93; &#x548C; &#x521B;&#x5EFA;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x7684;&#x65F6;&#x5019;&#x5FC5;&#x987B;&#x90FD;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;, &#x5982;&#x679C;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#x88AB;&#x4F7F;&#x7528;&#x4E86;, &#x90A3;&#x4E48;setLocal()&#x65B9;&#x6CD5;&#x5C06;&#x4E0D;&#x4F1A;&#x8D77;&#x5230;&#x4EFB;&#x4F55;&#x4F5C;&#x7528;;</p>
 </blockquote>
 </li>
-<li><p>根据文件打开或则创建数据库</p>
+<li><p>&#x6839;&#x636E;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6216;&#x5219;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SQLiteDatabase <span class="title">openOrCreateDatabase</span> <span class="params">(File file, SQLiteDatabase.CursorFactory factory)</span></span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><p>根据路径打开或创建数据库</p>
+<li><p>&#x6839;&#x636E;&#x8DEF;&#x5F84;&#x6253;&#x5F00;&#x6216;&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> SQLiteDatabase <span class="title">openOrCreateDatabase</span> <span class="params">(String path, SQLiteDatabase.CursorFactory factory)</span></span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
 </ol>
 </li>
-<li><p>操作数据库</p>
+<li><p>&#x64CD;&#x4F5C;&#x6570;&#x636E;&#x5E93;</p>
 <ol>
-<li><p>执行SQL语句动态参数</p>
+<li><p>&#x6267;&#x884C;SQL&#x8BED;&#x53E5;&#x52A8;&#x6001;&#x53C2;&#x6570;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execSQL</span> <span class="params">(String sql, Object[] bindArgs)</span></span></span><br></pre></td></tr></table></figure>
-<p>参数介绍 :<br>-- <strong>参数① sql</strong>: 要执行的SQL语句, 只能执行一条, 多条语句用分号隔开不管用, 参数使用 “?” 占位符代替;<br>-- <strong>参数② bingArgs</strong>: 替换上面SQL语句中的 “?” 占位符, 按照数组中的顺序依次替换;</p>
+<p>&#x53C2;&#x6570;&#x4ECB;&#x7ECD; :<br>-- <strong>&#x53C2;&#x6570;&#x2460; sql</strong>: &#x8981;&#x6267;&#x884C;&#x7684;SQL&#x8BED;&#x53E5;, &#x53EA;&#x80FD;&#x6267;&#x884C;&#x4E00;&#x6761;, &#x591A;&#x6761;&#x8BED;&#x53E5;&#x7528;&#x5206;&#x53F7;&#x9694;&#x5F00;&#x4E0D;&#x7BA1;&#x7528;, &#x53C2;&#x6570;&#x4F7F;&#x7528; &#x201C;?&#x201D; &#x5360;&#x4F4D;&#x7B26;&#x4EE3;&#x66FF;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; bingArgs</strong>: &#x66FF;&#x6362;&#x4E0A;&#x9762;SQL&#x8BED;&#x53E5;&#x4E2D;&#x7684; &#x201C;?&#x201D; &#x5360;&#x4F4D;&#x7B26;, &#x6309;&#x7167;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x66FF;&#x6362;;</p>
 </blockquote>
 </li>
-<li><p>执行固定SQL语句</p>
+<li><p>&#x6267;&#x884C;&#x56FA;&#x5B9A;SQL&#x8BED;&#x53E5;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">execSQL</span> <span class="params">(String sql)</span></span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><p>插入数据</p>
+<li><p>&#x63D2;&#x5165;&#x6570;&#x636E;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">long</span> <span class="title">insert</span> <span class="params">(String table, String nullColumnHack, ContentValues values)</span></span></span><br></pre></td></tr></table></figure>
-<p>-- <strong>参数① table</strong> : 数据库中的表名, 要插入数据的表;<br>-- <strong>参数② nullColumnHack</strong> : 该参数是可选的, 数据库表中不允许插入一行空的数据, 插入数据至少有一列不为null才能插入, 如果后面的values是null, 并且不知道列的名称, 那么插入操作会失败, 为了避免这种情况, 就出现了本参数, 为了防止 values为null的情况;<br>-- <strong>参数③ values</strong> : 相当于一个Map集合,键 是列名,值 是对应列名要插入的数据;<br><strong>插入原则</strong> : 不管 第三个 ContentValues参数 是否为null, 执行insert()方法都会添加一条记录, 如果values参数为null, 会添加一个除主键之外其它字段都为null的记录;<br>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建表数据, 键 为 列名, 值 为 对应的表数据</span></span><br><span class="line">ContentValues values = <span class="keyword">new</span> ContentValues();</span><br><span class="line">values.put(<span class="string">"name"</span>, <span class="string">"乔帮主"</span>);</span><br><span class="line">values.put(<span class="string">"age"</span>, <span class="number">54</span>);</span><br><span class="line"><span class="comment">//向表中插入数据, 如果values为null, 就会添加一个</span></span><br><span class="line"><span class="keyword">long</span> rowsNum = db.insert(<span class="string">"apple_info"</span>, <span class="string">"name"</span>, values);</span><br></pre></td></tr></table></figure>
-<p><strong>上面代码转成SQL语句 :</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">insert into <span class="title">apple_info</span> <span class="params">(name, age)</span> <span class="title">values</span> <span class="params">(<span class="string">'乔帮主'</span>, <span class="number">54</span>)</span></span></span><br></pre></td></tr></table></figure>
+<p>-- <strong>&#x53C2;&#x6570;&#x2460; table</strong> : &#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x8868;&#x540D;, &#x8981;&#x63D2;&#x5165;&#x6570;&#x636E;&#x7684;&#x8868;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; nullColumnHack</strong> : &#x8BE5;&#x53C2;&#x6570;&#x662F;&#x53EF;&#x9009;&#x7684;, &#x6570;&#x636E;&#x5E93;&#x8868;&#x4E2D;&#x4E0D;&#x5141;&#x8BB8;&#x63D2;&#x5165;&#x4E00;&#x884C;&#x7A7A;&#x7684;&#x6570;&#x636E;, &#x63D2;&#x5165;&#x6570;&#x636E;&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x5217;&#x4E0D;&#x4E3A;null&#x624D;&#x80FD;&#x63D2;&#x5165;, &#x5982;&#x679C;&#x540E;&#x9762;&#x7684;values&#x662F;null, &#x5E76;&#x4E14;&#x4E0D;&#x77E5;&#x9053;&#x5217;&#x7684;&#x540D;&#x79F0;, &#x90A3;&#x4E48;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#x4F1A;&#x5931;&#x8D25;, &#x4E3A;&#x4E86;&#x907F;&#x514D;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;, &#x5C31;&#x51FA;&#x73B0;&#x4E86;&#x672C;&#x53C2;&#x6570;, &#x4E3A;&#x4E86;&#x9632;&#x6B62; values&#x4E3A;null&#x7684;&#x60C5;&#x51B5;;<br>-- <strong>&#x53C2;&#x6570;&#x2462; values</strong> : &#x76F8;&#x5F53;&#x4E8E;&#x4E00;&#x4E2A;Map&#x96C6;&#x5408;,&#x952E; &#x662F;&#x5217;&#x540D;,&#x503C; &#x662F;&#x5BF9;&#x5E94;&#x5217;&#x540D;&#x8981;&#x63D2;&#x5165;&#x7684;&#x6570;&#x636E;;<br><strong>&#x63D2;&#x5165;&#x539F;&#x5219;</strong> : &#x4E0D;&#x7BA1; &#x7B2C;&#x4E09;&#x4E2A; ContentValues&#x53C2;&#x6570; &#x662F;&#x5426;&#x4E3A;null, &#x6267;&#x884C;insert()&#x65B9;&#x6CD5;&#x90FD;&#x4F1A;&#x6DFB;&#x52A0;&#x4E00;&#x6761;&#x8BB0;&#x5F55;, &#x5982;&#x679C;values&#x53C2;&#x6570;&#x4E3A;null, &#x4F1A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x9664;&#x4E3B;&#x952E;&#x4E4B;&#x5916;&#x5176;&#x5B83;&#x5B57;&#x6BB5;&#x90FD;&#x4E3A;null&#x7684;&#x8BB0;&#x5F55;;<br>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//&#x521B;&#x5EFA;&#x8868;&#x6570;&#x636E;, &#x952E; &#x4E3A; &#x5217;&#x540D;, &#x503C; &#x4E3A; &#x5BF9;&#x5E94;&#x7684;&#x8868;&#x6570;&#x636E;</span></span><br><span class="line">ContentValues values = <span class="keyword">new</span> ContentValues();</span><br><span class="line">values.put(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;&#x4E54;&#x5E2E;&#x4E3B;&quot;</span>);</span><br><span class="line">values.put(<span class="string">&quot;age&quot;</span>, <span class="number">54</span>);</span><br><span class="line"><span class="comment">//&#x5411;&#x8868;&#x4E2D;&#x63D2;&#x5165;&#x6570;&#x636E;, &#x5982;&#x679C;values&#x4E3A;null, &#x5C31;&#x4F1A;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;</span></span><br><span class="line"><span class="keyword">long</span> rowsNum = db.insert(<span class="string">&quot;apple_info&quot;</span>, <span class="string">&quot;name&quot;</span>, values);</span><br></pre></td></tr></table></figure>
+<p><strong>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8F6C;&#x6210;SQL&#x8BED;&#x53E5; :</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">insert into <span class="title">apple_info</span> <span class="params">(name, age)</span> <span class="title">values</span> <span class="params">(<span class="string">&apos;&#x4E54;&#x5E2E;&#x4E3B;&apos;</span>, <span class="number">54</span>)</span></span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><p>更新数据</p>
+<li><p>&#x66F4;&#x65B0;&#x6570;&#x636E;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">update</span> <span class="params">(String table, ContentValues values, String whereClause, String[] whereArgs)</span></span></span><br></pre></td></tr></table></figure>
-<p>-- <strong>参数① table</strong> : 数据库表名称;<br>-- <strong>参数② values</strong> : 该值类似Map集合, 键 是 列名, 值 是 要更新的数据, 这个值可以为null, 如果为null 这些数据会被清空;<br>-- <strong>参数③ whereClause</strong>: where选择语句, 选择那些行进行数据的更新, 如果该参数为 null, 就会修改所有行;<br>-- <strong>参数④ whereArgs</strong> : where选择语句的参数, 逐个替换 whereClause 中的占位符;<br>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//创建表数据, 键 为 列名, 值 为 对应的表数据</span></span><br><span class="line">ContentValues values = <span class="keyword">new</span> ContentValues();</span><br><span class="line">values.put(<span class="string">"name"</span>, <span class="string">"乔帮主"</span>);</span><br><span class="line">values.put(<span class="string">"age"</span>, <span class="number">54</span>);</span><br><span class="line"><span class="keyword">int</span> result = db.update(<span class="string">"apple_info"</span>, values, <span class="string">"name=?"</span>, <span class="keyword">new</span> String[]&#123;<span class="string">"乔帮主"</span>&#125;);</span><br></pre></td></tr></table></figure>
-<p><strong>上面代码转成SQL语句 :</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update apple_info set name=<span class="string">'乔帮主'</span>, age=<span class="number">56</span> where name=<span class="string">'乔帮主'</span></span><br></pre></td></tr></table></figure>
+<p>-- <strong>&#x53C2;&#x6570;&#x2460; table</strong> : &#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;&#x79F0;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; values</strong> : &#x8BE5;&#x503C;&#x7C7B;&#x4F3C;Map&#x96C6;&#x5408;, &#x952E; &#x662F; &#x5217;&#x540D;, &#x503C; &#x662F; &#x8981;&#x66F4;&#x65B0;&#x7684;&#x6570;&#x636E;, &#x8FD9;&#x4E2A;&#x503C;&#x53EF;&#x4EE5;&#x4E3A;null, &#x5982;&#x679C;&#x4E3A;null &#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x4F1A;&#x88AB;&#x6E05;&#x7A7A;;<br>-- <strong>&#x53C2;&#x6570;&#x2462; whereClause</strong>: where&#x9009;&#x62E9;&#x8BED;&#x53E5;, &#x9009;&#x62E9;&#x90A3;&#x4E9B;&#x884C;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x7684;&#x66F4;&#x65B0;, &#x5982;&#x679C;&#x8BE5;&#x53C2;&#x6570;&#x4E3A; null, &#x5C31;&#x4F1A;&#x4FEE;&#x6539;&#x6240;&#x6709;&#x884C;;<br>-- <strong>&#x53C2;&#x6570;&#x2463; whereArgs</strong> : where&#x9009;&#x62E9;&#x8BED;&#x53E5;&#x7684;&#x53C2;&#x6570;, &#x9010;&#x4E2A;&#x66FF;&#x6362; whereClause &#x4E2D;&#x7684;&#x5360;&#x4F4D;&#x7B26;;<br>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//&#x521B;&#x5EFA;&#x8868;&#x6570;&#x636E;, &#x952E; &#x4E3A; &#x5217;&#x540D;, &#x503C; &#x4E3A; &#x5BF9;&#x5E94;&#x7684;&#x8868;&#x6570;&#x636E;</span></span><br><span class="line">ContentValues values = <span class="keyword">new</span> ContentValues();</span><br><span class="line">values.put(<span class="string">&quot;name&quot;</span>, <span class="string">&quot;&#x4E54;&#x5E2E;&#x4E3B;&quot;</span>);</span><br><span class="line">values.put(<span class="string">&quot;age&quot;</span>, <span class="number">54</span>);</span><br><span class="line"><span class="keyword">int</span> result = db.update(<span class="string">&quot;apple_info&quot;</span>, values, <span class="string">&quot;name=?&quot;</span>, <span class="keyword">new</span> String[]{<span class="string">&quot;&#x4E54;&#x5E2E;&#x4E3B;&quot;</span>});</span><br></pre></td></tr></table></figure>
+<p><strong>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8F6C;&#x6210;SQL&#x8BED;&#x53E5; :</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update apple_info set name=<span class="string">&apos;&#x4E54;&#x5E2E;&#x4E3B;&apos;</span>, age=<span class="number">56</span> where name=<span class="string">&apos;&#x4E54;&#x5E2E;&#x4E3B;&apos;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><p>删除数据</p>
+<li><p>&#x5220;&#x9664;&#x6570;&#x636E;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">delete</span> <span class="params">(String table, String whereClause, String[] whereArgs)</span></span></span><br></pre></td></tr></table></figure>
-<p>参数介绍 :<br>-- <strong>参数① table</strong> : 要操作的数据库表名;<br>-- <strong>参数② whereClause</strong> : where选择语句, 选择哪些行要被删除, 如果为null, 就删除所有行;<br>-- <strong>参数③ whereArgs</strong> : where语句的参数, 逐个替换where语句中的 “?” 占位符;<br>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> result = db.delete(<span class="string">"apple_info"</span>, <span class="string">"name=?"</span>, <span class="keyword">new</span> String[]&#123;<span class="string">"乔帮主"</span>&#125;);</span><br></pre></td></tr></table></figure>
-<p><strong>上面代码转成SQL语句 :</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete apple_info where name=<span class="string">'乔帮主'</span></span><br></pre></td></tr></table></figure>
+<p>&#x53C2;&#x6570;&#x4ECB;&#x7ECD; :<br>-- <strong>&#x53C2;&#x6570;&#x2460; table</strong> : &#x8981;&#x64CD;&#x4F5C;&#x7684;&#x6570;&#x636E;&#x5E93;&#x8868;&#x540D;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; whereClause</strong> : where&#x9009;&#x62E9;&#x8BED;&#x53E5;, &#x9009;&#x62E9;&#x54EA;&#x4E9B;&#x884C;&#x8981;&#x88AB;&#x5220;&#x9664;, &#x5982;&#x679C;&#x4E3A;null, &#x5C31;&#x5220;&#x9664;&#x6240;&#x6709;&#x884C;;<br>-- <strong>&#x53C2;&#x6570;&#x2462; whereArgs</strong> : where&#x8BED;&#x53E5;&#x7684;&#x53C2;&#x6570;, &#x9010;&#x4E2A;&#x66FF;&#x6362;where&#x8BED;&#x53E5;&#x4E2D;&#x7684; &#x201C;?&#x201D; &#x5360;&#x4F4D;&#x7B26;;<br>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> result = db.delete(<span class="string">&quot;apple_info&quot;</span>, <span class="string">&quot;name=?&quot;</span>, <span class="keyword">new</span> String[]{<span class="string">&quot;&#x4E54;&#x5E2E;&#x4E3B;&quot;</span>});</span><br></pre></td></tr></table></figure>
+<p><strong>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8F6C;&#x6210;SQL&#x8BED;&#x53E5; :</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">delete apple_info where name=<span class="string">&apos;&#x4E54;&#x5E2E;&#x4E3B;&apos;</span></span><br></pre></td></tr></table></figure>
 </blockquote>
 </li>
-<li><p>查询</p>
+<li><p>&#x67E5;&#x8BE2;</p>
 <blockquote>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Cursor <span class="title">query</span> <span class="params">(<span class="keyword">boolean</span> distinct, String table, String[] columns,String selection, String[] selectionArgs,String groupBy, String having,String orderBy, String limit,CancellationSignal cancellationSignal)</span></span></span><br></pre></td></tr></table></figure>
-<p>参数介绍 :<br>-- <strong>参数① distinct</strong> : 是否去重复, true 去重复;<br>-- <strong>参数② table</strong> : 要查询的表名;<br>-- <strong>参数③ columns</strong> : 要查询的列名, 如果为null, 就会查询所有的列;<br>-- <strong>参数④ whereClause</strong> : 条件查询子句, 在这里可以使用占位符 “?”;<br>-- <strong>参数⑤ whereArgs</strong> : whereClause查询子句中的传入的参数值, 逐个替换 “?” 占位符;<br>-- <strong>参数⑥ groupBy</strong> : 控制分组, 如果为null 将不会分组;<br>-- <strong>参数⑦ having</strong> : 对分组进行过滤;<br>-- <strong>参数⑧ orderBy</strong> : 对记录进行排序;<br>-- <strong>参数⑨ limite</strong> : 用于分页, 如果为null, 就认为不进行分页查询;<br>-- <strong>参数⑩ cancellationSignal</strong> : 进程中取消操作的信号, 如果操作被取消, 当查询命令执行时会抛出 OperationCanceledException 异常;<br>实例：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Cursor cursor = db.query(<span class="keyword">true</span>, <span class="string">"apple_info"</span>,<span class="keyword">new</span> String[]&#123;<span class="string">"_id, name, age"</span>&#125;,<span class="string">"name like ?"</span>, <span class="keyword">new</span> String[]&#123;<span class="string">"乔%"</span>&#125;,<span class="keyword">null</span>, <span class="keyword">null</span>,<span class="string">"_id desc"</span>, <span class="string">"5, 10"</span>);</span><br><span class="line">cursor.close();</span><br></pre></td></tr></table></figure>
-<p><strong>上面代码转成SQL语句需要使用rawQuery方法，要实现以上所有的功能需要自己写一个SQL语句:</strong></p>
+<p>&#x53C2;&#x6570;&#x4ECB;&#x7ECD; :<br>-- <strong>&#x53C2;&#x6570;&#x2460; distinct</strong> : &#x662F;&#x5426;&#x53BB;&#x91CD;&#x590D;, true &#x53BB;&#x91CD;&#x590D;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; table</strong> : &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x8868;&#x540D;;<br>-- <strong>&#x53C2;&#x6570;&#x2462; columns</strong> : &#x8981;&#x67E5;&#x8BE2;&#x7684;&#x5217;&#x540D;, &#x5982;&#x679C;&#x4E3A;null, &#x5C31;&#x4F1A;&#x67E5;&#x8BE2;&#x6240;&#x6709;&#x7684;&#x5217;;<br>-- <strong>&#x53C2;&#x6570;&#x2463; whereClause</strong> : &#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x5B50;&#x53E5;, &#x5728;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5360;&#x4F4D;&#x7B26; &#x201C;?&#x201D;;<br>-- <strong>&#x53C2;&#x6570;&#x2464; whereArgs</strong> : whereClause&#x67E5;&#x8BE2;&#x5B50;&#x53E5;&#x4E2D;&#x7684;&#x4F20;&#x5165;&#x7684;&#x53C2;&#x6570;&#x503C;, &#x9010;&#x4E2A;&#x66FF;&#x6362; &#x201C;?&#x201D; &#x5360;&#x4F4D;&#x7B26;;<br>-- <strong>&#x53C2;&#x6570;&#x2465; groupBy</strong> : &#x63A7;&#x5236;&#x5206;&#x7EC4;, &#x5982;&#x679C;&#x4E3A;null &#x5C06;&#x4E0D;&#x4F1A;&#x5206;&#x7EC4;;<br>-- <strong>&#x53C2;&#x6570;&#x2466; having</strong> : &#x5BF9;&#x5206;&#x7EC4;&#x8FDB;&#x884C;&#x8FC7;&#x6EE4;;<br>-- <strong>&#x53C2;&#x6570;&#x2467; orderBy</strong> : &#x5BF9;&#x8BB0;&#x5F55;&#x8FDB;&#x884C;&#x6392;&#x5E8F;;<br>-- <strong>&#x53C2;&#x6570;&#x2468; limite</strong> : &#x7528;&#x4E8E;&#x5206;&#x9875;, &#x5982;&#x679C;&#x4E3A;null, &#x5C31;&#x8BA4;&#x4E3A;&#x4E0D;&#x8FDB;&#x884C;&#x5206;&#x9875;&#x67E5;&#x8BE2;;<br>-- <strong>&#x53C2;&#x6570;&#x2469; cancellationSignal</strong> : &#x8FDB;&#x7A0B;&#x4E2D;&#x53D6;&#x6D88;&#x64CD;&#x4F5C;&#x7684;&#x4FE1;&#x53F7;, &#x5982;&#x679C;&#x64CD;&#x4F5C;&#x88AB;&#x53D6;&#x6D88;, &#x5F53;&#x67E5;&#x8BE2;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x65F6;&#x4F1A;&#x629B;&#x51FA; OperationCanceledException &#x5F02;&#x5E38;;<br>&#x5B9E;&#x4F8B;&#xFF1A;</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Cursor cursor = db.query(<span class="keyword">true</span>, <span class="string">&quot;apple_info&quot;</span>,<span class="keyword">new</span> String[]{<span class="string">&quot;_id, name, age&quot;</span>},<span class="string">&quot;name like ?&quot;</span>, <span class="keyword">new</span> String[]{<span class="string">&quot;&#x4E54;%&quot;</span>},<span class="keyword">null</span>, <span class="keyword">null</span>,<span class="string">&quot;_id desc&quot;</span>, <span class="string">&quot;5, 10&quot;</span>);</span><br><span class="line">cursor.close();</span><br></pre></td></tr></table></figure>
+<p><strong>&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x8F6C;&#x6210;SQL&#x8BED;&#x53E5;&#x9700;&#x8981;&#x4F7F;&#x7528;rawQuery&#x65B9;&#x6CD5;&#xFF0C;&#x8981;&#x5B9E;&#x73B0;&#x4EE5;&#x4E0A;&#x6240;&#x6709;&#x7684;&#x529F;&#x80FD;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x5199;&#x4E00;&#x4E2A;SQL&#x8BED;&#x53E5;:</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Cursor <span class="title">rawQuery</span> <span class="params">(String sql, String[] selectionArgs)</span></span></span><br></pre></td></tr></table></figure>
-<p>参数解析 :<br>-- <strong>参数① sql</strong> : 要执行的SQL语句, 可以使用 “?” 作为占位符;<br>-- <strong>参数② selectionArgs</strong> : sql语句中的参数, 按照次序依次替换占位符 “?”;</p>
+<p>&#x53C2;&#x6570;&#x89E3;&#x6790; :<br>-- <strong>&#x53C2;&#x6570;&#x2460; sql</strong> : &#x8981;&#x6267;&#x884C;&#x7684;SQL&#x8BED;&#x53E5;, &#x53EF;&#x4EE5;&#x4F7F;&#x7528; &#x201C;?&#x201D; &#x4F5C;&#x4E3A;&#x5360;&#x4F4D;&#x7B26;;<br>-- <strong>&#x53C2;&#x6570;&#x2461; selectionArgs</strong> : sql&#x8BED;&#x53E5;&#x4E2D;&#x7684;&#x53C2;&#x6570;, &#x6309;&#x7167;&#x6B21;&#x5E8F;&#x4F9D;&#x6B21;&#x66FF;&#x6362;&#x5360;&#x4F4D;&#x7B26; &#x201C;?&#x201D;;</p>
 </blockquote>
 </li>
 </ol>
 </li>
 </ol>
-<h3 id="Cursor对象的操作"><a href="#Cursor对象的操作" class="headerlink" title="Cursor对象的操作"></a>Cursor对象的操作</h3><p>当执行的是select语句，返回一个Cursor对象。Cursor类似于JDBC中的ResultSet结果集，内置移动游标等方法：</p>
+<h3 id="Cursor&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;"><a href="#Cursor&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;" class="headerlink" title="Cursor&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;"></a>Cursor&#x5BF9;&#x8C61;&#x7684;&#x64CD;&#x4F5C;</h3><p>&#x5F53;&#x6267;&#x884C;&#x7684;&#x662F;select&#x8BED;&#x53E5;&#xFF0C;&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;Cursor&#x5BF9;&#x8C61;&#x3002;Cursor&#x7C7B;&#x4F3C;&#x4E8E;JDBC&#x4E2D;&#x7684;ResultSet&#x7ED3;&#x679C;&#x96C6;&#xFF0C;&#x5185;&#x7F6E;&#x79FB;&#x52A8;&#x6E38;&#x6807;&#x7B49;&#x65B9;&#x6CD5;&#xFF1A;</p>
 <table>
 <thead>
 <tr>
-<th>方法名</th>
-<th>简介</th>
+<th>&#x65B9;&#x6CD5;&#x540D;</th>
+<th>&#x7B80;&#x4ECB;</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>move(int offset)</td>
-<td>按偏移量来移动</td>
+<td>&#x6309;&#x504F;&#x79FB;&#x91CF;&#x6765;&#x79FB;&#x52A8;</td>
 </tr>
 <tr>
 <td>moveToFirst()</td>
-<td>将记录指针移动到第一行</td>
+<td>&#x5C06;&#x8BB0;&#x5F55;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x7B2C;&#x4E00;&#x884C;</td>
 </tr>
 <tr>
 <td>moveToLast ()</td>
-<td>将记录指针移动到最后一行</td>
+<td>&#x5C06;&#x8BB0;&#x5F55;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x6700;&#x540E;&#x4E00;&#x884C;</td>
 </tr>
 <tr>
 <td>moveToNext ()</td>
-<td>将记录指针移动到下一行</td>
+<td>&#x5C06;&#x8BB0;&#x5F55;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x4E0B;&#x4E00;&#x884C;</td>
 </tr>
 <tr>
 <td>moveToPosition(int position)</td>
-<td>将记录指针移动到指定的一行</td>
+<td>&#x5C06;&#x8BB0;&#x5F55;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x6307;&#x5B9A;&#x7684;&#x4E00;&#x884C;</td>
 </tr>
 <tr>
 <td>moveToPrevious()</td>
-<td>将记录指针移动到上一行</td>
+<td>&#x5C06;&#x8BB0;&#x5F55;&#x6307;&#x9488;&#x79FB;&#x52A8;&#x5230;&#x4E0A;&#x4E00;&#x884C;</td>
 </tr>
 <tr>
 <td>getCount()</td>
-<td>返回Cursor的行数</td>
+<td>&#x8FD4;&#x56DE;Cursor&#x7684;&#x884C;&#x6570;</td>
 </tr>
 <tr>
 <td>getColumnName(int index)</td>
-<td>根据列的索引返回其相应的列名称</td>
+<td>&#x6839;&#x636E;&#x5217;&#x7684;&#x7D22;&#x5F15;&#x8FD4;&#x56DE;&#x5176;&#x76F8;&#x5E94;&#x7684;&#x5217;&#x540D;&#x79F0;</td>
 </tr>
 <tr>
 <td>getColumnIndex(String name)</td>
-<td>根据列的名字返回其相应的索引</td>
+<td>&#x6839;&#x636E;&#x5217;&#x7684;&#x540D;&#x5B57;&#x8FD4;&#x56DE;&#x5176;&#x76F8;&#x5E94;&#x7684;&#x7D22;&#x5F15;</td>
 </tr>
 <tr>
 <td>getColumnNames()</td>
-<td>返回一个保存有所有列名称的字符串数组</td>
+<td>&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x4FDD;&#x5B58;&#x6709;&#x6240;&#x6709;&#x5217;&#x540D;&#x79F0;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x6570;&#x7EC4;</td>
 </tr>
 <tr>
 <td>getColumnCount()</td>
-<td>返回列的总数</td>
+<td>&#x8FD4;&#x56DE;&#x5217;&#x7684;&#x603B;&#x6570;</td>
 </tr>
 <tr>
 <td>close()</td>
-<td>关闭游标结果集，释放资源</td>
+<td>&#x5173;&#x95ED;&#x6E38;&#x6807;&#x7ED3;&#x679C;&#x96C6;&#xFF0C;&#x91CA;&#x653E;&#x8D44;&#x6E90;</td>
 </tr>
 <tr>
 <td>getType()</td>
-<td>获取字段的数据类型。分别有0、1、2、3、4这几个结果。</td>
+<td>&#x83B7;&#x53D6;&#x5B57;&#x6BB5;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x5206;&#x522B;&#x6709;0&#x3001;1&#x3001;2&#x3001;3&#x3001;4&#x8FD9;&#x51E0;&#x4E2A;&#x7ED3;&#x679C;&#x3002;</td>
 </tr>
 </tbody>
 </table>
-<h3 id="数据库事务Database-Transaction"><a href="#数据库事务Database-Transaction" class="headerlink" title="数据库事务Database Transaction"></a>数据库事务Database Transaction</h3><p>在数据库开发中，事务处理是非常重要的。<br>首先Android数据库操作（特别是写操作）是非常慢的，将所有操作打包成一个事务能大大提高处理速度。<br>其次是保证数据的一致性，一个事务中的所有操作可以看作一个原子操作，成功或者失败。如果全部成功，则事务提交完成；而事务内部如果有失败操作，整个事务操作会回滚，从而保证数据的一致性。<br>Android中事务的调用：</p>
+<h3 id="&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;Database-Transaction"><a href="#&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;Database-Transaction" class="headerlink" title="&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;Database Transaction"></a>&#x6570;&#x636E;&#x5E93;&#x4E8B;&#x52A1;Database Transaction</h3><p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x4E8B;&#x52A1;&#x5904;&#x7406;&#x662F;&#x975E;&#x5E38;&#x91CD;&#x8981;&#x7684;&#x3002;<br>&#x9996;&#x5148;Android&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#xFF08;&#x7279;&#x522B;&#x662F;&#x5199;&#x64CD;&#x4F5C;&#xFF09;&#x662F;&#x975E;&#x5E38;&#x6162;&#x7684;&#xFF0C;&#x5C06;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x6253;&#x5305;&#x6210;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#x80FD;&#x5927;&#x5927;&#x63D0;&#x9AD8;&#x5904;&#x7406;&#x901F;&#x5EA6;&#x3002;<br>&#x5176;&#x6B21;&#x662F;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x53EF;&#x4EE5;&#x770B;&#x4F5C;&#x4E00;&#x4E2A;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF0C;&#x6210;&#x529F;&#x6216;&#x8005;&#x5931;&#x8D25;&#x3002;&#x5982;&#x679C;&#x5168;&#x90E8;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x5B8C;&#x6210;&#xFF1B;&#x800C;&#x4E8B;&#x52A1;&#x5185;&#x90E8;&#x5982;&#x679C;&#x6709;&#x5931;&#x8D25;&#x64CD;&#x4F5C;&#xFF0C;&#x6574;&#x4E2A;&#x4E8B;&#x52A1;&#x64CD;&#x4F5C;&#x4F1A;&#x56DE;&#x6EDA;&#xFF0C;&#x4ECE;&#x800C;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;<br>Android&#x4E2D;&#x4E8B;&#x52A1;&#x7684;&#x8C03;&#x7528;&#xFF1A;</p>
 <blockquote>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">	db.beginTransaction();</span><br><span class="line">    <span class="comment">//在这里执行多个数据库操作</span></span><br><span class="line">    <span class="comment">//执行过程中可能会抛出异常</span></span><br><span class="line">    db.setTransactionSuccessful();</span><br><span class="line">    <span class="comment">//在setTransactionSuccessful和endTransaction之间不进行任何数据库操作</span></span><br><span class="line">	&#125; <span class="keyword">catch</span> (Exception e)&#123;</span><br><span class="line">	&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">    <span class="comment">//当所有操作执行完成后结束一个事务</span></span><br><span class="line">    db.endTransaction();</span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span> {</span><br><span class="line">	db.beginTransaction();</span><br><span class="line">    <span class="comment">//&#x5728;&#x8FD9;&#x91CC;&#x6267;&#x884C;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</span></span><br><span class="line">    <span class="comment">//&#x6267;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#x53EF;&#x80FD;&#x4F1A;&#x629B;&#x51FA;&#x5F02;&#x5E38;</span></span><br><span class="line">    db.setTransactionSuccessful();</span><br><span class="line">    <span class="comment">//&#x5728;setTransactionSuccessful&#x548C;endTransaction&#x4E4B;&#x95F4;&#x4E0D;&#x8FDB;&#x884C;&#x4EFB;&#x4F55;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;</span></span><br><span class="line">	} <span class="keyword">catch</span> (Exception e){</span><br><span class="line">	} <span class="keyword">finally</span> {</span><br><span class="line">    <span class="comment">//&#x5F53;&#x6240;&#x6709;&#x64CD;&#x4F5C;&#x6267;&#x884C;&#x5B8C;&#x6210;&#x540E;&#x7ED3;&#x675F;&#x4E00;&#x4E2A;&#x4E8B;&#x52A1;</span></span><br><span class="line">    db.endTransaction();</span><br><span class="line">	}</span><br></pre></td></tr></table></figure>
 </blockquote>
-<p><strong>注意：</strong></p>
+<p><strong>&#x6CE8;&#x610F;&#xFF1A;</strong></p>
 <blockquote>
-<p>一定要调用<code>db.setTransactionSuccessful();</code>事务才会成功提交完成<br>事务是可以嵌套的</p>
+<p>&#x4E00;&#x5B9A;&#x8981;&#x8C03;&#x7528;<code>db.setTransactionSuccessful();</code>&#x4E8B;&#x52A1;&#x624D;&#x4F1A;&#x6210;&#x529F;&#x63D0;&#x4EA4;&#x5B8C;&#x6210;<br>&#x4E8B;&#x52A1;&#x662F;&#x53EF;&#x4EE5;&#x5D4C;&#x5957;&#x7684;</p>
 </blockquote>
-<h3 id="SQLiteOpenHelper类"><a href="#SQLiteOpenHelper类" class="headerlink" title="SQLiteOpenHelper类"></a>SQLiteOpenHelper类</h3><p>SQLiteOpenHelper是系统提供的一个管理数据库表创建和版本管理（尤其是版本更新）的抽象类，我们必须通过继承SQLiteOpenHelper来实现自己的工具类。</p>
-<h2 id="封装DBHelper类"><a href="#封装DBHelper类" class="headerlink" title="封装DBHelper类"></a>封装DBHelper类</h2>
+<h3 id="SQLiteOpenHelper&#x7C7B;"><a href="#SQLiteOpenHelper&#x7C7B;" class="headerlink" title="SQLiteOpenHelper&#x7C7B;"></a>SQLiteOpenHelper&#x7C7B;</h3><p>SQLiteOpenHelper&#x662F;&#x7CFB;&#x7EDF;&#x63D0;&#x4F9B;&#x7684;&#x4E00;&#x4E2A;&#x7BA1;&#x7406;&#x6570;&#x636E;&#x5E93;&#x8868;&#x521B;&#x5EFA;&#x548C;&#x7248;&#x672C;&#x7BA1;&#x7406;&#xFF08;&#x5C24;&#x5176;&#x662F;&#x7248;&#x672C;&#x66F4;&#x65B0;&#xFF09;&#x7684;&#x62BD;&#x8C61;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x7EE7;&#x627F;SQLiteOpenHelper&#x6765;&#x5B9E;&#x73B0;&#x81EA;&#x5DF1;&#x7684;&#x5DE5;&#x5177;&#x7C7B;&#x3002;</p>
+<h2 id="&#x5C01;&#x88C5;DBHelper&#x7C7B;"><a href="#&#x5C01;&#x88C5;DBHelper&#x7C7B;" class="headerlink" title="&#x5C01;&#x88C5;DBHelper&#x7C7B;"></a>&#x5C01;&#x88C5;DBHelper&#x7C7B;</h2>
       
     </div>
     
@@ -495,17 +495,17 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></p>
-        <p><span>文章作者:</span><a href="/" title="回到主页">Susu</a></p>
-        <p><span>发布时间:</span>2016-05-26, 20:12:35</p>
-        <p><span>最后更新:</span>2016-08-22, 14:06:25</p>
+        <p><span>Title:</span><a href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></p>
+        <p><span>Author:</span><a href="/" title="Back to Homepage">Susu</a></p>
+        <p><span>Created:</span>2016-05-26, 20:12:35</p>
+        <p><span>Updated:</span>2016-08-22, 14:06:25</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/05/26/Android-基础之Sqlite的使用/" title="Android 基础之SQLite的使用">http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>Full URL:</span><a class="post-url" href="/2016/05/26/Android-基础之Sqlite的使用/" title="Android 基础之SQLite的使用">http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/</a>
+            <span class="copy-path" data-clipboard-text="From http://ilovesusu.github.io/2016/05/26/Android-基础之Sqlite的使用/　　By Susu" title="Copy Article&#39;s Link &amp; Author"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
-            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+            <span>License:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"CC BY-NC-SA 4.0"</a> Keep Link &amp; Author if Distribute.
         </p>
     </div>
 
@@ -532,7 +532,7 @@
 </article>
 
     <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
+    <strong class="toc-title">Contents</strong>
     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#SQLite数据库的特点："><span class="toc-number">2.</span> <span class="toc-text">SQLite数据库的特点：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Android对SQLite的操作"><span class="toc-number">3.</span> <span class="toc-text">Android对SQLite的操作</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteDatabase类"><span class="toc-number">3.1.</span> <span class="toc-text">SQLiteDatabase类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Cursor对象的操作"><span class="toc-number">3.2.</span> <span class="toc-text">Cursor对象的操作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库事务Database-Transaction"><span class="toc-number">3.3.</span> <span class="toc-text">数据库事务Database Transaction</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQLiteOpenHelper类"><span class="toc-number">3.4.</span> <span class="toc-text">SQLiteOpenHelper类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#封装DBHelper类"><span class="toc-number">4.</span> <span class="toc-text">封装DBHelper类</span></a></li></ol>
 </div>
 <style>
@@ -542,10 +542,10 @@
     }
 </style>
 
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+<input type="button" id="tocButton" value="Hide"  title="Show or Hide Table of Contents">
 
 <script>
-    yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    yiliaConfig.toc = ["Hide", "Show", !!"false"];
 </script>
 
 
@@ -640,21 +640,21 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/06/01/Android-四大组件之BroadcastReceiver/" title="上一篇: Android 四大组件之BroadcastReceiver">
+            <a href="/2016/06/01/Android-四大组件之BroadcastReceiver/" title="Pre: Android 四大组件之BroadcastReceiver">
                 <i class="fa fa-angle-left"></i>
             </a>
         
 
-        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+        <a title="Mini Archives"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/05/25/Android-四大组件之ContentProvider-1/" title="下一篇: Android 四大组件之ContentProvider(1)">
+            <a href="/2016/05/25/Android-四大组件之ContentProvider-1/" title="Next: Android 四大组件之ContentProvider(1)">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/优秀npm镜像推荐及使用/">优秀npm镜像推荐及使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
 
 
 
@@ -671,14 +671,14 @@
                 2016 Susu
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="A fast, simple &amp; powerful blog framework">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="Another simple and elegant theme for Hexo  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
+                        <span id="site-visit" >Site Visitors: 
                             <span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
@@ -688,7 +688,7 @@
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
+                        <span id="page-visit">Page Hits: 
                             <span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
@@ -721,9 +721,9 @@
 
 
 <div class="scroll" id="scroll">
-    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
-    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
-    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+    <a href="#" title="Back to Top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="Comments"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="Go to Bottom"><i class="fa fa-arrow-down"></i></a>
 </div>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
