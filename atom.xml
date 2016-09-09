@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://ilovesusu.github.io/"/>
-  <updated>2016-09-09T07:58:01.198Z</updated>
+  <updated>2016-09-09T08:02:37.734Z</updated>
   <id>http://ilovesusu.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://ilovesusu.github.io/2016/09/09/%E4%BC%98%E7%A7%80npm%E9%95%9C%E5%83%8F%E6%8E%A8%E8%8D%90%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
     <id>http://ilovesusu.github.io/2016/09/09/优秀npm镜像推荐及使用/</id>
     <published>2016-09-09T07:36:56.000Z</published>
-    <updated>2016-09-09T07:58:01.198Z</updated>
+    <updated>2016-09-09T08:02:37.734Z</updated>
     
     <content type="html">&lt;h2 id=&quot;&amp;#x7B80;&amp;#x4ECB;&quot;&gt;&lt;a href=&quot;#&amp;#x7B80;&amp;#x4ECB;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x7B80;&amp;#x4ECB;&quot;&gt;&lt;/a&gt;&amp;#x7B80;&amp;#x4ECB;&lt;/h2&gt;&lt;p&gt;npm&amp;#x5168;&amp;#x79F0;Node Package Manager&amp;#xFF0C;&amp;#x662F;node.js&amp;#x7684;&amp;#x6A21;&amp;#x5757;&amp;#x4F9D;&amp;#x8D56;&amp;#x7BA1;&amp;#x7406;&amp;#x5DE5;&amp;#x5177;&amp;#x3002;&amp;#x7531;&amp;#x4E8E;npm&amp;#x7684;&amp;#x6E90;&amp;#x5728;&amp;#x56FD;&amp;#x5916;&amp;#xFF0C;&amp;#x6240;&amp;#x4EE5;&amp;#x56FD;&amp;#x5185;&amp;#x7528;&amp;#x6237;&amp;#x4F7F;&amp;#x7528;&amp;#x8D77;&amp;#x6765;&amp;#x5404;&amp;#x79CD;&amp;#x4E0D;&amp;#x65B9;&amp;#x4FBF;&amp;#x3002;&amp;#x4E0B;&amp;#x9762;&amp;#x6574;&amp;#x7406;&amp;#x51FA;&amp;#x4E86;&amp;#x4E00;&amp;#x90E8;&amp;#x5206;&amp;#x56FD;&amp;#x5185;&amp;#x4F18;&amp;#x79C0;&amp;#x7684;npm&amp;#x955C;&amp;#x50CF;&amp;#x8D44;&amp;#x6E90;&amp;#xFF0C;&amp;#x56FD;&amp;#x5185;&amp;#x7528;&amp;#x6237;&amp;#x53EF;&amp;#x4EE5;&amp;#x9009;&amp;#x62E9;&amp;#x4F7F;&amp;#x7528;&amp;#x3002;&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;&amp;#x56FD;&amp;#x5916;&amp;#x4F18;&amp;#x79C0;npm&amp;#x955C;&amp;#x50CF;&quot;&gt;&lt;a href=&quot;#&amp;#x56FD;&amp;#x5916;&amp;#x4F18;&amp;#x79C0;npm&amp;#x955C;&amp;#x50CF;&quot; class=&quot;headerlink&quot; title=&quot;&amp;#x56FD;&amp;#x5916;&amp;#x4F18;&amp;#x79C0;npm&amp;#x955C;&amp;#x50CF;&quot;&gt;&lt;/a&gt;&amp;#x56FD;&amp;#x5916;&amp;#x4F18;&amp;#x79C0;npm&amp;#x955C;&amp;#x50CF;&lt;/h2&gt;&lt;h3 id=&quot;npmjs&amp;#x955C;&amp;#x50CF;&quot;&gt;&lt;a href=&quot;#npmjs&amp;#x955C;&amp;#x50CF;&quot; class=&quot;headerlink&quot; title=&quot;npmjs&amp;#x955C;&amp;#x50CF;&quot;&gt;&lt;/a&gt;npmjs&amp;#x955C;&amp;#x50CF;&lt;/h3&gt;&lt;ul&gt;
@@ -71,9 +71,9 @@
       <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="npm" scheme="http://ilovesusu.github.io/tags/npm/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="npm mirror" scheme="http://ilovesusu.github.io/tags/npm-mirror/"/>
     
   </entry>
   
@@ -685,9 +685,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
@@ -745,9 +745,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
@@ -774,9 +774,9 @@
     
       <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
-    
       <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
       <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
     
