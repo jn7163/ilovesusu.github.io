@@ -15,16 +15,16 @@
 
 
 
-<meta name="description" content="简介">
+<meta name="description" content="简介使用Android studio开发时会出现很多的问题,这篇文章就是总结在开发中出现的问题.">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android 四大组件之Activity">
-<meta property="og:url" content="http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/index.html">
+<meta property="og:title" content=" Android Studio gradle build 时">
+<meta property="og:url" content="http://ilovesusu.github.io/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/index.html">
 <meta property="og:site_name" content="Susu的博客">
-<meta property="og:description" content="简介">
-<meta property="og:updated_time" content="2016-08-22T06:06:25.817Z">
+<meta property="og:description" content="简介使用Android studio开发时会出现很多的问题,这篇文章就是总结在开发中出现的问题.">
+<meta property="og:updated_time" content="2016-09-26T14:25:32.381Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Android 四大组件之Activity">
-<meta name="twitter:description" content="简介">
+<meta name="twitter:title" content=" Android Studio gradle build 时">
+<meta name="twitter:description" content="简介使用Android studio开发时会出现很多的问题,这篇文章就是总结在开发中出现的问题.">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -56,7 +56,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Android 四大组件之Activity | Susu的博客</title>
+<title> Android Studio gradle build 时 | Susu的博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -280,11 +280,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
-      <div class="body-wrap"><article id="post-Android-四大组件之Activity" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/06/01/Android-四大组件之Activity/" class="article-date">
-      <time datetime="2016-06-01T13:25:05.000Z" itemprop="datePublished">2016-06-01</time>
+      <a href="/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/" class="article-date">
+      <time datetime="2016-09-26T14:13:56.000Z" itemprop="datePublished">2016-09-26</time>
 </a>
 
 
@@ -299,7 +299,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Android 四大组件之Activity
+       Android Studio gradle build 时
     </h1>
   
 
@@ -314,7 +314,7 @@
 
         
     <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/wine/">wine</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/安装QQ/">安装QQ</a></li></ul>
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android-Studio/">Android-Studio</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li></ul>
     </div>
 
         <div class="clearfix"></div>
@@ -324,8 +324,13 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><a id="more"></a>
-<h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>使用Android studio开发时会出现很多的问题,这篇文章就是总结在开发中出现的问题.<br><a id="more"></a></p>
+<h3 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h3><p>全新的Debian (64位)搭建好Android开发环境，编译出错：<br>Error:Execution failed for task ‘:facebookSDK:processReleaseResources’.&gt; java.io.IOException: Cannot run program “/opt/sdk/build-tools/20.0.0/aapt”: error=2, No such file or directory</p>
+<h3 id="解决方案1"><a href="#解决方案1" class="headerlink" title="解决方案1"></a>解决方案1</h3><p><strong>原因</strong>:是64位系统搞的鬼。<br>解决的方案就是安装几个32位的兼容库，如下：</p>
+<blockquote>
+<p>$ sudo apt-get install -y libc6-i386 lib32stdc++6 lib32gcc1 lib32ncurses5 lib32z1</p>
+</blockquote>
+
       
     </div>
     
@@ -333,13 +338,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></p>
+        <p><span>本文标题:</span><a href="/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/"> Android Studio gradle build 时</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Susu</a></p>
-        <p><span>发布时间:</span>2016-06-01, 21:25:05</p>
-        <p><span>最后更新:</span>2016-08-22, 14:06:25</p>
+        <p><span>发布时间:</span>2016-09-26, 22:13:56</p>
+        <p><span>最后更新:</span>2016-09-26, 22:25:32</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2016/06/01/Android-四大组件之Activity/" title="Android 四大组件之Activity">http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/" title=" Android Studio gradle build 时">http://ilovesusu.github.io/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://ilovesusu.github.io/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
         <p>
@@ -351,16 +356,10 @@
 
     <nav id="article-nav">
         
-            <div id="article-nav-newer" class="article-nav-title">
-                <a href="/2016/06/02/Android-基础之侧滑菜单的使用/">
-                    Android 基础之侧滑菜单的使用
-                </a>
-            </div>
-        
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2016/06/01/Android-动画合集/">
-                    Android 动画合集
+                <a href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/">
+                    Debian使用Hexo和GitHub搭建个人静态博客
                 </a>
             </div>
         
@@ -372,7 +371,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二级菜单"><span class="toc-number">2.</span> <span class="toc-text">二级菜单</span></a></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#问题1"><span class="toc-number">1.1.</span> <span class="toc-text">问题1</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决方案1"><span class="toc-number">1.2.</span> <span class="toc-text">解决方案1</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -408,7 +407,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Android 四大组件之Activity　| Susu的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":" Android Studio gradle build 时　| Susu的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -424,7 +423,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" id="ds-thread" data-thread-key="2016/06/01/Android-四大组件之Activity/" data-title="Android 四大组件之Activity" data-url="http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/" data-title=" Android Studio gradle build 时" data-url="http://ilovesusu.github.io/2016/09/26/Android-Studio-gradle-build-时-xx-build-tools-xx-aapt-error-2-No-such-file-or-directory/"></div>
     <script>
         var duoshuoQuery = {short_name:"ilovesusu"};
         var loadComment = function(){
@@ -447,15 +446,13 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2016/06/02/Android-基础之侧滑菜单的使用/" title="上一篇: Android 基础之侧滑菜单的使用">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
 
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2016/06/01/Android-动画合集/" title="下一篇: Android 动画合集">
+            <a href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/" title="下一篇: Debian使用Hexo和GitHub搭建个人静态博客">
                 <i class="fa fa-angle-right"></i>
             </a>
         
