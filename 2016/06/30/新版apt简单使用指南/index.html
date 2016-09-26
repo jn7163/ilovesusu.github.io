@@ -15,21 +15,21 @@
 
 
 
-<meta name="description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x8FC7;&amp;#x53BB;&amp;#x5341;&amp;#x591A;&amp;#x5E74;&amp;#x4EE5;&amp;#x6765;&amp;#xFF0C;&amp;#x51E0;&amp;#x4E4E;&amp;#x6240;&amp;#x6709; Debian &amp;#x7528;&amp;#x6237;&amp;#x90FD;&amp;#x5728;&amp;#x4F7F;&amp;#x7528; apt-get &amp;#x8FDB;&amp;#x884C;&amp;#x5B89">
+<meta name="description" content="简介过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新版apt简单使用指南">
 <meta property="og:url" content="http://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/index.html">
 <meta property="og:site_name" content="Susu的博客">
-<meta property="og:description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x8FC7;&amp;#x53BB;&amp;#x5341;&amp;#x591A;&amp;#x5E74;&amp;#x4EE5;&amp;#x6765;&amp;#xFF0C;&amp;#x51E0;&amp;#x4E4E;&amp;#x6240;&amp;#x6709; Debian &amp;#x7528;&amp;#x6237;&amp;#x90FD;&amp;#x5728;&amp;#x4F7F;&amp;#x7528; apt-get &amp;#x8FDB;&amp;#x884C;&amp;#x5B89">
+<meta property="og:description" content="简介过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。">
 <meta property="og:updated_time" content="2016-08-22T06:06:25.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新版apt简单使用指南">
-<meta name="twitter:description" content="&amp;#x7B80;&amp;#x4ECB;&amp;#x8FC7;&amp;#x53BB;&amp;#x5341;&amp;#x591A;&amp;#x5E74;&amp;#x4EE5;&amp;#x6765;&amp;#xFF0C;&amp;#x51E0;&amp;#x4E4E;&amp;#x6240;&amp;#x6709; Debian &amp;#x7528;&amp;#x6237;&amp;#x90FD;&amp;#x5728;&amp;#x4F7F;&amp;#x7528; apt-get &amp;#x8FDB;&amp;#x884C;&amp;#x5B89">
+<meta name="twitter:description" content="简介过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternative" href="/atom.xml" title="Susu的博客" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Susu的博客" type="application/atom+xml">
 
 
 
@@ -70,17 +70,14 @@
         isArchive: false,
         isTag: false,
         isCategory: false,
-        open_in_new: true,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: undefined
     }
 </script>
 
 
-    <script>
-        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
-    </script>
+    <script> yiliaConfig.jquery_ui = [false]; </script>
 
 
 
@@ -109,13 +106,6 @@
         <p class="header-subtitle">专注于Android、Java、移动互联网、Linux、网络安全</p>
         
 
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -182,19 +172,19 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:0x73757375@gmail.com" title="Email"></a>
+                                <a class="fa Email" href="mailto:0x73757375@gmail.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="https://github.com/ilovesusu" title="GitHub"></a>
+                                <a class="fa GitHub" href="https://github.com/ilovesusu" title="GitHub"></a>
                             
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
-                                <a class="fa 网易云音乐" target="_blank" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
+                                <a class="fa 网易云音乐" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
                             
-                                <a class="fa Google" target="_blank" href="https://www.google.com.hk/" title="Google"></a>
+                                <a class="fa Google" href="https://www.google.com.hk/" title="Google"></a>
                             
-                                <a class="fa QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
+                                <a class="fa QQ" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
                             
-                                <a class="fa Telegram" target="_blank" href="https://telegram.me/ilovesusu" title="Telegram"></a>
+                                <a class="fa Telegram" href="https://telegram.me/ilovesusu" title="Telegram"></a>
                             
                         </ul>
                     </nav>
@@ -212,11 +202,11 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
                     
                     </div>
                 </section>
@@ -296,6 +286,8 @@
       <a href="/2016/06/30/新版apt简单使用指南/" class="article-date">
       <time datetime="2016-06-30T14:14:03.000Z" itemprop="datePublished">2016-06-30</time>
 </a>
+
+
     </div>
   
   <div class="article-inner">
@@ -332,55 +324,55 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x8FC7;&#x53BB;&#x5341;&#x591A;&#x5E74;&#x4EE5;&#x6765;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709; Debian &#x7528;&#x6237;&#x90FD;&#x5728;&#x4F7F;&#x7528; apt-get &#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3001;&#x5220;&#x9664;&#x8F6F;&#x4EF6;&#x5305;&#x7B49;&#x7BA1;&#x7406;&#x64CD;&#x4F5C;&#x3002;&#x73B0;&#x5728;&#x5927;&#x5BB6;&#x4E5F;&#x5E94;&#x8BE5;&#x8BD5;&#x7740;&#x5207;&#x6362;&#x5230;&#x65B0;&#x7684; APT &#x547D;&#x4EE4;&#x6765;&#x4E86;&#x3002;<br><a id="more"></a></p>
-<h2 id="&#x65B0;&#x7248;apt&#x4F7F;&#x7528;&#xFF08;&#x5217;&#x8868;&#xFF09;"><a href="#&#x65B0;&#x7248;apt&#x4F7F;&#x7528;&#xFF08;&#x5217;&#x8868;&#xFF09;" class="headerlink" title="&#x65B0;&#x7248;apt&#x4F7F;&#x7528;&#xFF08;&#x5217;&#x8868;&#xFF09;"></a>&#x65B0;&#x7248;apt&#x4F7F;&#x7528;&#xFF08;&#x5217;&#x8868;&#xFF09;</h2><p>&#x4E0B;&#x9762;&#x6211;&#x4EEC;&#x5217;&#x51FA; Debian &#x4E2D;&#x4F7F;&#x7528; APT &#x547D;&#x4EE4;&#x4E0E;&#x8001;&#x7248;&#x672C; Debian &#x4E2D;&#x8F6F;&#x4EF6;&#x5305;&#x7BA1;&#x7406;&#x7684;&#x7528;&#x6CD5;&#x5BF9;&#x6BD4;&#xFF1A;</p>
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。<br><a id="more"></a></p>
+<h2 id="新版apt使用（列表）"><a href="#新版apt使用（列表）" class="headerlink" title="新版apt使用（列表）"></a>新版apt使用（列表）</h2><p>下面我们列出 Debian 中使用 APT 命令与老版本 Debian 中软件包管理的用法对比：</p>
 <table>
 <thead>
 <tr>
-<th>&#x65B0;&#x7684;apt&#x7BA1;&#x7406;&#x5DE5;&#x5177;</th>
-<th>&#x8001;&#x7248;&#x672C;apt&#x7BA1;&#x7406;&#x5DE5;&#x5177;</th>
+<th>新的apt管理工具</th>
+<th>老版本apt管理工具</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>apt install &#x5305;&#x540D;</td>
-<td>&#x66FF;&#x4EE3; apt-get install &#x5305;&#x540D;</td>
+<td>apt install 包名</td>
+<td>替代 apt-get install 包名</td>
 </tr>
 <tr>
-<td>apt remove &#x5305;&#x540D;</td>
-<td>&#x66FF;&#x4EE3; apt-get remove &#x5305;&#x540D;</td>
+<td>apt remove 包名</td>
+<td>替代 apt-get remove 包名</td>
 </tr>
 <tr>
-<td>apt search &#x5305;&#x540D;</td>
-<td>&#x66FF;&#x4EE3; apt-cache search &#x5305;&#x540D;</td>
+<td>apt search 包名</td>
+<td>替代 apt-cache search 包名</td>
 </tr>
 <tr>
-<td>apt show &#x5305;&#x540D;</td>
-<td>&#x66FF;&#x4EE3; apt-cache show &#x5305;&#x540D;</td>
+<td>apt show 包名</td>
+<td>替代 apt-cache show 包名</td>
 </tr>
 <tr>
 <td>apt update</td>
-<td>&#x66FF;&#x4EE3; apt-get update</td>
+<td>替代 apt-get update</td>
 </tr>
 <tr>
 <td>apt upgrade</td>
-<td>&#x66FF;&#x4EE3; apt-get upgrade</td>
+<td>替代 apt-get upgrade</td>
 </tr>
 <tr>
-<td>apt list &#x2013;installed</td>
-<td>&#x66FF;&#x4EE3; dpkg -l</td>
+<td>apt list –installed</td>
+<td>替代 dpkg -l</td>
 </tr>
 <tr>
 <td>apt edit-sources</td>
-<td>&#x66FF;&#x4EE3; sudo nano /etc/apt/sources.list</td>
+<td>替代 sudo nano /etc/apt/sources.list</td>
 </tr>
 <tr>
 <td>apt autoremove</td>
-<td>&#x66FF;&#x4EE3; apt-get autoremove</td>
+<td>替代 apt-get autoremove</td>
 </tr>
 <tr>
-<td>apt purge &#x5305;&#x540D;</td>
-<td>&#x66FF;&#x4EE3; apt-get purge &#x5305;&#x540D;</td>
+<td>apt purge 包名</td>
+<td>替代 apt-get purge 包名</td>
 </tr>
 </tbody>
 </table>
@@ -429,21 +421,27 @@
 </article>
 
     <div id="toc" class="toc-article">
-    <strong class="toc-title">文章目录</strong>
-    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新版apt使用（列表）"><span class="toc-number">2.</span> <span class="toc-text">新版apt使用（列表）</span></a></li></ol>
-</div>
-<style>
-    .left-col .switch-btn,
-    .left-col .switch-area {
-        display: none;
-    }
-</style>
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新版apt使用（列表）"><span class="toc-number">2.</span> <span class="toc-text">新版apt使用（列表）</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
 
-<input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
 
-<script>
-    yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
-</script>
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -477,7 +475,7 @@
     
       <div class="duoshuo" id="comments">
     <div id="comment-box" ></div>
-    <div class="ds-thread" data-thread-key="2016/06/30/新版apt简单使用指南/" data-title="新版apt简单使用指南" data-url="http://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/"></div>
+    <div class="ds-thread" id="ds-thread" data-thread-key="2016/06/30/新版apt简单使用指南/" data-title="新版apt简单使用指南" data-url="http://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/"></div>
     <script>
         var duoshuoQuery = {short_name:"ilovesusu"};
         var loadComment = function(){
@@ -488,46 +486,9 @@
         }
 
         
-            // Add comment count
-            $(function(){ 
-                var jsonUrl = "http://api.duoshuo.com/threads/counts.jsonp?short_name=ilovesusu&threads=2016/06/30/新版apt简单使用指南/&callback=?";
-                $.getJSON(jsonUrl, function(result){
-                    $.each(result.response, function(i, field){
-                        var value = field.comments;
-                        if (value > 0) {
-                            $(".count-comment").text(value);
-                            return;
-                        }
-                    })
-                })
-            })
-        
     </script>
     
-    <aside class="comment-bar">
-        <a href="javascript:void(0);">
-            <i class="fa fa-commenting-o animated infinite pulse"></i>
-            <i class="fa fa-spinner fa-pulse"></i>
-            <span class="count-comment"></span>
-        </a>
-    </aside>
-    <script>
-        var $commentBar = $("#comments aside.comment-bar");
-        var load$hide = function(){
-            $commentBar.find("a > i").toggle();
-            loadComment();
-            $commentBar.fadeOut(800);
-        }
-        $commentBar.click(function(){
-            load$hide();
-        })
-        $commentBar.children("a").hover(function(){
-            load$hide();
-        })
-        if (window.location.hash === "#comments") {
-            load$hide();
-        }
-    </script>
+    <script> loadComment(); </script>
 
 </div>
     
@@ -551,7 +512,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/优秀npm镜像推荐及使用/">优秀npm镜像推荐及使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/">Debian使用Hexo和GitHub搭建个人静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/09/09/优秀npm镜像推荐及使用/">优秀npm镜像推荐及使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="/2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
 
 
 
@@ -568,25 +529,23 @@
                 2016 Susu
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
                 
-                    <span>, </span>
+                    <span>| </span>
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -617,11 +576,34 @@
 
 
 
+
 <div class="scroll" id="scroll">
     <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
     <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>

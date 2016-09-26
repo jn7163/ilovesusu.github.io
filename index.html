@@ -18,20 +18,17 @@
     
 
 
-<meta name="description">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Susu的博客">
 <meta property="og:url" content="http://ilovesusu.github.io/index.html">
 <meta property="og:site_name" content="Susu的博客">
-<meta property="og:description">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Susu的博客">
-<meta name="twitter:description">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
 
-    <link rel="alternative" href="/atom.xml" title="Susu的博客" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="Susu的博客" type="application/atom+xml">
 
 
 
@@ -74,17 +71,14 @@
         isArchive: false,
         isTag: false,
         isCategory: false,
-        open_in_new: true,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: undefined
     }
 </script>
 
 
-    <script>
-        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
-    </script>
+    <script> yiliaConfig.jquery_ui = [false]; </script>
 
 
 
@@ -113,13 +107,6 @@
         <p class="header-subtitle">专注于Android、Java、移动互联网、Linux、网络安全</p>
         
 
-        
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="false" />
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
         
 
 
@@ -186,19 +173,19 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="mailto:0x73757375@gmail.com" title="Email"></a>
+                                <a class="fa Email" href="mailto:0x73757375@gmail.com" title="Email"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="https://github.com/ilovesusu" title="GitHub"></a>
+                                <a class="fa GitHub" href="https://github.com/ilovesusu" title="GitHub"></a>
                             
-                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
                             
-                                <a class="fa 网易云音乐" target="_blank" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
+                                <a class="fa 网易云音乐" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
                             
-                                <a class="fa Google" target="_blank" href="https://www.google.com.hk/" title="Google"></a>
+                                <a class="fa Google" href="https://www.google.com.hk/" title="Google"></a>
                             
-                                <a class="fa QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
+                                <a class="fa QQ" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
                             
-                                <a class="fa Telegram" target="_blank" href="https://telegram.me/ilovesusu" title="Telegram"></a>
+                                <a class="fa Telegram" href="https://telegram.me/ilovesusu" title="Telegram"></a>
                             
                         </ul>
                     </nav>
@@ -216,11 +203,11 @@
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
                     
-                      <a target="_blank" class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
                     
                     </div>
                 </section>
@@ -296,12 +283,100 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-Debian使用Hexo和GitHub搭建个人静态博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/" class="article-date">
+      <time datetime="2016-09-12T08:22:11.000Z" itemprop="datePublished">2016-09-12</time>
+</a>
+
+ 
+    <a href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/" ></span>
+        
+        
+    </a>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/">Debian使用Hexo和GitHub搭建个人静态博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2>
+          
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/Debian-GNU-Linux/">Debian GNU/Linux</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Testing-Stable/">Testing/Stable</a></li></ul>
+    </div>
+
+      
+        <p class="article-more-link">
+          <a href="/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/#more">more >></a>
+        </p>
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-优秀npm镜像推荐及使用" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2016/09/09/优秀npm镜像推荐及使用/" class="article-date">
       <time datetime="2016-09-09T07:36:56.000Z" itemprop="datePublished">2016-09-09</time>
 </a>
+
+ 
+    <a href="/2016/09/09/优秀npm镜像推荐及使用/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/09/09/优秀npm镜像推荐及使用/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -323,7 +398,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>npm&#x5168;&#x79F0;Node Package Manager&#xFF0C;&#x662F;node.js&#x7684;&#x6A21;&#x5757;&#x4F9D;&#x8D56;&#x7BA1;&#x7406;&#x5DE5;&#x5177;&#x3002;&#x7531;&#x4E8E;npm&#x7684;&#x6E90;&#x5728;&#x56FD;&#x5916;&#xFF0C;&#x6240;&#x4EE5;&#x56FD;&#x5185;&#x7528;&#x6237;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5404;&#x79CD;&#x4E0D;&#x65B9;&#x4FBF;&#x3002;&#x4E0B;&#x9762;&#x6574;&#x7406;&#x51FA;&#x4E86;&#x4E00;&#x90E8;&#x5206;&#x56FD;&#x5185;&#x4F18;&#x79C0;&#x7684;npm&#x955C;&#x50CF;&#x8D44;&#x6E90;&#xFF0C;&#x56FD;&#x5185;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4F7F;&#x7528;&#x3002;<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>npm全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。<br>
           
       
     </div>
@@ -368,6 +443,17 @@
       <a href="/2016/08/26/跨平台远程协助软件推荐/" class="article-date">
       <time datetime="2016-08-26T05:41:16.000Z" itemprop="datePublished">2016-08-26</time>
 </a>
+
+ 
+    <a href="/2016/08/26/跨平台远程协助软件推荐/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/26/跨平台远程协助软件推荐/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -389,7 +475,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x8FDC;&#x7A0B;&#x6280;&#x672F;&#x5C31;&#x662F;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x529E;&#x516C;&#x3001;&#x8FDC;&#x7A0B;&#x7BA1;&#x7406;&#x8BBE;&#x5907;&#x800C;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x79CD;&#x6280;&#x672F;&#x3002;,&#x867D;&#x7136;QQ&#x8FDC;&#x7A0B;&#x534F;&#x52A9;&#x4E5F;&#x633A;&#x5B9E;&#x7528;&#xFF0C;&#x4F46;&#x53D7;&#x5230;&#x7684;&#x675F;&#x7F1A;&#x8FDC;&#x8FDC;&#x65E0;&#x6CD5;&#x6EE1;&#x8DB3;&#x4EBA;&#x4EEC;&#x8FDC;&#x7A0B;&#x529E;&#x516C;&#x7B49;&#x9700;&#x6C42;,&#x5C31;&#x8DE8;&#x5E73;&#x53F0;&#x6765;&#x8BB2;,&#x8FD8;&#x6709;&#x5F88;&#x591A;&#x4F18;&#x79C0;&#x7684;&#x8F6F;&#x4EF6;&#x5462;!&#x73B0;&#x5728;&#x6211;&#x5C31;&#x4E00;&#x4E00;&#x63A8;&#x8350;&#x7ED9;&#x5927;&#x5BB6;&#x5427;!<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>远程技术就是实现远程办公、远程管理设备而开发的一种技术。,虽然QQ远程协助也挺实用，但受到的束缚远远无法满足人们远程办公等需求,就跨平台来讲,还有很多优秀的软件呢!现在我就一一推荐给大家吧!<br>
           
       
     </div>
@@ -434,6 +520,17 @@
       <a href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/" class="article-date">
       <time datetime="2016-08-25T07:58:48.000Z" itemprop="datePublished">2016-08-25</time>
 </a>
+
+ 
+    <a href="/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -455,7 +552,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x6211;&#x67E5;&#x4E86;&#x4E0D;&#x5C11;&#x6587;&#x7AE0;,&#x65AD;&#x65AD;&#x7EED;&#x7EED;&#x641E;&#x4E86;n&#x4E45;,&#x7EC8;&#x4E8E;&#x7B97;&#x662F;&#x5C06;&#x9A71;&#x52A8;&#x8FD9;&#x641E;&#x5B9A;&#x4E86;,&#x5988;&#x5988;&#x518D;&#x4E5F;&#x4E0D;&#x7528;&#x62C5;&#x5FC3;&#x6211;&#x7684;Debian&#x9ED1;&#x5C4F;&#x4E86;.<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.<br>
           
       
     </div>
@@ -500,6 +597,17 @@
       <a href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/" class="article-date">
       <time datetime="2016-08-24T07:41:49.000Z" itemprop="datePublished">2016-08-24</time>
 </a>
+
+ 
+    <a href="/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -521,7 +629,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x524D;&#x51E0;&#x5929;android studio2.1.3&#x6B63;&#x5F0F;&#x7248;&#x66F4;&#x65B0;&#x4E86;&#xFF0C;&#x5F53;&#x65F6;&#x6B63;&#x5728;&#x505A;&#x9879;&#x76EE;&#xFF0C;&#x4E0D;&#x60F3;&#x7ACB;&#x5373;&#x66F4;&#x65B0;&#xFF0C;&#x5C31;&#x60F3;&#x7B49;&#x4E0B;&#x518D;&#x66F4;&#x65B0;&#xFF0C;&#x51C6;&#x5907;&#x70B9;&#x201C;&#x7A0D;&#x540E;&#x66F4;&#x65B0;&#x201D;&#xFF0C;&#x53EF;&#x662F;&#x9B3C;&#x4F7F;&#x795E;&#x5DEE;&#x5730;&#x70B9;&#x4E86;ignore&#xFF08;&#x5FFD;&#x7565;&#xFF09;.<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>前几天android studio2.1.3正式版更新了，当时正在做项目，不想立即更新，就想等下再更新，准备点“稍后更新”，可是鬼使神差地点了ignore（忽略）.<br>
           
       
     </div>
@@ -566,6 +674,17 @@
       <a href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/" class="article-date">
       <time datetime="2016-08-24T06:36:21.000Z" itemprop="datePublished">2016-08-24</time>
 </a>
+
+ 
+    <a href="/2016/08/24/Android-Studio中好用的插件收集-陆续更新/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/24/Android-Studio中好用的插件收集-陆续更新/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -587,7 +706,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x63A8;&#x8350;&#x51E0;&#x6B3E;&#x5B9E;&#x7528;&#x7684;Android Studio &#x63D2;&#x4EF6;<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>推荐几款实用的Android Studio 插件<br>
           
       
     </div>
@@ -632,6 +751,17 @@
       <a href="/2016/08/22/Debian下可用的翻墙工具教程/" class="article-date">
       <time datetime="2016-08-22T14:57:12.000Z" itemprop="datePublished">2016-08-22</time>
 </a>
+
+ 
+    <a href="/2016/08/22/Debian下可用的翻墙工具教程/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/22/Debian下可用的翻墙工具教程/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -653,7 +783,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x5927;&#x795E;&#x5E26;&#x4F60;&#x7FFB;&#x58BB;&#x5E26;&#x4F60;&#x98DE;&#xFF0C;&#x914D;&#x7F6E;&#x7B80;&#x5355;&#xFF0C;&#x53EF;&#x7535;&#x8111;&#x624B;&#x673A;&#x5E73;&#x677F;&#x540C;&#x65F6;&#x7FFB;&#x5899;&#xFF0C;&#x4E0A;Google&#x3001;&#x770B;YouTube&#xFF0C;&#x6BD4;&#x4F60;&#x7528;&#x8FC7;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x79CD;&#x7FFB;&#x5899;&#x5DE5;&#x5177;&#x66F4;&#x7B80;&#x5355;&#xFF0C;&#x8FD8;&#x9AD8;&#x6548;&#x3002;<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。<br>
           
       
     </div>
@@ -698,6 +828,17 @@
       <a href="/2016/08/22/Chrome中好用的插件收集-陆续更新/" class="article-date">
       <time datetime="2016-08-22T13:03:09.000Z" itemprop="datePublished">2016-08-22</time>
 </a>
+
+ 
+    <a href="/2016/08/22/Chrome中好用的插件收集-陆续更新/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/22/Chrome中好用的插件收集-陆续更新/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -719,7 +860,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x8C37;&#x6B4C;&#x6D4F;&#x89C8;&#x5668; Google Chrome &#x6700;&#x5927;&#x7684;&#x7279;&#x8272;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x62E5;&#x6709;&#x975E;&#x5E38;&#x4E30;&#x5BCC;&#x7684;&#x63D2;&#x4EF6;&#x6269;&#x5C55;&#xFF0C;&#x57FA;&#x672C;&#x4F60;&#x80FD;&#x60F3;&#x5F97;&#x7684;&#x529F;&#x80FD;&#x90FD;&#x6709;&#x5B9E;&#x73B0;&#xFF0C;Chorme WebStore (&#x7F51;&#x4E0A;&#x5E94;&#x7528;&#x5546;&#x5E97;) &#x7B80;&#x76F4;&#x5C31;&#x50CF;&#x662F;&#x4E00;&#x4E2A;&#x5B9D;&#x5E93;&#xFF0C;&#x7136;&#x800C;&#x5F88;&#x591A;&#x4F18;&#x79C0;&#x7684;&#x6269;&#x5C55;&#x5374;&#x88AB;&#x57CB;&#x6CA1;&#x3002;</p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>谷歌浏览器 Google Chrome 最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chorme WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。</p>
           
       
     </div>
@@ -764,6 +905,17 @@
       <a href="/2016/08/22/Debian安装VirtualBox增强工具/" class="article-date">
       <time datetime="2016-08-22T05:50:43.000Z" itemprop="datePublished">2016-08-22</time>
 </a>
+
+ 
+    <a href="/2016/08/22/Debian安装VirtualBox增强工具/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/08/22/Debian安装VirtualBox增强工具/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -785,7 +937,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x5728;Debian&#x4E0B;&#x5B89;&#x88C5;VirtualBox&#x589E;&#x5F3A;&#x5DE5;&#x5177;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x53D8;&#x7684;&#x7B80;&#x5355;&#x4F8B;&#x5982;:&#x526A;&#x8D34;&#x677F;,&#x6587;&#x4EF6;&#x62D6;&#x62FD;&#x2026;&#x7B49;,&#x4F46;&#x662F;&#x9700;&#x8981;&#x5728;&#x865A;&#x62DF;&#x673A;&#x5185;&#x90E8;&#x5B89;&#x88C5;&#x4E00;&#x4E9B;&#x4E1C;&#x897F;,&#x5728;&#x8FD9;&#x91CC;&#x505A;&#x4E00;&#x4E2A;&#x8BB0;&#x5F55;,&#x4E5F;&#x65B9;&#x4FBF;&#x65B0;&#x624B;,&#x9632;&#x6B62;&#x4E0B;&#x6298;&#x817E;.</p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在Debian下安装VirtualBox增强工具可以使得一些操作变的简单例如:剪贴板,文件拖拽…等,但是需要在虚拟机内部安装一些东西,在这里做一个记录,也方便新手,防止下折腾.</p>
           
       
     </div>
@@ -830,6 +982,17 @@
       <a href="/2016/06/30/新版apt简单使用指南/" class="article-date">
       <time datetime="2016-06-30T14:14:03.000Z" itemprop="datePublished">2016-06-30</time>
 </a>
+
+ 
+    <a href="/2016/06/30/新版apt简单使用指南/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+            <span class="ds-thread-count"  data-thread-key="2016/06/30/新版apt简单使用指南/" ></span>
+        
+        
+    </a>
+
     </div>
   
   <div class="article-inner">
@@ -851,7 +1014,7 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x8FC7;&#x53BB;&#x5341;&#x591A;&#x5E74;&#x4EE5;&#x6765;&#xFF0C;&#x51E0;&#x4E4E;&#x6240;&#x6709; Debian &#x7528;&#x6237;&#x90FD;&#x5728;&#x4F7F;&#x7528; apt-get &#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3001;&#x5220;&#x9664;&#x8F6F;&#x4EF6;&#x5305;&#x7B49;&#x7BA1;&#x7406;&#x64CD;&#x4F5C;&#x3002;&#x73B0;&#x5728;&#x5927;&#x5BB6;&#x4E5F;&#x5E94;&#x8BE5;&#x8BD5;&#x7740;&#x5207;&#x6362;&#x5230;&#x65B0;&#x7684; APT &#x547D;&#x4EE4;&#x6765;&#x4E86;&#x3002;<br></p>
+              <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。<br>
           
       
     </div>
@@ -890,78 +1053,11 @@
 
 
   
-    <article id="post-Android-编码规范" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/06/29/Android-编码规范/" class="article-date">
-      <time datetime="2016-06-29T14:38:17.000Z" itemprop="datePublished">2016-06-29</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/06/29/Android-编码规范/">Android 编码规范</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-              <h2 id="&#x7B80;&#x4ECB;"><a href="#&#x7B80;&#x4ECB;" class="headerlink" title="&#x7B80;&#x4ECB;"></a>&#x7B80;&#x4ECB;</h2><p>&#x56E2;&#x961F;&#x534F;&#x4F5C;&#x9879;&#x76EE;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x6301;&#x5927;&#x5BB6;&#x7684;&#x4EE3;&#x7801;&#x4E00;&#x81F4;&#x6027;&#xFF0C;&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x4EE3;&#x7801;&#x683C;&#x5F0F;&#x7684;&#x89C4;&#x8303;&#x3002;<br></p>
-          
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-    <div class="article-category tagcloud">
-    <a class="article-category-link" href="/categories/Android/">Android</a>
-    </div>
-
-
-      
-    <div class="article-tag tagcloud">
-        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/编码规范/">编码规范</a></li></ul>
-    </div>
-
-      
-        <p class="article-more-link">
-          <a href="/2016/06/29/Android-编码规范/#more">more >></a>
-        </p>
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
   
     <nav id="page-nav">
       <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
     </nav>
   
-
 </div>
       <footer id="footer">
     <div class="outer">
@@ -971,25 +1067,23 @@
                 2016 Susu
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.0">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
             </div>
         </div>
         
             <div class="visit">
                 
                     <span id="busuanzi_container_site_pv" style='display:none'>
-                        <span id="site-visit" >本站到访数: 
-                            <span id="busuanzi_value_site_uv"></span>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
                         </span>
                     </span>
                 
                 
-                    <span>, </span>
+                    <span>| </span>
                 
                 
                     <span id="busuanzi_container_page_pv" style='display:none'>
-                        <span id="page-visit">本页阅读量: 
-                            <span id="busuanzi_value_page_pv"></span>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
                         </span>
                     </span>
                 
@@ -1018,6 +1112,32 @@
     </script>
 
 
+    
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var duoshuoQuery = {short_name:"ilovesusu"};
+                (function() {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'http://static.duoshuo.com/embed.js';
+                    s.async = true; s.charset = 'UTF-8';
+                    (d.head || d.body).appendChild(s);
+                })();
+
+                $(document).ready(function(){
+                    var $duoshuoCount = $(".ds-thread-count");
+                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
+                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                        $(this).siblings(".count-comment").text(num);
+                        $(this).remove();
+                    })
+                })
+            }
+        </script>
+    
+
+     
+
+
 
 
 <div class="scroll" id="scroll">
@@ -1025,6 +1145,28 @@
     <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>
   </div>
