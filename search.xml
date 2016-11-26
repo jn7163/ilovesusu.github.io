@@ -5,7 +5,7 @@
     
     <entry>
       <title><![CDATA[许嵩-苏格拉没有底[简述]]]></title>
-      <url>http://ilovesusu.github.io/2016/11/12/%E8%AE%B8%E5%B5%A9-%E8%8B%8F%E6%A0%BC%E6%8B%89%E6%B2%A1%E6%9C%89%E5%BA%95-%E7%AE%80%E4%BB%8B/</url>
+      <url>https://ilovesusu.github.io/2016/11/12/%E8%AE%B8%E5%B5%A9-%E8%8B%8F%E6%A0%BC%E6%8B%89%E6%B2%A1%E6%9C%89%E5%BA%95-%E7%AE%80%E4%BB%8B/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>许嵩最大的悲哀就是在歌迷还是初中高中生年纪的时候出了一张成熟的大学生才能听懂的专辑，然后那些因为听不懂而脱粉的粉丝很多年以后却想不起这张专辑，只记住了许嵩是自己非主流时候喜欢过的歌手。<br><a id="more"></a><br><img src="./许嵩.jpg" alt="苏格拉没有底"><br>这几天的查阅，我才算是真正的见识了许嵩的文采。</p>
 <h2 id="专辑–苏格拉没有底"><a href="#专辑–苏格拉没有底" class="headerlink" title="专辑–苏格拉没有底"></a>专辑–苏格拉没有底</h2><p><strong>转载自网易云音乐：<a href="http://music.163.com/#/album?id=16937" target="_blank" rel="external">http://music.163.com/#/album?id=16937</a></strong><br><strong>在文中加入自己的看法，仅代表个人看法，如有不妥，敬请指出。</strong><br><img src="./许嵩-苏格拉没有底/许嵩.jpg" alt="苏格拉没有底"><br>从昔日那个写着哼着《城府》夺得各大音乐试听榜冠军的音乐顽童成长到今时，许嵩在音乐层面一直保持独立做派，此番再度包揽十首词曲的全部创作。毫无粉饰的生存哲学，超越现实的想象思辨，细而不腻的私人回忆，在十首作品里尽数展现。自成一派的制作风格与词曲质感，随性慵懒的演绎方式，标志性的假音与转音，舒服惬意的中慢板R&amp;B节奏……令人一听便可品出强烈的个人风味。浪漫与幽默并存、务实与务虚交织，《苏格拉没有底》仿若暗器般无色无味却能迅速在人心中稳固沉积，在悠然自得的节奏摆荡中持续扩散。</p>
 <div style="color:red"><strong>《苏格拉没有底》</strong>真的是许嵩最屌最有深意最深不见底的一张专辑！拆迁、青少年性启蒙、酒桌文化、微博新社交、备胎等等各方面的社会现象，都能隐晦地写进歌里，真的是“嬉笑怒骂皆文章”。</div>
@@ -43,7 +43,7 @@
     
     <entry>
       <title><![CDATA[改GNOME 3的屏幕录制的默认时间]]></title>
-      <url>http://ilovesusu.github.io/2016/11/01/%E6%94%B9GNOME-3%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%97%B6%E9%97%B4/</url>
+      <url>https://ilovesusu.github.io/2016/11/01/%E6%94%B9GNOME-3%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%97%B6%E9%97%B4/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>GNOME 3配备了一个不错的嵌入式屏幕录像机。该屏幕录像机是非常方便的，但它有一个重大缺陷（以我的观点）：截屏的默认最大长度为30秒。我不能理解这样一个较低的值对于屏幕录制来说是几个意思！<br><a id="more"></a><br>但是经过修改以后能达到这样的效果。</p>
 <p><video controls loop="loop" src="./desktop.webm"></video><br>在GNOME 3的早期版本中，这个值是硬编码，这个值的改变是困难的。</p>
 <p>在GNOME 3.10中，截屏录制的最大长度由gconf注册。所以，你现在可以设置它的缺省值。</p>
@@ -63,7 +63,7 @@
     
     <entry>
       <title><![CDATA[Eclipse 提示框背景色黑色解决方案]]></title>
-      <url>http://ilovesusu.github.io/2016/10/27/Eclipse-%E6%8F%90%E7%A4%BA%E6%A1%86%E8%83%8C%E6%99%AF%E8%89%B2%E9%BB%91%E8%89%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <url>https://ilovesusu.github.io/2016/10/27/Eclipse-%E6%8F%90%E7%A4%BA%E6%A1%86%E8%83%8C%E6%99%AF%E8%89%B2%E9%BB%91%E8%89%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>Debian下Eclipse提示框背景色为黑色看起来很不舒服，这是因为Eclipse默认使用系统的主题Ambiance。<br><a id="more"></a><br><img src="./eclipse-black-background.jpg" alt=""></p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>其实出现这种问题解决起来也很容易，只需要换一个gtk2的主题就能搞定。</p>
 <blockquote>
@@ -77,7 +77,7 @@
     
     <entry>
       <title><![CDATA[linux 下使用 adb fastboot 刷 CyanogenMod ROM]]></title>
-      <url>http://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-CyanogenMod-ROM/</url>
+      <url>https://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-CyanogenMod-ROM/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>linux环境下使用[Android SDK Platform-tools]中的adb fastboot工具刷机其实也是很简单的,有兴趣的同学可以学习一下.<br><a id="more"></a></p>
 <h3 id="1-搭建-Android-SDK-Platform-tools-环境"><a href="#1-搭建-Android-SDK-Platform-tools-环境" class="headerlink" title="1.搭建 Android SDK Platform-tools 环境"></a>1.搭建 Android SDK Platform-tools 环境</h3><p>link:<a href="http://" target="_blank" rel="external">搭建 Android SDK环境</a></p>
 <h3 id="2-准备-Recovery-及-ROM"><a href="#2-准备-Recovery-及-ROM" class="headerlink" title="2.准备 Recovery 及 ROM"></a>2.准备 Recovery 及 ROM</h3><h3 id="3-刷入-ClockworkMod-Recovery"><a href="#3-刷入-ClockworkMod-Recovery" class="headerlink" title="3.刷入 ClockworkMod Recovery"></a>3.刷入 ClockworkMod Recovery</h3><h3 id="4-刷入-CyanogenMod-ROM"><a href="#4-刷入-CyanogenMod-ROM" class="headerlink" title="4.刷入 CyanogenMod ROM"></a>4.刷入 CyanogenMod ROM</h3><blockquote>
@@ -92,7 +92,7 @@
     
     <entry>
       <title><![CDATA[Android-Studio-常见问题总结]]></title>
-      <url>http://ilovesusu.github.io/2016/09/26/Android-Studio-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
+      <url>https://ilovesusu.github.io/2016/09/26/Android-Studio-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>使用Android studio开发时会出现很多的问题,这篇文章就是总结在开发中出现的问题.<br><a id="more"></a></p>
 <h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><h3 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h3><p>全新的Debian (64位)搭建好Android开发环境，编译出错：<br>Error:Execution failed for task ‘:facebookSDK:processReleaseResources’.&gt; java.io.IOException: Cannot run program “/opt/sdk/build-tools/20.0.0/aapt”: error=2, No such file or directory</p>
 <h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><h3 id="问题1解决方案"><a href="#问题1解决方案" class="headerlink" title="问题1解决方案"></a>问题1解决方案</h3><p><strong>原因</strong>:是64位系统搞的鬼。<br>解决的方案就是安装几个32位的兼容库，如下：</p>
@@ -104,7 +104,7 @@
     
     <entry>
       <title><![CDATA[Debian使用Hexo和GitHub搭建个人静态博客]]></title>
-      <url>http://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
+      <url>https://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>最近Hexo + Github pages非常火,很多人都写了搭建方案,但是更多的人选择windows作为搭建的平台,因为我的工作环境是Debian Testing,所以我想写写怎么在Debian下搭建Hexo + Github pages<br><a id="more"></a></p>
 <h2 id="预先准备"><a href="#预先准备" class="headerlink" title="预先准备"></a>预先准备</h2><p>1.github帐号</p>
 <blockquote>
@@ -143,7 +143,7 @@
     
     <entry>
       <title><![CDATA[优秀npm镜像推荐及使用]]></title>
-      <url>http://ilovesusu.github.io/2016/09/09/%E4%BC%98%E7%A7%80npm%E9%95%9C%E5%83%8F%E6%8E%A8%E8%8D%90%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
+      <url>https://ilovesusu.github.io/2016/09/09/%E4%BC%98%E7%A7%80npm%E9%95%9C%E5%83%8F%E6%8E%A8%E8%8D%90%E5%8F%8A%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>npm全称Node Package Manager，是node.js的模块依赖管理工具。由于npm的源在国外，所以国内用户使用起来各种不方便。下面整理出了一部分国内优秀的npm镜像资源，国内用户可以选择使用。<br><a id="more"></a></p>
 <h2 id="国外优秀npm镜像"><a href="#国外优秀npm镜像" class="headerlink" title="国外优秀npm镜像"></a>国外优秀npm镜像</h2><h3 id="npmjs镜像"><a href="#npmjs镜像" class="headerlink" title="npmjs镜像"></a>npmjs镜像</h3><ul>
 <li>搜索地址：<a href="https://www.npmjs.com/" target="_blank" rel="external">https://www.npmjs.com/</a></li>
@@ -187,7 +187,7 @@
     
     <entry>
       <title><![CDATA[跨平台远程协助软件推荐]]></title>
-      <url>http://ilovesusu.github.io/2016/08/26/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
+      <url>https://ilovesusu.github.io/2016/08/26/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>远程技术就是实现远程办公、远程管理设备而开发的一种技术。,虽然QQ远程协助也挺实用，但受到的束缚远远无法满足人们远程办公等需求,就跨平台来讲,还有很多优秀的软件呢!现在我就一一推荐给大家吧!<br><a id="more"></a></p>
 <h2 id="远程协助利器"><a href="#远程协助利器" class="headerlink" title="远程协助利器"></a>远程协助利器</h2><h3 id="AnyDesk"><a href="#AnyDesk" class="headerlink" title="AnyDesk"></a><a href="http://anydesk.com/remote-desktop" target="_blank" rel="external">AnyDesk</a></h3><p><img src="./AnyDesk.png" alt="AnyDesk"></p>
 <blockquote>
@@ -205,7 +205,7 @@
     
     <entry>
       <title><![CDATA[Debian 真丶NvidiaGraphicsDrivers安装]]></title>
-      <url>http://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/</url>
+      <url>https://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.<br><a id="more"></a><br>注意，我是标题党，这实际上是一篇intel+nvidia安装显卡驱动</p>
 <h2 id="新手误解"><a href="#新手误解" class="headerlink" title="新手误解"></a>新手误解</h2><ol>
 <li>我是否需要为我的笔记本/台式机安装Nvidia驱动？<blockquote>
@@ -256,7 +256,7 @@
     
     <entry>
       <title><![CDATA[Android Studio更新时不小心点了ignore（忽略）解决方案]]></title>
-      <url>http://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <url>https://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>前几天android studio2.1.3正式版更新了，当时正在做项目，不想立即更新，就想等下再更新，准备点“稍后更新”，可是鬼使神差地点了ignore（忽略）.<br><a id="more"></a></p>
 <h2 id="手残恢复方案"><a href="#手残恢复方案" class="headerlink" title="手残恢复方案"></a>手残恢复方案</h2><p>今天想更新，可是点check for update时，却提示我我目前使用的就是最新的呢!<br>我当时就是这样一个表情。<br><img src="./mengbi.jpg" alt=""><br>我使用的是Debian所以在我的家目录下有一个文件夹叫做.Androidstudio2.1,在里面找一个叫”options/updates.xml“的文件.删除updates.xml文件中的“ignoredBuildNumbers”部分并保存.(这时候需要关闭android studio.)<br>其实就是把update.xml文件中的忽略消息给删了,然后重新打开studio，check for update<br>嘿嘿.现在又可以更新了</p>
 <p>看来手残的病得治疗啊!</p>
@@ -265,7 +265,7 @@
     
     <entry>
       <title><![CDATA[Android Studio中好用的插件收集(陆续更新)]]></title>
-      <url>http://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+      <url>https://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>推荐几款实用的Android Studio 插件<br><a id="more"></a></p>
 <h2 id="优秀的插件"><a href="#优秀的插件" class="headerlink" title="优秀的插件"></a>优秀的插件</h2><ol>
 <li>Gsonformat:可根据json数据快速生成java实体类</li>
@@ -279,7 +279,7 @@
     
     <entry>
       <title><![CDATA[Debian下可用的翻墙工具教程]]></title>
-      <url>http://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</url>
+      <url>https://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>大神带你翻墻带你飞，配置简单，可电脑手机平板同时翻墙，上Google、看YouTube，比你用过的任何一种翻墙工具更简单，还高效。<br><a id="more"></a></p>
 <h2 id="博主推荐"><a href="#博主推荐" class="headerlink" title="博主推荐"></a>博主推荐</h2><h3 id="XX-Net"><a href="#XX-Net" class="headerlink" title="XX-Net"></a>XX-Net</h3><p>XX-Net是一个免费的桌面应用程序，提供快速，可靠和安全地访问开放的互联网对送检地区的用户。它使用谷歌应用程序引擎（GAE）通过防火墙代理服务器。</p>
 <blockquote>
@@ -304,7 +304,7 @@
     
     <entry>
       <title><![CDATA[Chrome中好用的插件收集(陆续更新)]]></title>
-      <url>http://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
+      <url>https://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>谷歌浏览器 Google Chrome 最大的特色之一就是拥有非常丰富的插件扩展，基本你能想得的功能都有实现，Chorme WebStore (网上应用商店) 简直就像是一个宝库，然而很多优秀的扩展却被埋没。</p>
 <a id="more"></a>
 <h2 id="Chrome-插件总结"><a href="#Chrome-插件总结" class="headerlink" title="Chrome 插件总结"></a>Chrome 插件总结</h2><blockquote>
@@ -331,7 +331,7 @@
     
     <entry>
       <title><![CDATA[Debian安装VirtualBox增强工具]]></title>
-      <url>http://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</url>
+      <url>https://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>在Debian下安装VirtualBox增强工具可以使得一些操作变的简单例如:剪贴板,文件拖拽…等,但是需要在虚拟机内部安装一些东西,在这里做一个记录,也方便新手,防止下折腾.</p>
 <a id="more"></a>
 <h2 id="安装VirtualBox增强工具"><a href="#安装VirtualBox增强工具" class="headerlink" title="安装VirtualBox增强工具"></a>安装VirtualBox增强工具</h2><p>首先切换到root用户执行下面的三行命令<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">apt-get install gcc make</div><div class="line">apt-get install dkms</div><div class="line">apt-get install linux-headers-`uname -r`</div></pre></td></tr></table></figure></p>
@@ -342,7 +342,7 @@
     
     <entry>
       <title><![CDATA[新版apt简单使用指南]]></title>
-      <url>http://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
+      <url>https://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>过去十多年以来，几乎所有 Debian 用户都在使用 apt-get 进行安装、删除软件包等管理操作。现在大家也应该试着切换到新的 APT 命令来了。<br><a id="more"></a></p>
 <h2 id="新版apt使用（列表）"><a href="#新版apt使用（列表）" class="headerlink" title="新版apt使用（列表）"></a>新版apt使用（列表）</h2><p>下面我们列出 Debian 中使用 APT 命令与老版本 Debian 中软件包管理的用法对比：</p>
 <table>
@@ -400,7 +400,7 @@
     
     <entry>
       <title><![CDATA[Android 编码规范]]></title>
-      <url>http://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+      <url>https://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>团队协作项目，为了保持大家的代码一致性，进行一些代码格式的规范。<br><a id="more"></a></p>
 <h2 id="编码规范"><a href="#编码规范" class="headerlink" title="编码规范"></a>编码规范</h2><ol>
 <li>代码缩进使用4个空格，不是Tab键。</li>
@@ -435,7 +435,7 @@
     
     <entry>
       <title><![CDATA[终于，输给了时间]]></title>
-      <url>http://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/</url>
+      <url>https://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>何种妥协，各种抱歉，始终仍输给了时间。<br><a id="more"></a><br>昨天在朋友的空间里逛了一晚上，看他们写着自己的心事，自己却想不起自己的心绪。突然就那么的怀恋起来那些过往。</p>
 <p>是的，我以为自己经历了那么多，我会很坚强的去面对那些过去的，现在的，以及将来的那些人那些事。可是当我再一次想起我们有过的那些曾经，我依然忍不住轻声的哭出来。</p>
 <p>  不可致否，我乃然想着他们，甚至深深的！是的，好久了，心里在也没有走进来一个人。好想有个人抱抱，因为我感觉自己真的好冷，好累！</p>
@@ -472,7 +472,7 @@
     
     <entry>
       <title><![CDATA[eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案]]></title>
-      <url>http://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
+      <url>https://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>在Debian GNU/Linux下， eclipse svn插件subclipse安装一般会遇到这个问题”Failed to load JavaHL Library”在这里写下解决方案。<br><a id="more"></a></p>
 <h2 id="Failed-to-load-JavaHL-Library"><a href="#Failed-to-load-JavaHL-Library" class="headerlink" title="Failed to load JavaHL Library"></a>Failed to load JavaHL Library</h2><p><em>These are the <strong>errors</strong> that were encountered:<br>no libsvnjavahl-1 in java.library.path<br>no svnjavahl-1 in java.library.path<br>no svnjavahl in java.library.path<br>java.library.path = /usr/lib/jni</em></p>
 <p>这里有官方的解决这个问题的指导：<a href="http://subclipse.tigris.org/wiki/JavaHL" target="_blank" rel="external">http://subclipse.tigris.org/wiki/JavaHL</a></p>
@@ -502,7 +502,7 @@
     
     <entry>
       <title><![CDATA[Android 基础之侧滑菜单的使用]]></title>
-      <url>http://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <url>https://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>相信很多朋友都见过可以侧滑的Android应用,比如QQ,知乎,谷歌音乐,CSDN等。这个现在几乎所有流行应用都在使用,今天看看这个是怎么实现的.</p>
 <a id="more"></a>
 <h2 id="DrawerLayout"><a href="#DrawerLayout" class="headerlink" title="DrawerLayout"></a>DrawerLayout</h2><blockquote>
@@ -575,35 +575,35 @@
     
     <entry>
       <title><![CDATA[Android 四大组件之Activity]]></title>
-      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/</url>
+      <url>https://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 动画合集]]></title>
-      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/</url>
+      <url>https://ilovesusu.github.io/2016/06/01/Android-%E5%8A%A8%E7%94%BB%E5%90%88%E9%9B%86/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 四大组件之Service服务]]></title>
-      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</url>
+      <url>https://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BService%E6%9C%8D%E5%8A%A1/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 四大组件之BroadcastReceiver]]></title>
-      <url>http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</url>
+      <url>https://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BBroadcastReceiver/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Android 基础之SQLite的使用]]></title>
-      <url>http://ilovesusu.github.io/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
+      <url>https://ilovesusu.github.io/2016/05/26/Android-%E5%9F%BA%E7%A1%80%E4%B9%8BSqlite%E7%9A%84%E4%BD%BF%E7%94%A8/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>在Android平台上，集成了一个嵌入式关系型数据库——SQLite。 SQLite3支持 NULL、INTEGER、REAL（浮点数字）、TEXT(字符串文本)和BLOB(二进制对象)等五种数据类型； 虽然它支持的类型只有五种，但实际上sqlite3也接受varchar(n)、char(n)、decimal(p,s) 等数据类型，只不过在运算或保存时会转成对应的五种数据类型。</p>
 <a id="more"></a>
 <h2 id="SQLite数据库的特点："><a href="#SQLite数据库的特点：" class="headerlink" title="SQLite数据库的特点："></a>SQLite数据库的特点：</h2><p>（1）Android通过 SQLite 数据库引擎来实现结构化数据的存储。在一个数据库应用程序中，任何类都可以通过名字对已经创建的数据库进行访问，但是在应用程序之外就不可以。<br>（2）SQLite 数据库是一种用C语言编写的嵌入式数据库，它是一个轻量级的数据库，最初为嵌入式设计的。它是在一些基础简单的语句处理上要比oracle / mysql快很多，而且其对内存的要求很低，在内存中只需要几百KB的存储空间。这是Android中采用 SQLite 数据库的主要原因。<br>（3）SQLite 支持事务处理功能。Transaction<br>（4）SQLite 处理速度比MySQL等著名的开源数据库系统更快。它没有服务器进程。<br>（5）SQLite 通过文件保存数据库，该文件是跨平台的，可以自由复制。一个文件就是一个数据库。数据库名即文件名。<br>（6）JDBC会消耗太多系统资源，所以JDBC对于手机并不合适，因此Android提供了新的API来使用 SQLite 数据库。<br>（7）SQLite最大的特点是你可以把各种类型的数据保存到任何字段中，而不用关心字段声明的数据类型是什么。 例如：可以在Integer类型的字段中存放字符串，或者在布尔型字段中存放浮点数，或者在字符型字段中存放日期型值。</p>
@@ -764,14 +764,14 @@
     
     <entry>
       <title><![CDATA[Android 四大组件之ContentProvider(1)]]></title>
-      <url>http://ilovesusu.github.io/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/</url>
+      <url>https://ilovesusu.github.io/2016/05/25/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BContentProvider-1/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><a id="more"></a>
 <h2 id="二级菜单"><a href="#二级菜单" class="headerlink" title="二级菜单"></a>二级菜单</h2>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[Debian 8+ 安装 SunJdk]]></title>
-      <url>http://ilovesusu.github.io/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/</url>
+      <url>https://ilovesusu.github.io/2016/05/24/Debian-8-%E5%AE%89%E8%A3%85-SunJdk/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>由于要用Debian做Java的开发 ，最初Debian默认的OpenJdk还是可以的，但是由于Android开发需要SunJdk，所以需要手动安装。</p>
 <a id="more"></a>
 <p>Debian6以后安装SunJdk不只是简单的使用apt-get install 了，因为一些原因，Debian不维护SunJdk的deb了  所以只能从jdk官方下载压缩包安装。<br>某次在Debian wiki上浏览的时候发现了一个包，是java-package，所以我去查了查。<br>大家可以看看下面的链接。</p>
@@ -790,7 +790,7 @@
     
     <entry>
       <title><![CDATA[Debian安装QQ]]></title>
-      <url>http://ilovesusu.github.io/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/</url>
+      <url>https://ilovesusu.github.io/2016/05/24/Debian%E5%AE%89%E8%A3%85QQ/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>Debian GNU/Linux是一个优秀的操作系统，但是TX没有开发Linux下的QQ（之前TX发布的QQ.deb已经不能使用，webqq又半死不活），在这种情况下就需要教大家怎么在Debian上使用QQ了。</p>
 <a id="more"></a>
 <p>##第一步、开启Debian 对i386的支持</p>
@@ -821,7 +821,7 @@
     
     <entry>
       <title><![CDATA[404 Not Found：该页无法显示]]></title>
-      <url>http://ilovesusu.github.io//404.html</url>
+      <url>https://ilovesusu.github.io//404.html</url>
       <content type="html"><![CDATA[<style type="text/css">
     .article-title {
         font-size: 2.1em;
@@ -883,7 +883,7 @@
     
     <entry>
       <title><![CDATA[关于&留言板]]></title>
-      <url>http://ilovesusu.github.io/about/index.html</url>
+      <url>https://ilovesusu.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
 <li>姓名：XXX</li>
 <li>网名：Susu</li>
@@ -912,7 +912,7 @@
     
     <entry>
       <title><![CDATA[标签]]></title>
-      <url>http://ilovesusu.github.io/tags/index.html</url>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
       <content type="html"></content>
     </entry>
     

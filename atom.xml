@@ -4,9 +4,9 @@
   <subtitle>专注于Android、Java、移动互联网、Linux、网络安全</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://ilovesusu.github.io/"/>
+  <link href="https://ilovesusu.github.io/"/>
   <updated>2016-11-25T11:53:05.363Z</updated>
-  <id>http://ilovesusu.github.io/</id>
+  <id>https://ilovesusu.github.io/</id>
   
   <author>
     <name>Susu</name>
@@ -17,8 +17,8 @@
   
   <entry>
     <title>许嵩-苏格拉没有底[简述]</title>
-    <link href="http://ilovesusu.github.io/2016/11/12/%E8%AE%B8%E5%B5%A9-%E8%8B%8F%E6%A0%BC%E6%8B%89%E6%B2%A1%E6%9C%89%E5%BA%95-%E7%AE%80%E4%BB%8B/"/>
-    <id>http://ilovesusu.github.io/2016/11/12/许嵩-苏格拉没有底-简介/</id>
+    <link href="https://ilovesusu.github.io/2016/11/12/%E8%AE%B8%E5%B5%A9-%E8%8B%8F%E6%A0%BC%E6%8B%89%E6%B2%A1%E6%9C%89%E5%BA%95-%E7%AE%80%E4%BB%8B/"/>
+    <id>https://ilovesusu.github.io/2016/11/12/许嵩-苏格拉没有底-简介/</id>
     <published>2016-11-12T13:50:12.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -62,17 +62,17 @@
     
     </summary>
     
-      <category term="心情随笔" scheme="http://ilovesusu.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+      <category term="心情随笔" scheme="https://ilovesusu.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="Music" scheme="http://ilovesusu.github.io/tags/Music/"/>
+      <category term="Music" scheme="https://ilovesusu.github.io/tags/Music/"/>
     
   </entry>
   
   <entry>
     <title>改GNOME 3的屏幕录制的默认时间</title>
-    <link href="http://ilovesusu.github.io/2016/11/01/%E6%94%B9GNOME-3%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%97%B6%E9%97%B4/"/>
-    <id>http://ilovesusu.github.io/2016/11/01/改GNOME-3的屏幕录制的默认时间/</id>
+    <link href="https://ilovesusu.github.io/2016/11/01/%E6%94%B9GNOME-3%E7%9A%84%E5%B1%8F%E5%B9%95%E5%BD%95%E5%88%B6%E7%9A%84%E9%BB%98%E8%AE%A4%E6%97%B6%E9%97%B4/"/>
+    <id>https://ilovesusu.github.io/2016/11/01/改GNOME-3的屏幕录制的默认时间/</id>
     <published>2016-11-01T02:53:01.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -98,21 +98,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Gnome" scheme="http://ilovesusu.github.io/tags/Gnome/"/>
+      <category term="Gnome" scheme="https://ilovesusu.github.io/tags/Gnome/"/>
     
   </entry>
   
   <entry>
     <title>Eclipse 提示框背景色黑色解决方案</title>
-    <link href="http://ilovesusu.github.io/2016/10/27/Eclipse-%E6%8F%90%E7%A4%BA%E6%A1%86%E8%83%8C%E6%99%AF%E8%89%B2%E9%BB%91%E8%89%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://ilovesusu.github.io/2016/10/27/Eclipse-提示框背景色黑色解决方案/</id>
+    <link href="https://ilovesusu.github.io/2016/10/27/Eclipse-%E6%8F%90%E7%A4%BA%E6%A1%86%E8%83%8C%E6%99%AF%E8%89%B2%E9%BB%91%E8%89%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://ilovesusu.github.io/2016/10/27/Eclipse-提示框背景色黑色解决方案/</id>
     <published>2016-10-27T09:12:42.000Z</published>
     <updated>2016-11-25T12:28:08.567Z</updated>
     
@@ -132,21 +132,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Eclipse" scheme="http://ilovesusu.github.io/tags/Eclipse/"/>
+      <category term="Eclipse" scheme="https://ilovesusu.github.io/tags/Eclipse/"/>
     
   </entry>
   
   <entry>
     <title>linux 下使用 adb fastboot 刷 CyanogenMod ROM</title>
-    <link href="http://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-CyanogenMod-ROM/"/>
-    <id>http://ilovesusu.github.io/2016/10/18/linux-下使用-adb-fastboot-刷-CyanogenMod-ROM/</id>
+    <link href="https://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-CyanogenMod-ROM/"/>
+    <id>https://ilovesusu.github.io/2016/10/18/linux-下使用-adb-fastboot-刷-CyanogenMod-ROM/</id>
     <published>2016-10-18T03:25:06.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -167,19 +167,19 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
   </entry>
   
   <entry>
     <title>Android-Studio-常见问题总结</title>
-    <link href="http://ilovesusu.github.io/2016/09/26/Android-Studio-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/"/>
-    <id>http://ilovesusu.github.io/2016/09/26/Android-Studio-常见问题总结/</id>
+    <link href="https://ilovesusu.github.io/2016/09/26/Android-Studio-%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98%E6%80%BB%E7%BB%93/"/>
+    <id>https://ilovesusu.github.io/2016/09/26/Android-Studio-常见问题总结/</id>
     <published>2016-09-26T14:13:56.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -197,21 +197,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Android-Studio" scheme="http://ilovesusu.github.io/tags/Android-Studio/"/>
+      <category term="Android-Studio" scheme="https://ilovesusu.github.io/tags/Android-Studio/"/>
     
   </entry>
   
   <entry>
     <title>Debian使用Hexo和GitHub搭建个人静态博客</title>
-    <link href="http://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://ilovesusu.github.io/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/</id>
+    <link href="https://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://ilovesusu.github.io/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/</id>
     <published>2016-09-12T08:22:11.000Z</published>
     <updated>2016-11-25T15:28:35.164Z</updated>
     
@@ -256,19 +256,19 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
   </entry>
   
   <entry>
     <title>优秀npm镜像推荐及使用</title>
-    <link href="http://ilovesusu.github.io/2016/09/09/%E4%BC%98%E7%A7%80npm%E9%95%9C%E5%83%8F%E6%8E%A8%E8%8D%90%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
-    <id>http://ilovesusu.github.io/2016/09/09/优秀npm镜像推荐及使用/</id>
+    <link href="https://ilovesusu.github.io/2016/09/09/%E4%BC%98%E7%A7%80npm%E9%95%9C%E5%83%8F%E6%8E%A8%E8%8D%90%E5%8F%8A%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ilovesusu.github.io/2016/09/09/优秀npm镜像推荐及使用/</id>
     <published>2016-09-09T07:36:56.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -318,19 +318,19 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="npm" scheme="http://ilovesusu.github.io/tags/npm/"/>
+      <category term="npm" scheme="https://ilovesusu.github.io/tags/npm/"/>
     
-      <category term="npm mirror" scheme="http://ilovesusu.github.io/tags/npm-mirror/"/>
+      <category term="npm mirror" scheme="https://ilovesusu.github.io/tags/npm-mirror/"/>
     
   </entry>
   
   <entry>
     <title>跨平台远程协助软件推荐</title>
-    <link href="http://ilovesusu.github.io/2016/08/26/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
-    <id>http://ilovesusu.github.io/2016/08/26/跨平台远程协助软件推荐/</id>
+    <link href="https://ilovesusu.github.io/2016/08/26/%E8%B7%A8%E5%B9%B3%E5%8F%B0%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/"/>
+    <id>https://ilovesusu.github.io/2016/08/26/跨平台远程协助软件推荐/</id>
     <published>2016-08-26T05:41:16.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -354,21 +354,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="远程协助利器" scheme="http://ilovesusu.github.io/tags/%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E5%88%A9%E5%99%A8/"/>
+      <category term="远程协助利器" scheme="https://ilovesusu.github.io/tags/%E8%BF%9C%E7%A8%8B%E5%8D%8F%E5%8A%A9%E5%88%A9%E5%99%A8/"/>
     
   </entry>
   
   <entry>
     <title>Debian 真丶NvidiaGraphicsDrivers安装</title>
-    <link href="http://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/"/>
-    <id>http://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/</id>
+    <link href="https://ilovesusu.github.io/2016/08/25/Debian-%E7%9C%9F%E4%B8%B6NvidiaGraphicsDrivers%E5%AE%89%E8%A3%85/"/>
+    <id>https://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/</id>
     <published>2016-08-25T07:58:48.000Z</published>
     <updated>2016-11-25T14:53:23.648Z</updated>
     
@@ -425,21 +425,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Nvidia驱动安装(双显卡切换)" scheme="http://ilovesusu.github.io/tags/Nvidia%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85-%E5%8F%8C%E6%98%BE%E5%8D%A1%E5%88%87%E6%8D%A2/"/>
+      <category term="Nvidia驱动安装(双显卡切换)" scheme="https://ilovesusu.github.io/tags/Nvidia%E9%A9%B1%E5%8A%A8%E5%AE%89%E8%A3%85-%E5%8F%8C%E6%98%BE%E5%8D%A1%E5%88%87%E6%8D%A2/"/>
     
   </entry>
   
   <entry>
     <title>Android Studio更新时不小心点了ignore（忽略）解决方案</title>
-    <link href="http://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://ilovesusu.github.io/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/</id>
+    <link href="https://ilovesusu.github.io/2016/08/24/Android-Studio%E6%9B%B4%E6%96%B0%E6%97%B6%E4%B8%8D%E5%B0%8F%E5%BF%83%E7%82%B9%E4%BA%86ignore%EF%BC%88%E5%BF%BD%E7%95%A5%EF%BC%89%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://ilovesusu.github.io/2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/</id>
     <published>2016-08-24T07:41:49.000Z</published>
     <updated>2016-11-25T14:58:28.030Z</updated>
     
@@ -454,19 +454,19 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
   </entry>
   
   <entry>
     <title>Android Studio中好用的插件收集(陆续更新)</title>
-    <link href="http://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
-    <id>http://ilovesusu.github.io/2016/08/24/Android-Studio中好用的插件收集-陆续更新/</id>
+    <link href="https://ilovesusu.github.io/2016/08/24/Android-Studio%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>https://ilovesusu.github.io/2016/08/24/Android-Studio中好用的插件收集-陆续更新/</id>
     <published>2016-08-24T06:36:21.000Z</published>
     <updated>2016-11-25T11:53:05.395Z</updated>
     
@@ -486,21 +486,21 @@
     
     </summary>
     
-      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
+      <category term="Android" scheme="https://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Android studio" scheme="http://ilovesusu.github.io/tags/Android-studio/"/>
+      <category term="Android studio" scheme="https://ilovesusu.github.io/tags/Android-studio/"/>
     
   </entry>
   
   <entry>
     <title>Debian下可用的翻墙工具教程</title>
-    <link href="http://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
-    <id>http://ilovesusu.github.io/2016/08/22/Debian下可用的翻墙工具教程/</id>
+    <link href="https://ilovesusu.github.io/2016/08/22/Debian%E4%B8%8B%E5%8F%AF%E7%94%A8%E7%9A%84%E7%BF%BB%E5%A2%99%E5%B7%A5%E5%85%B7%E6%95%99%E7%A8%8B/"/>
+    <id>https://ilovesusu.github.io/2016/08/22/Debian下可用的翻墙工具教程/</id>
     <published>2016-08-22T14:57:12.000Z</published>
     <updated>2016-11-25T11:53:05.407Z</updated>
     
@@ -531,23 +531,23 @@
     
     </summary>
     
-      <category term="科学上网" scheme="http://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+      <category term="科学上网" scheme="https://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="翻墙" scheme="http://ilovesusu.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+      <category term="翻墙" scheme="https://ilovesusu.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
     
-      <category term="免费vpn" scheme="http://ilovesusu.github.io/tags/%E5%85%8D%E8%B4%B9vpn/"/>
+      <category term="免费vpn" scheme="https://ilovesusu.github.io/tags/%E5%85%8D%E8%B4%B9vpn/"/>
     
   </entry>
   
   <entry>
     <title>Chrome中好用的插件收集(陆续更新)</title>
-    <link href="http://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
-    <id>http://ilovesusu.github.io/2016/08/22/Chrome中好用的插件收集-陆续更新/</id>
+    <link href="https://ilovesusu.github.io/2016/08/22/Chrome%E4%B8%AD%E5%A5%BD%E7%94%A8%E7%9A%84%E6%8F%92%E4%BB%B6%E6%94%B6%E9%9B%86-%E9%99%86%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    <id>https://ilovesusu.github.io/2016/08/22/Chrome中好用的插件收集-陆续更新/</id>
     <published>2016-08-22T13:03:09.000Z</published>
     <updated>2016-11-25T11:53:05.407Z</updated>
     
@@ -580,21 +580,21 @@
     
     </summary>
     
-      <category term="Chrome" scheme="http://ilovesusu.github.io/categories/Chrome/"/>
+      <category term="Chrome" scheme="https://ilovesusu.github.io/categories/Chrome/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="Chrome" scheme="http://ilovesusu.github.io/tags/Chrome/"/>
+      <category term="Chrome" scheme="https://ilovesusu.github.io/tags/Chrome/"/>
     
   </entry>
   
   <entry>
     <title>Debian安装VirtualBox增强工具</title>
-    <link href="http://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
-    <id>http://ilovesusu.github.io/2016/08/22/Debian安装VirtualBox增强工具/</id>
+    <link href="https://ilovesusu.github.io/2016/08/22/Debian%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+    <id>https://ilovesusu.github.io/2016/08/22/Debian安装VirtualBox增强工具/</id>
     <published>2016-08-22T05:50:43.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -611,21 +611,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="安装VirtualBox增强工具" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
+      <category term="安装VirtualBox增强工具" scheme="https://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85VirtualBox%E5%A2%9E%E5%BC%BA%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>新版apt简单使用指南</title>
-    <link href="http://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
-    <id>http://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/</id>
+    <link href="https://ilovesusu.github.io/2016/06/30/%E6%96%B0%E7%89%88apt%E7%AE%80%E5%8D%95%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/"/>
+    <id>https://ilovesusu.github.io/2016/06/30/新版apt简单使用指南/</id>
     <published>2016-06-30T14:14:03.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -689,21 +689,21 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="APT 使用" scheme="http://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/"/>
+      <category term="APT 使用" scheme="https://ilovesusu.github.io/tags/APT-%E4%BD%BF%E7%94%A8/"/>
     
   </entry>
   
   <entry>
     <title>Android 编码规范</title>
-    <link href="http://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
-    <id>http://ilovesusu.github.io/2016/06/29/Android-编码规范/</id>
+    <link href="https://ilovesusu.github.io/2016/06/29/Android-%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+    <id>https://ilovesusu.github.io/2016/06/29/Android-编码规范/</id>
     <published>2016-06-29T14:38:17.000Z</published>
     <updated>2016-11-25T11:53:05.407Z</updated>
     
@@ -744,19 +744,19 @@
     
     </summary>
     
-      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
+      <category term="Android" scheme="https://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
+      <category term="Android" scheme="https://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="编码规范" scheme="http://ilovesusu.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
+      <category term="编码规范" scheme="https://ilovesusu.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/"/>
     
   </entry>
   
   <entry>
     <title>终于，输给了时间</title>
-    <link href="http://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/"/>
-    <id>http://ilovesusu.github.io/2016/06/09/终于，输给了时间/</id>
+    <link href="https://ilovesusu.github.io/2016/06/09/%E7%BB%88%E4%BA%8E%EF%BC%8C%E8%BE%93%E7%BB%99%E4%BA%86%E6%97%B6%E9%97%B4/"/>
+    <id>https://ilovesusu.github.io/2016/06/09/终于，输给了时间/</id>
     <published>2016-06-08T17:07:09.000Z</published>
     <updated>2016-11-25T11:53:05.407Z</updated>
     
@@ -799,21 +799,21 @@
     
     </summary>
     
-      <category term="心情随笔" scheme="http://ilovesusu.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
+      <category term="心情随笔" scheme="https://ilovesusu.github.io/categories/%E5%BF%83%E6%83%85%E9%9A%8F%E7%AC%94/"/>
     
     
-      <category term="爱情" scheme="http://ilovesusu.github.io/tags/%E7%88%B1%E6%83%85/"/>
+      <category term="爱情" scheme="https://ilovesusu.github.io/tags/%E7%88%B1%E6%83%85/"/>
     
-      <category term="友情" scheme="http://ilovesusu.github.io/tags/%E5%8F%8B%E6%83%85/"/>
+      <category term="友情" scheme="https://ilovesusu.github.io/tags/%E5%8F%8B%E6%83%85/"/>
     
-      <category term="随便" scheme="http://ilovesusu.github.io/tags/%E9%9A%8F%E4%BE%BF/"/>
+      <category term="随便" scheme="https://ilovesusu.github.io/tags/%E9%9A%8F%E4%BE%BF/"/>
     
   </entry>
   
   <entry>
     <title>eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</title>
-    <link href="http://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
-    <id>http://ilovesusu.github.io/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/</id>
+    <link href="https://ilovesusu.github.io/2016/06/06/eclipse-svn%E6%8F%92%E4%BB%B6subclipse%E5%AE%89%E8%A3%85%E6%8A%A5Failed-to-load-JavaHL-Library%E9%94%99%E8%AF%AF%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
+    <id>https://ilovesusu.github.io/2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/</id>
     <published>2016-06-06T13:48:17.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -849,25 +849,25 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="eclipse" scheme="http://ilovesusu.github.io/tags/eclipse/"/>
+      <category term="eclipse" scheme="https://ilovesusu.github.io/tags/eclipse/"/>
     
-      <category term="subclipse" scheme="http://ilovesusu.github.io/tags/subclipse/"/>
+      <category term="subclipse" scheme="https://ilovesusu.github.io/tags/subclipse/"/>
     
-      <category term="JavaHL Library" scheme="http://ilovesusu.github.io/tags/JavaHL-Library/"/>
+      <category term="JavaHL Library" scheme="https://ilovesusu.github.io/tags/JavaHL-Library/"/>
     
   </entry>
   
   <entry>
     <title>Android 基础之侧滑菜单的使用</title>
-    <link href="http://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://ilovesusu.github.io/2016/06/02/Android-基础之侧滑菜单的使用/</id>
+    <link href="https://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>https://ilovesusu.github.io/2016/06/02/Android-基础之侧滑菜单的使用/</id>
     <published>2016-06-02T14:01:26.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -946,25 +946,25 @@
     
     </summary>
     
-      <category term="Android" scheme="http://ilovesusu.github.io/categories/Android/"/>
+      <category term="Android" scheme="https://ilovesusu.github.io/categories/Android/"/>
     
     
-      <category term="Android" scheme="http://ilovesusu.github.io/tags/Android/"/>
+      <category term="Android" scheme="https://ilovesusu.github.io/tags/Android/"/>
     
-      <category term="侧滑菜单" scheme="http://ilovesusu.github.io/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/"/>
+      <category term="侧滑菜单" scheme="https://ilovesusu.github.io/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/"/>
     
-      <category term="DrawerLayout" scheme="http://ilovesusu.github.io/tags/DrawerLayout/"/>
+      <category term="DrawerLayout" scheme="https://ilovesusu.github.io/tags/DrawerLayout/"/>
     
-      <category term="SlidingMenu" scheme="http://ilovesusu.github.io/tags/SlidingMenu/"/>
+      <category term="SlidingMenu" scheme="https://ilovesusu.github.io/tags/SlidingMenu/"/>
     
-      <category term="MaterialDrawer" scheme="http://ilovesusu.github.io/tags/MaterialDrawer/"/>
+      <category term="MaterialDrawer" scheme="https://ilovesusu.github.io/tags/MaterialDrawer/"/>
     
   </entry>
   
   <entry>
     <title>Android 四大组件之Activity</title>
-    <link href="http://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/"/>
-    <id>http://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/</id>
+    <link href="https://ilovesusu.github.io/2016/06/01/Android-%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E4%B9%8BActivity/"/>
+    <id>https://ilovesusu.github.io/2016/06/01/Android-四大组件之Activity/</id>
     <published>2016-06-01T13:25:05.000Z</published>
     <updated>2016-11-25T11:53:05.363Z</updated>
     
@@ -977,16 +977,16 @@
     
     </summary>
     
-      <category term="Debian GNU/Linux" scheme="http://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
+      <category term="Debian GNU/Linux" scheme="https://ilovesusu.github.io/categories/Debian-GNU-Linux/"/>
     
     
-      <category term="Debian" scheme="http://ilovesusu.github.io/tags/Debian/"/>
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
     
-      <category term="Testing/Stable" scheme="http://ilovesusu.github.io/tags/Testing-Stable/"/>
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
     
-      <category term="安装QQ" scheme="http://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
+      <category term="安装QQ" scheme="https://ilovesusu.github.io/tags/%E5%AE%89%E8%A3%85QQ/"/>
     
-      <category term="wine" scheme="http://ilovesusu.github.io/tags/wine/"/>
+      <category term="wine" scheme="https://ilovesusu.github.io/tags/wine/"/>
     
   </entry>
   
