@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://ilovesusu.github.io/"/>
-  <updated>2016-11-26T15:58:56.517Z</updated>
+  <updated>2016-11-28T14:45:14.048Z</updated>
   <id>https://ilovesusu.github.io/</id>
   
   <author>
@@ -16,11 +16,74 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Debian 8 安装Shadowsocks-libev</title>
+    <link href="https://ilovesusu.github.io/2016/11/28/Debian-8-%E5%AE%89%E8%A3%85Shadowsocks-libev/"/>
+    <id>https://ilovesusu.github.io/2016/11/28/Debian-8-安装Shadowsocks-libev/</id>
+    <published>2016-11-28T14:24:06.000Z</published>
+    <updated>2016-11-28T14:45:14.048Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>现在我将向您展示如何在Debian 8安装shadowsocks-libev。由于它是用C编写的，所以它消耗非常少的内存，非常适合嵌入式设备和低端盒。<br><a id="more"></a><br>因为Debian8 默认是没有shadowsocks-libev包的。<br>查看所有架构下的<a href="https://packages.debian.org/search?suite=all&amp;arch=any&amp;searchon=names&amp;keywords=shadowsocks-libev" target="_blank" rel="external">shadowsocks-libev</a></p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先，获取GPG公钥，然后用apt-键导入到系统中。</p>
+<blockquote>
+<p>wget <a href="http://shadowsocks.org/debian/1D27208A.gpg" target="_blank" rel="external">http://shadowsocks.org/debian/1D27208A.gpg</a><br>sudo apt-key add 1D27208A.gpg</p>
+</blockquote>
+<p>现在打开/etc/apt/sources.list文件。</p>
+<blockquote>
+<p>sudo vi /etc/apt/sources.list</p>
+</blockquote>
+<p>将下列行放置在文件的结尾。</p>
+<blockquote>
+<p>#Debian 8<br>deb <a href="http://shadowsocks.org/debian" target="_blank" rel="external">http://shadowsocks.org/debian</a> wheezy main</p>
+</blockquote>
+<p>保存并关闭文件。现在更新本地包索引并安装shadowsocks-libev。</p>
+<blockquote>
+<p>sudo apt-get update;sudo apt-get install shadowsocks-libev</p>
+</blockquote>
+<h2 id="配置shadowsocks-libev"><a href="#配置shadowsocks-libev" class="headerlink" title="配置shadowsocks-libev"></a>配置shadowsocks-libev</h2><p>配置文件为：/etc/shadowsocks-libev/config.json，格式说明：</p>
+<blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line">	<span class="attr">"server"</span>:<span class="string">"example.com or X.X.X.X"</span>,</div><div class="line">	<span class="attr">"server_port"</span>:<span class="number">443</span>,</div><div class="line">	<span class="attr">"password"</span>:<span class="string">"password"</span>,</div><div class="line">	<span class="attr">"method"</span>:<span class="string">"rc4-md5"</span>,</div><div class="line">	<span class="attr">"timeout"</span>:<span class="number">60</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>其中：</p>
+<blockquote>
+<p>server：主机IP<br>server_port：服务器监听端口<br>password：密码<br>method：加密方式 默认为table,其他有rc4,rc4-md5,aes-128-cfb, aes-192-cfb, aes-256-cfb,bf-cfb, camellia-128-cfb, camellia-192-cfb,camellia-256-cfb, cast5-cfb, des-cfb</p>
+</blockquote>
+<p>多用户：</p>
+<blockquote>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">&#123;</div><div class="line"> <span class="attr">"server"</span>:<span class="string">"my_server_ip"</span>，</div><div class="line"> <span class="string">"local_address"</span>: <span class="string">"127.0.0.1"</span>,</div><div class="line"> <span class="attr">"local_port"</span>:<span class="number">1080</span>,</div><div class="line">  <span class="attr">"port_password"</span>: &#123;</div><div class="line">     <span class="attr">"8381"</span>: <span class="string">"foobar1"</span>,</div><div class="line">     <span class="attr">"8382"</span>: <span class="string">"foobar2"</span>,</div><div class="line">     <span class="attr">"8383"</span>: <span class="string">"foobar3"</span>,</div><div class="line">     <span class="attr">"8384"</span>: <span class="string">"foobar4"</span></div><div class="line"> &#125;,</div><div class="line"> <span class="attr">"timeout"</span>:<span class="number">300</span>,</div><div class="line"> <span class="attr">"method"</span>:<span class="string">"aes-256-cfb"</span>,</div><div class="line"> <span class="attr">"fast_open"</span>: <span class="literal">false</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</blockquote>
+<p>配置完成以后需要重启服务：</p>
+<blockquote>
+<p>sudo service shadowsocks-libev restart</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;现在我将向您展示如何在Debian 8安装shadowsocks-libev。由于它是用C编写的，所以它消耗非常少的内存，非常适合嵌入式设备和低端盒。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="科学上网" scheme="https://ilovesusu.github.io/categories/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+    
+      <category term="Debian" scheme="https://ilovesusu.github.io/tags/Debian/"/>
+    
+      <category term="Testing/Stable" scheme="https://ilovesusu.github.io/tags/Testing-Stable/"/>
+    
+      <category term="科学上网" scheme="https://ilovesusu.github.io/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/"/>
+    
+      <category term="shadowsocks-libev" scheme="https://ilovesusu.github.io/tags/shadowsocks-libev/"/>
+    
+      <category term="shadowsocks" scheme="https://ilovesusu.github.io/tags/shadowsocks/"/>
+    
+  </entry>
+  
+  <entry>
     <title>开发者Debian里的十八般兵器</title>
     <link href="https://ilovesusu.github.io/2016/11/26/%E5%BC%80%E5%8F%91%E8%80%85Debian%E9%87%8C%E7%9A%84%E5%8D%81%E5%85%AB%E8%88%AC%E5%85%B5%E5%99%A8/"/>
     <id>https://ilovesusu.github.io/2016/11/26/开发者Debian里的十八般兵器/</id>
     <published>2016-11-26T13:23:11.000Z</published>
-    <updated>2016-11-26T15:58:56.517Z</updated>
+    <updated>2016-11-28T15:13:25.655Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>俗话说，工欲善其事，必先利其器，在开发者的世界里，熟练掌握各种辅助工具，可以达到事半功倍，快速提高工作效率的效果。<br><a id="more"></a></p>
 <h2 id="集成开发环境IDE"><a href="#集成开发环境IDE" class="headerlink" title="集成开发环境IDE"></a>集成开发环境IDE</h2><p>集成开发环境一般是集编辑，编译，链接，调试，版本管理和打包发布于一体的大型开发软件。它的特点是功能丰富，上手快，易操作。缺点也显而易见，笨重，运行速度慢，需要更多的CPU，内存资源。</p>
@@ -89,7 +152,24 @@
 <li><p>Freeplane<br><img src="./Freeplane.png" alt="Freeplane"><br>Freeplane是由经典思维导图软件FreeMind的主创人员设计的另外一款同类型工具，Freeplane已由官方汉化，功能比较齐全，相较于FreeMind也毫不逊色。<br><a href="http://www.freeplane.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
 </ul>
-<h2 id="远程链接"><a href="#远程链接" class="headerlink" title="远程链接"></a>远程链接</h2><h2 id="BT-Sync"><a href="#BT-Sync" class="headerlink" title="BT Sync"></a>BT Sync</h2><h2 id="即时聊天"><a href="#即时聊天" class="headerlink" title="即时聊天"></a>即时聊天</h2>]]></content>
+<h2 id="远程链接"><a href="#远程链接" class="headerlink" title="远程链接"></a>远程链接</h2><p>有什么比远程别人帮你解决问题更爽的，有什么比远程办公更装B的！</p>
+<ul>
+<li>AnyDesk<br><img src="./AnyDesk.png" alt="AnyDesk"><br>AnyDesk是一款号称速度最快的免费远程连接/远程桌面控制软件，据说是前 TeamViewer 开发小组人员自立门户的产品，它拥有先进的视频压缩技术 DeskRT， 可轻松穿透防火墙/路由器，实测在电信、移动的跨网宽带环境下，速度确实要比 TeamViewer 和 QQ 流畅。<br><a href="http://anydesk.com/remote-desktop" target="_blank" rel="external">软件主页以及下载地址</a></li>
+</ul>
+<h2 id="网盘-or-Bt-Sync-or-Download"><a href="#网盘-or-Bt-Sync-or-Download" class="headerlink" title="网盘 or Bt Sync or Download"></a>网盘 or Bt Sync or Download</h2><ul>
+<li><p>BT Sync<br><img src="./BT-Sync.png" alt="BT-Sync"><br>BT 下载，大家应该都很熟悉。开发 BT 的技术公司又发明了一个新的玩意，叫做 BT Sync，都是采用 P2P 协议来进行文件传输。简言之，BT Sync是一个文件同步工具，让你的文件不仅能够在自己的各个设备间传输，同时也能让你的文件夹通过加密手段传输给第三方。<br><a href="https://www.resilio.com/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+<li><p>Syncthing<br><img src="./Syncthing.png" alt="Syncthing"><br>Syncthing是一个免费开源的工具，它能在你的各个网络计算机间同步文件/文件夹。它不像其它的同步工具，如BitTorrent Sync和Dropbox那样，它的同步数据是直接从一个系统中直接传输到另一个系统的，并且它是完全开源的，安全且私密的。<br><a href="https://syncthing.net/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+<li><p>Dropbox<br><img src="./Dropbox.png" alt="Dropbox"><br>Dropbox是一款非常好用的免费网络文件同步工具，是Dropbox公司运行的在线存储服务，通过云计算实现因特网上的文件同步，用户可以存储并共享文件和文件夹。Dropbox提供免费和收费服务，Dropbox的收费服务包括Dropbox Pro 和 Dropbox for Business。在不同操作系统下有客户端软件，并且有网页客户端。<br><a href="https://www.dropbox.com/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+<li><p>you-get<br><img src="./you-get.png" alt="you-get"><br>You-Get 乃一小小哒命令行程序，提供便利的方式，下载网络上的富媒体信息。<br><a href="https://you-get.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+</ul>
+<h2 id="即时聊天"><a href="#即时聊天" class="headerlink" title="即时聊天"></a>即时聊天</h2><ul>
+<li>Telegram<br><img src="./Telegram.png" alt="Telegram"><br>Telegram Messenger 是一个跨平台的即时通信软件，它的客户端是自由及开放源代码软件，但是它的服务器是专有软件。用户可以相互交换加密与自析构的消息，以及照片、视频、文件，支持所有的文件类型。官方提供移动端(Android、iOS、Windows Phone)、桌面端(Windows、macOS、Linux)和网页端(官方在线版)应用；同时官方开放应用程序接口，因此会有一些第三方的客户端。<br><a href="https://telegram.org/" target="_blank" rel="external">软件主页以及下载地址</a></li>
+</ul>
+]]></content>
     
     <summary type="html">
     
@@ -952,103 +1032,6 @@
       <category term="subclipse" scheme="https://ilovesusu.github.io/tags/subclipse/"/>
     
       <category term="JavaHL Library" scheme="https://ilovesusu.github.io/tags/JavaHL-Library/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android 基础之侧滑菜单的使用</title>
-    <link href="https://ilovesusu.github.io/2016/06/02/Android-%E5%9F%BA%E7%A1%80%E4%B9%8B%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>https://ilovesusu.github.io/2016/06/02/Android-基础之侧滑菜单的使用/</id>
-    <published>2016-06-02T14:01:26.000Z</published>
-    <updated>2016-11-25T11:53:05.363Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>相信很多朋友都见过可以侧滑的Android应用,比如QQ,知乎,谷歌音乐,CSDN等。这个现在几乎所有流行应用都在使用,今天看看这个是怎么实现的.</p>
-<a id="more"></a>
-<h2 id="DrawerLayout"><a href="#DrawerLayout" class="headerlink" title="DrawerLayout"></a>DrawerLayout</h2><blockquote>
-<p>drawerLayout是Support Library包中实现了侧滑菜单效果的控件，可以说drawerLayout是因为第三方控件如MenuDrawer等的出现之后，google借鉴而出现的产物。drawerLayout分为侧边菜单和主内容区两部分，侧边菜单可以根据手势展开与隐藏（drawerLayout自身特性），主内容区的内容可以随着菜单的点击而变化（这需要使用者自己实现）。</p>
-</blockquote>
-<h3 id="DrawerLayout的使用："><a href="#DrawerLayout的使用：" class="headerlink" title="DrawerLayout的使用："></a>DrawerLayout的使用：</h3><ol>
-<li>直接将DrawerLayout作为根布局，然后其内部第一个View为内容区域，第二个View为左侧菜单，第三个View为右侧侧滑菜单，当前第三个是可选的。</li>
-<li>第一个View的宽高应当设置为match_parent。</li>
-<li>第二、三个View需要设置android:layout_gravity=”left”，和android:layout_gravity=”right”且一搬高度设置为match_parent，宽度为固定值，即侧滑菜单的宽度。</li>
-</ol>
-<p>main.XML代码如下所示：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">android.support.v4.widget.DrawerLayout</span> <span class="attr">xmlns:android</span>=<span class="string">"http://schemas.android.com/apk/res/android"</span></span></div><div class="line">    <span class="attr">xmlns:tools</span>=<span class="string">"http://schemas.android.com/tools"</span></div><div class="line">    <span class="attr">android:id</span>=<span class="string">"@+id/drawer_layout"</span></div><div class="line">    <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">    <span class="attr">android:background</span>=<span class="string">"#004FFF"</span></div><div class="line">    <span class="attr">android:orientation</span>=<span class="string">"vertical"</span></div><div class="line">    <span class="attr">tools:context</span>=<span class="string">"$&#123;relativePackage&#125;.$&#123;activityClass&#125;"</span> &gt;</div><div class="line"><span class="comment">&lt;!--第一个子元素是抽屉没有打开时显示的布局 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:orientation</span>=<span class="string">"horizontal"</span> &gt;</div><div class="line"></div><div class="line">        <span class="tag">&lt;<span class="name">ImageView</span></span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/iv_click"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:src</span>=<span class="string">"@drawable/ic_launcher"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">TextView</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"0dp"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:layout_gravity</span>=<span class="string">"center_vertical"</span></div><div class="line">        <span class="attr">android:layout_weight</span>=<span class="string">"1"</span></div><div class="line">        <span class="attr">android:gravity</span>=<span class="string">"center"</span></div><div class="line">        <span class="attr">android:text</span>=<span class="string">"消息"</span></div><div class="line">        <span class="attr">android:textSize</span>=<span class="string">"20sp"</span> /&gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">ImageView</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span> /&gt;</div><div class="line">    <span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--第二个子元素是抽屉中的内容，即抽屉布局 --&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">LinearLayout</span></span></div><div class="line">        <span class="attr">android:id</span>=<span class="string">"@+id/ll"</span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_gravity</span>=<span class="string">"left"</span></div><div class="line">        <span class="attr">android:background</span>=<span class="string">"#004FFF"</span></div><div class="line">        <span class="attr">android:orientation</span>=<span class="string">"vertical"</span> &gt;</div><div class="line"></div><div class="line">    <span class="tag">&lt;<span class="name">TextView</span></span></div><div class="line">        <span class="attr">android:layout_width</span>=<span class="string">"match_parent"</span></div><div class="line">        <span class="attr">android:layout_height</span>=<span class="string">"wrap_content"</span></div><div class="line">        <span class="attr">android:layout_gravity</span>=<span class="string">"center_vertical"</span></div><div class="line">        <span class="attr">android:gravity</span>=<span class="string">"center"</span></div><div class="line">        <span class="attr">android:padding</span>=<span class="string">"10dp"</span></div><div class="line">        <span class="attr">android:text</span>=<span class="string">"子菜单一"</span></div><div class="line">        <span class="attr">android:textSize</span>=<span class="string">"20sp"</span> /&gt;</div><div class="line"><span class="tag">&lt;/<span class="name">LinearLayout</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">android.support.v4.widget.DrawerLayout</span>&gt;</span></div></pre></td></tr></table></figure></p>
-<h3 id="DrawerLayout常用的一些方法"><a href="#DrawerLayout常用的一些方法" class="headerlink" title="DrawerLayout常用的一些方法:"></a>DrawerLayout常用的一些方法:</h3><ol>
-<li>关闭抽屉: drawerlayout.closeDrawers();</li>
-<li>打开抽屉：drawerlayout.openDrawer(抽屉view);</li>
-<li>设置抽屉的阴影:setDrawerShadow(@DrawableRes int resId, @EdgeGravity int gravity) 如果你的抽屉在左边的话设置成 Gravity.LEFT显示.反之.</li>
-</ol>
-<p>main.XML代码如下所示：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.example.drawerLayout;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.app.Activity;</div><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"><span class="keyword">import</span> android.support.v4.widget.DrawerLayout;</div><div class="line"><span class="keyword">import</span> android.view.Gravity;</div><div class="line"><span class="keyword">import</span> android.view.Menu;</div><div class="line"><span class="keyword">import</span> android.view.MenuItem;</div><div class="line"><span class="keyword">import</span> android.view.View;</div><div class="line"><span class="keyword">import</span> android.view.View.OnClickListener;</div><div class="line"><span class="keyword">import</span> android.view.ViewGroup.LayoutParams;</div><div class="line"><span class="keyword">import</span> android.widget.ImageView;</div><div class="line"><span class="keyword">import</span> android.widget.LinearLayout;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> <span class="keyword">implements</span> <span class="title">OnClickListener</span> </span>&#123;</div><div class="line">	DrawerLayout drawerLayout;</div><div class="line">	ImageView iv_click;</div><div class="line">	LinearLayout ll;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">		<span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">		setContentView(R.layout.activity_main);</div><div class="line">		getActionBar().hide();</div><div class="line">		drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);</div><div class="line">		iv_click = (ImageView) findViewById(R.id.iv_click);</div><div class="line">		ll = (LinearLayout) findViewById(R.id.ll);</div><div class="line"></div><div class="line">		iv_click.setOnClickListener(<span class="keyword">this</span>);</div><div class="line">		<span class="comment">//将侧滑菜单设置为屏幕的三分之二</span></div><div class="line">		LayoutParams layoutParams = ll.getLayoutParams();</div><div class="line">		layoutParams.width = getResources().getDisplayMetrics().widthPixels * <span class="number">2</span> / <span class="number">3</span>;</div><div class="line">		ll.setLayoutParams(layoutParams);</div><div class="line"></div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onClick</span><span class="params">(View v)</span> </span>&#123;</div><div class="line">		<span class="comment">// TODO Auto-generated method stub</span></div><div class="line">		<span class="keyword">switch</span> (v.getId()) &#123;</div><div class="line">		<span class="keyword">case</span> R.id.iv_click:</div><div class="line">        	<span class="comment">//监听 打开抽屉</span></div><div class="line">			drawerLayout.openDrawer(Gravity.LEFT);</div><div class="line">			<span class="keyword">break</span>;</div><div class="line"></div><div class="line">		<span class="keyword">default</span>:</div><div class="line">			<span class="keyword">break</span>;</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h2 id="SlidingMenu"><a href="#SlidingMenu" class="headerlink" title="SlidingMenu"></a>SlidingMenu</h2><blockquote>
-<p>drawerLayout是Support Library包中实现了侧滑菜单效果的侧滑菜单栏，github上有个应用非常广泛的开源库SlidingMenu。很多著名的应用都用了这个开源库。</p>
-</blockquote>
-<p>开源库地址: <a href="https://github.com/jfeinstein10/SlidingMenu" target="_blank" rel="external">SlidingMenu</a></p>
-<p><strong>注</strong>：<strong>SlidingMenu</strong>是一个开源库，而<strong>不是一个完整的项目</strong>，要把它作为<strong>libary</strong>引入到你自己的工程里，简单配置一下就可以实现SlidingMenu的效果。</p>
-<h3 id="SlidingMenu的使用："><a href="#SlidingMenu的使用：" class="headerlink" title="SlidingMenu的使用："></a>SlidingMenu的使用：</h3><p>一、新建一个Android项目，将SlidingMenuLibrary导入新建的Android项目中，步骤如下：<br>1、 右键点击新建的Android项目，然后点击最下方的“Properties”选项；<br>2、 点击弹出对话框之后，在最左侧选择“Android”选项，然后再点击右下方的“Add”按钮；<br>3、 点击后弹出对话框，选中之前导入的SlidingMenuLibrary项目；<br>4、 导入成功之后会在Android的引用包中出现一个slidingmenulibrary.jar包；</p>
-<p>注意：<br>有个地方需要特别注意：在新建完Android项目之后，较新的Eclipse版本都会在Android目录下 生成一个libs的文件夹，里面会有一个android-support-v4.jar的jar包，这个jar一定要删掉，否则运行程序的时候会出现异常，提示是找不到类的异常。最后发现出现异常的原因是因为在导入slidingmenulibrary类库的时候，这个类库里面本身就包含了android-support-v4.jar的jar包，所以运行的时候就会出现异常，系统不知道去调用哪个路径的下的包，所以程序崩溃，提示找不到类。<br>二、使用SlidingMenu开源库开发：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">package</span> com.example.sildingmenu;</div><div class="line"></div><div class="line"><span class="keyword">import</span> android.app.Activity;</div><div class="line"><span class="keyword">import</span> android.os.Bundle;</div><div class="line"></div><div class="line"><span class="keyword">import</span> com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;</div><div class="line"></div><div class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MainActivity</span> <span class="keyword">extends</span> <span class="title">Activity</span> </span>&#123;</div><div class="line"></div><div class="line">    <span class="keyword">private</span> SlidingMenu slidMenu;</div><div class="line"></div><div class="line">	<span class="meta">@Override</span></div><div class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">onCreate</span><span class="params">(Bundle savedInstanceState)</span> </span>&#123;</div><div class="line">        <span class="keyword">super</span>.onCreate(savedInstanceState);</div><div class="line">        setContentView(R.layout.activity_main);</div><div class="line">        slidMenu = <span class="keyword">new</span> SlidingMenu(<span class="keyword">this</span>);</div><div class="line">        slidMenu.setMode(SlidingMenu.LEFT);</div><div class="line">        slidMenu.setMenu(R.layout.asdf);</div><div class="line">        slidMenu.setTouchModeAbove(SlidingMenu.TOUCHMODE_MARGIN);</div><div class="line">        slidMenu.setTouchModeBehind(SlidingMenu.TOUCHMODE_MARGIN);</div><div class="line">        slidMenu.setBehindWidth(<span class="number">300</span>);</div><div class="line">        slidMenu.attachToActivity(<span class="keyword">this</span>, SlidingMenu.SLIDING_CONTENT);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-<h3 id="SlidingMenu常用的一些方法"><a href="#SlidingMenu常用的一些方法" class="headerlink" title="SlidingMenu常用的一些方法:"></a>SlidingMenu常用的一些方法:</h3><table>
-<thead>
-<tr>
-<th>方法名称</th>
-<th>介绍</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>slidMenu.setShadowWidth(10);</td>
-<td>设置阴影图片的宽度</td>
-</tr>
-<tr>
-<td>slidMenu.setShadowWidth(10);</td>
-<td>设置阴影图片</td>
-</tr>
-<tr>
-<td>menu.toggle();</td>
-<td>动态判断自动关闭或开启SlidingMenu</td>
-</tr>
-<tr>
-<td>menu.showMenu();</td>
-<td>显示SlidingMenu</td>
-</tr>
-<tr>
-<td>menu.showContent();</td>
-<td>显示内容</td>
-</tr>
-<tr>
-<td>menu.setOnOpenListener(onOpenListener);</td>
-<td>监听slidingmenu打开</td>
-</tr>
-<tr>
-<td>menu.OnCloseListener(OnCloseListener);</td>
-<td>监听slidingmenu关闭时事件</td>
-</tr>
-<tr>
-<td>menu.OnClosedListener(OnClosedListener);</td>
-<td>监听slidingmenu关闭后事件</td>
-</tr>
-</tbody>
-</table>
-<h2 id="MaterialDrawer"><a href="#MaterialDrawer" class="headerlink" title="MaterialDrawer"></a>MaterialDrawer</h2><p>:以后添加</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;简述&quot;&gt;&lt;a href=&quot;#简述&quot; class=&quot;headerlink&quot; title=&quot;简述&quot;&gt;&lt;/a&gt;简述&lt;/h2&gt;&lt;p&gt;相信很多朋友都见过可以侧滑的Android应用,比如QQ,知乎,谷歌音乐,CSDN等。这个现在几乎所有流行应用都在使用,今天看看这个是怎么实现的.&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Android" scheme="https://ilovesusu.github.io/categories/Android/"/>
-    
-    
-      <category term="Android" scheme="https://ilovesusu.github.io/tags/Android/"/>
-    
-      <category term="侧滑菜单" scheme="https://ilovesusu.github.io/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/"/>
-    
-      <category term="DrawerLayout" scheme="https://ilovesusu.github.io/tags/DrawerLayout/"/>
-    
-      <category term="SlidingMenu" scheme="https://ilovesusu.github.io/tags/SlidingMenu/"/>
-    
-      <category term="MaterialDrawer" scheme="https://ilovesusu.github.io/tags/MaterialDrawer/"/>
     
   </entry>
   
