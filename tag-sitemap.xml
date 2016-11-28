@@ -30,13 +30,6 @@
     </url>
 
     <url>
-        <loc>https://ilovesusu.github.io/tags/SQLite/</loc>
-        <lastmod>2016-11-25T11:53:05.363Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://ilovesusu.github.io/tags/%E4%BE%A7%E6%BB%91%E8%8F%9C%E5%8D%95/</loc>
         <lastmod>2016-11-25T11:53:05.363Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -59,6 +52,13 @@
 
     <url>
         <loc>https://ilovesusu.github.io/tags/MaterialDrawer/</loc>
+        <lastmod>2016-11-25T11:53:05.363Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://ilovesusu.github.io/tags/SQLite/</loc>
         <lastmod>2016-11-25T11:53:05.363Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -205,14 +205,14 @@
     </url>
 
     <url>
-        <loc>https://ilovesusu.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
+        <loc>https://ilovesusu.github.io/tags/Chrome/</loc>
         <lastmod>2016-11-25T11:53:05.407Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://ilovesusu.github.io/tags/Chrome/</loc>
+        <loc>https://ilovesusu.github.io/tags/%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83/</loc>
         <lastmod>2016-11-25T11:53:05.407Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
@@ -290,14 +290,14 @@
 
     <url>
         <loc>https://ilovesusu.github.io/tags/Debian/</loc>
-        <lastmod>2016-11-28T15:13:25.655Z</lastmod>
+        <lastmod>2016-11-28T15:17:02.823Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://ilovesusu.github.io/tags/Testing-Stable/</loc>
-        <lastmod>2016-11-28T15:13:25.655Z</lastmod>
+        <lastmod>2016-11-28T15:17:02.823Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>

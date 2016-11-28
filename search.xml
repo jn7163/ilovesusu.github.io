@@ -123,7 +123,7 @@
 </li>
 <li><p>Dropbox<br><img src="./Dropbox.png" alt="Dropbox"><br>Dropbox是一款非常好用的免费网络文件同步工具，是Dropbox公司运行的在线存储服务，通过云计算实现因特网上的文件同步，用户可以存储并共享文件和文件夹。Dropbox提供免费和收费服务，Dropbox的收费服务包括Dropbox Pro 和 Dropbox for Business。在不同操作系统下有客户端软件，并且有网页客户端。<br><a href="https://www.dropbox.com/" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
-<li><p>you-get<br><img src="./you-get.png" alt="you-get"><br>You-Get 乃一小小哒命令行程序，提供便利的方式，下载网络上的富媒体信息。<br><a href="https://you-get.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+<li><p>you-get<br>You-Get 乃一小小哒命令行程序，提供便利的方式，下载网络上的富媒体信息。<br><a href="https://you-get.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
 </ul>
 <h2 id="即时聊天"><a href="#即时聊天" class="headerlink" title="即时聊天"></a>即时聊天</h2><ul>
@@ -1011,12 +1011,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[标签]]></title>
-      <url>https://ilovesusu.github.io/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[关于&留言板]]></title>
       <url>https://ilovesusu.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
@@ -1043,6 +1037,12 @@
 <li>开发工具: Eclipse,Android studio,Vim</li>
 </ul>
 <div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签]]></title>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
