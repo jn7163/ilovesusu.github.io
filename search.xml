@@ -1011,6 +1011,12 @@
     </entry>
     
     <entry>
+      <title><![CDATA[标签]]></title>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于&留言板]]></title>
       <url>https://ilovesusu.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
@@ -1037,12 +1043,6 @@
 <li>开发工具: Eclipse,Android studio,Vim</li>
 </ul>
 <div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签]]></title>
-      <url>https://ilovesusu.github.io/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
