@@ -15,16 +15,19 @@
 
 
 
-<meta name="description" content="简述我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.">
+<meta name="description" content="二次完善与2017年 02月 14日 星期二 21:34:57 CST
+简述经过又一段时间的查阅文章,真是断断续续搞了n久,不过终于将驱动这块搞定了,妈妈再也不用担心我的Debian黑屏了.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Debian 真丶NvidiaGraphicsDrivers安装">
 <meta property="og:url" content="https://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/index.html">
 <meta property="og:site_name" content="Susu的博客">
-<meta property="og:description" content="简述我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.">
-<meta property="og:updated_time" content="2016-11-25T14:53:23.648Z">
+<meta property="og:description" content="二次完善与2017年 02月 14日 星期二 21:34:57 CST
+简述经过又一段时间的查阅文章,真是断断续续搞了n久,不过终于将驱动这块搞定了,妈妈再也不用担心我的Debian黑屏了.">
+<meta property="og:updated_time" content="2017-02-14T15:36:18.240Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Debian 真丶NvidiaGraphicsDrivers安装">
-<meta name="twitter:description" content="简述我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.">
+<meta name="twitter:description" content="二次完善与2017年 02月 14日 星期二 21:34:57 CST
+简述经过又一段时间的查阅文章,真是断断续续搞了n久,不过终于将驱动这块搞定了,妈妈再也不用担心我的Debian黑屏了.">
 
 <link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
@@ -331,18 +334,34 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>我查了不少文章,断断续续搞了n久,终于算是将驱动这搞定了,妈妈再也不用担心我的Debian黑屏了.<br><a id="more"></a><br>注意，我是标题党，这实际上是一篇intel+nvidia安装显卡驱动</p>
+        <p><div style="color:#F00">二次完善与2017年 02月 14日 星期二 21:34:57 CST</div></p>
+<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>经过又一段时间的查阅文章,真是断断续续搞了n久,不过终于将驱动这块搞定了,妈妈再也不用担心我的Debian黑屏了.<br><a id="more"></a></p>
+<h2 id="预备知识"><a href="#预备知识" class="headerlink" title="预备知识"></a>预备知识</h2><p>###关于单显卡和双显卡</p>
+<ul>
+<li>笔记本<strong>双</strong>显卡：指笔记本拥有一个独立显卡和一个cpu集成的核心显卡，两个显卡可以通过系统切换使用，一般使用核心显卡相对节能，适合办公上网等。使用独立显卡性能较高，适合游戏和作图。</li>
+<li>笔记本<strong>单</strong>显卡：指笔记本只有一个独立显卡，或只有一个主板板载集成显卡，或只有一个cpu集成的核心显卡。不能进行显卡切换。</li>
+</ul>
+<p>###关于 nouveau 和 nvidia驱动</p>
+<ul>
+<li>nouveau：是一个自由及开放源代码显卡驱动程序，是为Nvidia的显示卡所编写，此驱动程序是由一群独立的软件工程师所编写，Nvidia的员工也提供了少许帮助。简而言之就是开源驱动。</li>
+<li>nvidia驱动：通常是指有NVIDIA官方提供的NVIDIA显卡驱动。</li>
+</ul>
+<h3 id="目前linux下有三种optimus的实现"><a href="#目前linux下有三种optimus的实现" class="headerlink" title="目前linux下有三种optimus的实现"></a>目前linux下有三种optimus的实现</h3><ol>
+<li>nouveau-only: PRIME GPU offloading using nouveau</li>
+<li>nvidia-only: nvidia’s more recent implementation, also packaged as nvidia-prime in Ubuntu</li>
+<li>nouveau or nvidia: bumblebee</li>
+</ol>
 <h2 id="新手误解"><a href="#新手误解" class="headerlink" title="新手误解"></a>新手误解</h2><ol>
 <li>我是否需要为我的笔记本/台式机安装Nvidia驱动？<blockquote>
 <p>如果是双显卡，不是用Debian作图形，游戏等工作，实际上是不需要安装Nvidia的驱动的。</p>
 </blockquote>
 </li>
 <li>关于对NvidiaGraphicsDrivers Wiki的误解。<blockquote>
-<p>这个wiki是讲解怎么安装Nvidia的驱动的，并不是双显卡。</p>
+<p>这个wiki是讲解怎么安装Nvidia的驱动的（单显卡中的一种），并不是双显卡。</p>
 </blockquote>
 </li>
-<li>是不是Debian已经自动安装好了Nvidia驱动呢?<blockquote>
-<p>执行lspci -vv 就能看到了。<br>例如看到这样的就说明Debian已经为你安装了开源的nouveau驱动。<br>Kernel driver in use: nouveau<br>Kernel modules: nouveau</p>
+<li>是不是Debian已经自动安装好了Nvidia开源驱动（nouveau）呢?<blockquote>
+<p>执行lspci -v 就能看到了。<br>例如看到这样的就说明Debian已经为你安装了开源的nouveau驱动。<br>Kernel driver in use: nouveau<br>Kernel modules: nouveau</p>
 </blockquote>
 </li>
 </ol>
@@ -350,7 +369,8 @@
 <blockquote>
 <p>sudo apt-get purge nvidia*<br>sudo rm /etc/X11/xorg.conf</p>
 </blockquote>
-<h2 id="双显卡切换的解决方案"><a href="#双显卡切换的解决方案" class="headerlink" title="双显卡切换的解决方案"></a>双显卡切换的解决方案</h2><h3 id="bumblebee简述"><a href="#bumblebee简述" class="headerlink" title="bumblebee简述"></a>bumblebee简述</h3><p>Bumblebee旨在为NVIDIA Optimus笔记本电脑提供GNU / Linux发行版的支持。使用Bumblebee，您可以使用NVIDIA卡渲染,使用Intel卡显示图形。</p>
+<h2 id="双显卡切换的解决方案"><a href="#双显卡切换的解决方案" class="headerlink" title="双显卡切换的解决方案"></a>双显卡切换的解决方案</h2><h3 id="Bumblebee简述"><a href="#Bumblebee简述" class="headerlink" title="Bumblebee简述"></a>Bumblebee简述</h3><p>Bumblebee旨在为NVIDIA Optimus笔记本电脑提供GNU / Linux发行版的支持。使用Bumblebee，您可以使用NVIDIA卡渲染,使用Intel卡显示图形。</p>
+<p>Bumblebee，开机加载的是intel的驱动，程序默认也都是用intel的集显，如果需要用独显要用optirun运行程序，这样能做到最大程度的提高电池续航能力。</p>
 <h3 id="安装bumblebee"><a href="#安装bumblebee" class="headerlink" title="安装bumblebee"></a>安装bumblebee</h3><p>其实很简单，<a href="https://wiki.debian.org/Bumblebee#Power_Management" target="_blank" rel="external">see it</a><br>添加32位支持（如果是64位系统的话）</p>
 <blockquote>
 <p>sudo dpkg –add-architecture i386</p>
@@ -358,11 +378,7 @@
 <p>个人怀疑一部分安装完后黑屏的情况可能和没有执行这一步有关。</p>
 <p>更新源,安装bumblebee</p>
 <blockquote>
-<p>sudo apt-get update<br>sudo apt-get install bumblebee primus primus-libs:i386</p>
-</blockquote>
-<p>如果要运行闭源驱动的话，进行下面一步，如果想用nouveau开源驱动的话，请跳过这步。</p>
-<blockquote>
-<p>sudo apt-get bumblebee-nvidia</p>
+<p>sudo apt-get update<br>sudo apt-get install bumblebee-nvidia primus primus-libs:i386</p>
 </blockquote>
 <h3 id="使用bumblebee"><a href="#使用bumblebee" class="headerlink" title="使用bumblebee"></a>使用bumblebee</h3><p>要在终端中运行离散NVIDIA卡运行应用程序：</p>
 <blockquote>
@@ -376,6 +392,11 @@
 <blockquote>
 <p>$ optirun –help</p>
 </blockquote>
+<h3 id="在Steam中使用bumblebee"><a href="#在Steam中使用bumblebee" class="headerlink" title="在Steam中使用bumblebee"></a>在Steam中使用bumblebee</h3><ol>
+<li>从Steam客户端的“库”页面中选择要使用Nvidia显卡运行的游戏，右键单击并选择“属性”。</li>
+<li>单击设置启动选项按钮，并为命令行指定primusrun ％command％。</li>
+<li>保存您的更改。此方法允许您选择在每个游戏基础上使用离散NVidia GPU。</li>
+</ol>
 
       
     </div>
@@ -387,7 +408,7 @@
         <p><span>本文标题:</span><a href="">Debian 真丶NvidiaGraphicsDrivers安装</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">Susu</a></p>
         <p><span>发布时间:</span>2016-08-25, 15:58:48</p>
-        <p><span>最后更新:</span>2016-11-25, 22:53:23</p>
+        <p><span>最后更新:</span>2017-02-14, 23:36:18</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="" title="Debian 真丶NvidiaGraphicsDrivers安装">https://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/</a>
             <span class="copy-path" data-clipboard-text="原文: https://ilovesusu.github.io/2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -423,7 +444,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-number">1.</span> <span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新手误解"><span class="toc-number">2.</span> <span class="toc-text">新手误解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑屏解决方案-写在前面"><span class="toc-number">3.</span> <span class="toc-text">黑屏解决方案(写在前面)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#双显卡切换的解决方案"><span class="toc-number">4.</span> <span class="toc-text">双显卡切换的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#bumblebee简述"><span class="toc-number">4.1.</span> <span class="toc-text">bumblebee简述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装bumblebee"><span class="toc-number">4.2.</span> <span class="toc-text">安装bumblebee</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用bumblebee"><span class="toc-number">4.3.</span> <span class="toc-text">使用bumblebee</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简述"><span class="toc-number">1.</span> <span class="toc-text">简述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#预备知识"><span class="toc-number">2.</span> <span class="toc-text">预备知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#目前linux下有三种optimus的实现"><span class="toc-number">2.1.</span> <span class="toc-text">目前linux下有三种optimus的实现</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#新手误解"><span class="toc-number">3.</span> <span class="toc-text">新手误解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#黑屏解决方案-写在前面"><span class="toc-number">4.</span> <span class="toc-text">黑屏解决方案(写在前面)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#双显卡切换的解决方案"><span class="toc-number">5.</span> <span class="toc-text">双显卡切换的解决方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Bumblebee简述"><span class="toc-number">5.1.</span> <span class="toc-text">Bumblebee简述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装bumblebee"><span class="toc-number">5.2.</span> <span class="toc-text">安装bumblebee</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#使用bumblebee"><span class="toc-number">5.3.</span> <span class="toc-text">使用bumblebee</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在Steam中使用bumblebee"><span class="toc-number">5.4.</span> <span class="toc-text">在Steam中使用bumblebee</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -526,7 +547,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2016 Susu
+                2016-2017 Susu
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
