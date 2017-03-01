@@ -7,21 +7,40 @@
       <title><![CDATA[Debian 8 安装Shadowsocks-libev]]></title>
       <url>https://ilovesusu.github.io/2016/11/28/Debian-8-%E5%AE%89%E8%A3%85Shadowsocks-libev/</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>现在我将向您展示如何在Debian 8安装shadowsocks-libev。由于它是用C编写的，所以它消耗非常少的内存，非常适合嵌入式设备和低端盒。<br><a id="more"></a><br>因为Debian8 默认是没有shadowsocks-libev包的。<br>查看所有架构下的<a href="https://packages.debian.org/search?suite=all&amp;arch=any&amp;searchon=names&amp;keywords=shadowsocks-libev" target="_blank" rel="external">shadowsocks-libev</a></p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>首先，获取GPG公钥，然后用apt-键导入到系统中。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><strong>听老大说shadowsocks.org 提供的 deb 源严重过时了，最好不要用。建议修改。</strong>。</p>
+<p><del>首先，获取GPG公钥，然后用apt-键导入到系统中。</del></p>
 <blockquote>
 <p>wget <a href="http://shadowsocks.org/debian/1D27208A.gpg" target="_blank" rel="external">http://shadowsocks.org/debian/1D27208A.gpg</a><br>sudo apt-key add 1D27208A.gpg</p>
 </blockquote>
-<p>现在打开/etc/apt/sources.list文件。</p>
+<p><del>现在打开/etc/apt/sources.list文件。</del></p>
 <blockquote>
 <p>sudo vi /etc/apt/sources.list</p>
 </blockquote>
-<p>将下列行放置在文件的结尾。</p>
+<p><del>将下列行放置在文件的结尾。</del></p>
 <blockquote>
 <p>#Debian 8<br>deb <a href="http://shadowsocks.org/debian" target="_blank" rel="external">http://shadowsocks.org/debian</a> wheezy main</p>
 </blockquote>
-<p>保存并关闭文件。现在更新本地包索引并安装shadowsocks-libev。</p>
+<p><del>保存并关闭文件。现在更新本地包索引并安装shadowsocks-libev。</del></p>
+<p></p><p style="color:red;font-size:36px">看这里</p><p></p>
 <blockquote>
-<p>sudo apt-get update;sudo apt-get install shadowsocks-libev</p>
+<p>sudo apt-get update;sudo apt-get install shadowsocks-libev~~</p>
+</blockquote>
+<p>所以，现在更新新的办法，就是使用Debian Backports。<br>切换为root并且使用你最顺手的编辑器打开文件 /etc/apt/sources.list :</p>
+<blockquote>
+<p>susu@debian:~$ su<br>Password:<br>debian:/home/human# nano /etc/apt/sources.list</p>
+</blockquote>
+<p>增加以下几行:</p>
+<blockquote>
+<p># Backports repository<br>deb <a href="http://backports.debian.org/debian-backports" target="_blank" rel="external">http://backports.debian.org/debian-backports</a> squeeze-backports main contrib non-free</p>
+</blockquote>
+<p>如果你是开源软件的狂热爱好者,你可能会想要移除 contrib 和 non-free 两个部分</p>
+<p>既然你已经增加了软件库, 更新APT的缓存来包含在backports目录列表中的可用软件:</p>
+<blockquote>
+<p>debian:/home/susu# apt-get update</p>
+</blockquote>
+<p>然后就直接安装：</p>
+<blockquote>
+<p>apt-get install shadowsocks-libev</p>
 </blockquote>
 <h2 id="配置shadowsocks-libev"><a href="#配置shadowsocks-libev" class="headerlink" title="配置shadowsocks-libev"></a>配置shadowsocks-libev</h2><p>配置文件为：/etc/shadowsocks-libev/config.json，格式说明：</p>
 <blockquote>
@@ -1061,6 +1080,78 @@
       <title><![CDATA[标签]]></title>
       <url>https://ilovesusu.github.io/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[心爱的书籍]]></title>
+      <url>https://ilovesusu.github.io/Debian/index.html</url>
+      <content type="html"><![CDATA[<p>读书是通往梦想的一个途径，读一本好书，让我们得以明净如水，开阔视野，丰富阅历，益于人生。人一生就是一条路，在这条路上的跋涉痕迹成为我们每个人一生唯一的轨迹，此路不可能走第二次，而在人生的道路上，我们所见的风景是有限的。书籍就是望远镜，书籍就是一盏明灯，让我们看得更远、更清晰。</p>
+<blockquote>
+<p>“书籍是人类进步的阶梯.”——这是高尔基说过的一句名言。每个人都想进步,也在不断的进步.一本好书，可以让你少走很多弯路，所以多读读下面推荐的书籍吧！</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">书籍</th>
+<th style="text-align:center">书籍</th>
+<th style="text-align:center">书籍</th>
+<th style="text-align:center">书籍</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="./index/debian-book-hb.9.png" alt=""></td>
+<td style="text-align:center"><img src="./index/hacker.png" alt=""></td>
+<td style="text-align:center"><img src="./index/jqqd.png" alt=""></td>
+<td style="text-align:center"><img src="./index/jqqd.png" alt=""></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="./book/Debian入门到精通/index.html">debian入门到精通</a></td>
+<td style="text-align:center"><a href="./book/我是一个黑客/index.html">我是一个黑客</a></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<blockquote>
+<p>故事情节紧凑、逻辑清晰耐人寻味、影片的开篇即可吸引你继续往下观看，看后会有意犹未尽的感觉，经典电影的灵魂是一部电影可以开启一条你从没走过或思考过的路，犹如一本好书，回味悠长。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">影视</th>
+<th style="text-align:center">影视</th>
+<th style="text-align:center">影视</th>
+<th style="text-align:center">影视</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><img src="./index/3idiots.jpg" alt=""></td>
+<td style="text-align:center"><img src="./index/jqqd.png" alt=""></td>
+<td style="text-align:center"><img src="./index/jqqd.png" alt=""></td>
+<td style="text-align:center"><img src="./index/jqqd.png" alt=""></td>
+</tr>
+<tr>
+<td style="text-align:center"><a href="https://movie.douban.com/subject/3793023/" target="_blank" rel="external">三傻大闹宝莱坞</a></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+<tr>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+]]></content>
     </entry>
     
   

@@ -7,6 +7,13 @@
     </url>
     
     <url>
+        <loc>https://ilovesusu.github.io/Debian/</loc>
+        <lastmod>2017-03-01T14:17:04.370Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
         <loc>https://ilovesusu.github.io/about/</loc>
         <lastmod>2016-08-22T11:15:34.410Z</lastmod>
         <changefreq>weekly</changefreq>
