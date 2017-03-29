@@ -304,7 +304,7 @@
     <link href="https://ilovesusu.github.io/2016/10/27/Eclipse-%E6%8F%90%E7%A4%BA%E6%A1%86%E8%83%8C%E6%99%AF%E8%89%B2%E9%BB%91%E8%89%B2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     <id>https://ilovesusu.github.io/2016/10/27/Eclipse-提示框背景色黑色解决方案/</id>
     <published>2016-10-27T09:12:42.000Z</published>
-    <updated>2016-11-25T12:28:08.567Z</updated>
+    <updated>2017-03-29T05:12:22.404Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>Debian下Eclipse提示框背景色为黑色看起来很不舒服，这是因为Eclipse默认使用系统的主题Ambiance。<br><a id="more"></a><br><img src="./eclipse-black-background.jpg" alt=""></p>
 <h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>其实出现这种问题解决起来也很容易，只需要换一个gtk2的主题就能搞定。</p>
@@ -314,6 +314,10 @@
 <p>有了这两个包，只需要运行gtk-theme-switch随便选择一个主题就可以解决黑主题的问题了，但是随便选择的有可能不是很美观，所以可以选择多次尝试调整。</p>
 <p>调整好以后是这样的。</p>
 <p><img src="./eclipse-good-background.png" alt=""></p>
+<p>#<font color="red">注意</font><br>Please note, this issue has been resolved in Eclipse as of 8th November 2016. To have this fixed, please download one of the latest integration builds: <a href="http://download.eclipse.org/eclipse/downloads/" target="_blank" rel="external">http://download.eclipse.org/eclipse/downloads/</a><br>(The maintenance builds don’t have the patch at the time of writing 2016-11Nov-09Wed).</p>
+<p>I wrote a patch that introduced a new preference in Eclipse “Information Background/Text” under General -&gt; Appearance -&gt; Colors and Fonts. This preference generates the correct color on Linux/Gtk (White background, black text).<br>See: Bug 505738 – Define a information hover color which JDT, CDT or others can use <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=505738" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=505738</a></p>
+<p>Subsequently I made Javadoc colors inherit it’s color from that preference. See:<br>Bug 501742 – Default Javadoc text and background color should use colors consistent with Java editor background/foreground. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=501742" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=501742</a></p>
+<p>As an added bonus, it also works on the Dark Theme:<br>Bug 505851 – [Dark Theme] Style the HOVER_ colors for the dark theme <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=505851" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=505851</a></p>
 ]]></content>
     
     <summary type="html">

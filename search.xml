@@ -220,6 +220,10 @@
 <p>有了这两个包，只需要运行gtk-theme-switch随便选择一个主题就可以解决黑主题的问题了，但是随便选择的有可能不是很美观，所以可以选择多次尝试调整。</p>
 <p>调整好以后是这样的。</p>
 <p><img src="./eclipse-good-background.png" alt=""></p>
+<p>#<font color="red">注意</font><br>Please note, this issue has been resolved in Eclipse as of 8th November 2016. To have this fixed, please download one of the latest integration builds: <a href="http://download.eclipse.org/eclipse/downloads/" target="_blank" rel="external">http://download.eclipse.org/eclipse/downloads/</a><br>(The maintenance builds don’t have the patch at the time of writing 2016-11Nov-09Wed).</p>
+<p>I wrote a patch that introduced a new preference in Eclipse “Information Background/Text” under General -&gt; Appearance -&gt; Colors and Fonts. This preference generates the correct color on Linux/Gtk (White background, black text).<br>See: Bug 505738 – Define a information hover color which JDT, CDT or others can use <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=505738" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=505738</a></p>
+<p>Subsequently I made Javadoc colors inherit it’s color from that preference. See:<br>Bug 501742 – Default Javadoc text and background color should use colors consistent with Java editor background/foreground. <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=501742" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=501742</a></p>
+<p>As an added bonus, it also works on the Dark Theme:<br>Bug 505851 – [Dark Theme] Style the HOVER_ colors for the dark theme <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=505851" target="_blank" rel="external">https://bugs.eclipse.org/bugs/show_bug.cgi?id=505851</a></p>
 ]]></content>
     </entry>
     
@@ -1048,6 +1052,41 @@
     </entry>
     
     <entry>
+      <title><![CDATA[关于&留言板]]></title>
+      <url>https://ilovesusu.github.io/about/index.html</url>
+      <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
+<li>姓名：XXX</li>
+<li>网名：Susu</li>
+<li>星座：摩羯座</li>
+<li>GitHub：github.com/dxg74120</li>
+<li>Email：0x73757375@gmail.com</li>
+</ul>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+<p>&emsp;&emsp;本人学识渊博、经验丰富，代码风骚、效率恐怖，c/c++、java、php无不精通，熟练掌握各种框架，深山苦练20余年，一天只睡4小时，千里之外定位问题，瞬息之间修复上线。<br>&emsp;&emsp;身体强壮、健步如飞，可连续编程100小时不休息，讨论技术方案5小时不喝水，上至带项目、出方案，下至盗账号、威胁pm，啥都能干。泡面矿泉水已备好，学校不支持编程已辍学，家人不支持编程已断绝关系，老婆不支持编程已离婚，小孩不支持编程已送孤儿院，备用电源万兆光纤永不断电断网，门口已埋雷无人打扰。</p>
+</blockquote>
+<h2 id="爱好"><a href="#爱好" class="headerlink" title="爱好"></a>爱好</h2><ul>
+<li>撸代码，网络安全方面，Linux方面都是十足喜欢。</li>
+<li>看电影,看美剧，听音乐，唱歌(Rap),写只有自己看的懂的文章。</li>
+<li>en,还有LOL</li>
+</ul>
+<h2 id="技术列表"><a href="#技术列表" class="headerlink" title="技术列表"></a>技术列表</h2><ul>
+<li>熟练语言: Java(Android方向),Shell,</li>
+<li>了解语言: Html,Css3,Javascript,C#</li>
+<li>数据库: MySQL,SQLite,SQL server</li>
+<li>版本管理: Git</li>
+<li>开发平台: Debian,Win7</li>
+<li>开发工具: Eclipse,Android studio,Vim</li>
+</ul>
+<div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签]]></title>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[心爱的书籍]]></title>
       <url>https://ilovesusu.github.io/Debian/index.html</url>
       <content type="html"><![CDATA[<p>读书是通往梦想的一个途径，读一本好书，让我们得以明净如水，开阔视野，丰富阅历，益于人生。人一生就是一条路，在这条路上的跋涉痕迹成为我们每个人一生唯一的轨迹，此路不可能走第二次，而在人生的道路上，我们所见的风景是有限的。书籍就是望远镜，书籍就是一盏明灯，让我们看得更远、更清晰。</p>
@@ -1117,41 +1156,6 @@
 </tbody>
 </table>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于&留言板]]></title>
-      <url>https://ilovesusu.github.io/about/index.html</url>
-      <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
-<li>姓名：XXX</li>
-<li>网名：Susu</li>
-<li>星座：摩羯座</li>
-<li>GitHub：github.com/dxg74120</li>
-<li>Email：0x73757375@gmail.com</li>
-</ul>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
-<p>&emsp;&emsp;本人学识渊博、经验丰富，代码风骚、效率恐怖，c/c++、java、php无不精通，熟练掌握各种框架，深山苦练20余年，一天只睡4小时，千里之外定位问题，瞬息之间修复上线。<br>&emsp;&emsp;身体强壮、健步如飞，可连续编程100小时不休息，讨论技术方案5小时不喝水，上至带项目、出方案，下至盗账号、威胁pm，啥都能干。泡面矿泉水已备好，学校不支持编程已辍学，家人不支持编程已断绝关系，老婆不支持编程已离婚，小孩不支持编程已送孤儿院，备用电源万兆光纤永不断电断网，门口已埋雷无人打扰。</p>
-</blockquote>
-<h2 id="爱好"><a href="#爱好" class="headerlink" title="爱好"></a>爱好</h2><ul>
-<li>撸代码，网络安全方面，Linux方面都是十足喜欢。</li>
-<li>看电影,看美剧，听音乐，唱歌(Rap),写只有自己看的懂的文章。</li>
-<li>en,还有LOL</li>
-</ul>
-<h2 id="技术列表"><a href="#技术列表" class="headerlink" title="技术列表"></a>技术列表</h2><ul>
-<li>熟练语言: Java(Android方向),Shell,</li>
-<li>了解语言: Html,Css3,Javascript,C#</li>
-<li>数据库: MySQL,SQLite,SQL server</li>
-<li>版本管理: Git</li>
-<li>开发平台: Debian,Win7</li>
-<li>开发工具: Eclipse,Android studio,Vim</li>
-</ul>
-<div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签]]></title>
-      <url>https://ilovesusu.github.io/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
