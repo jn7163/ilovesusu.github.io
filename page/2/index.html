@@ -306,8 +306,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/"></span>
         
     </a>
 
@@ -384,8 +384,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/"></span>
         
     </a>
 
@@ -461,8 +461,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/24/Android-Studio中好用的插件收集-陆续更新/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/24/Android-Studio中好用的插件收集-陆续更新/"></span>
         
     </a>
 
@@ -538,8 +538,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/22/Debian下可用的翻墙工具教程/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/22/Debian下可用的翻墙工具教程/"></span>
         
     </a>
 
@@ -615,8 +615,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/22/Chrome中好用的插件收集-陆续更新/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/22/Chrome中好用的插件收集-陆续更新/"></span>
         
     </a>
 
@@ -692,8 +692,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/22/Debian安装VirtualBox增强工具/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/22/Debian安装VirtualBox增强工具/"></span>
         
     </a>
 
@@ -769,8 +769,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/06/30/新版apt简单使用指南/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/06/30/新版apt简单使用指南/"></span>
         
     </a>
 
@@ -846,8 +846,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/06/29/Android-编码规范/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/06/29/Android-编码规范/"></span>
         
     </a>
 
@@ -923,8 +923,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/06/09/终于，输给了时间/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/06/09/终于，输给了时间/"></span>
         
     </a>
 
@@ -1000,8 +1000,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/"></span>
         
     </a>
 
@@ -1125,28 +1125,23 @@
 
 
     
+
+    
+        <script id="dsq-count-scr" src="//undefined.disqus.com/count.js" async></script>
         <script>
             if ($(".left-col").is(":visible")) {
-                var duoshuoQuery = {short_name:"ilovesusu"};
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
-                    s.async = true; s.charset = 'UTF-8';
-                    (d.head || d.body).appendChild(s);
-                })();
-
-                $(document).ready(function(){
-                    var $duoshuoCount = $(".ds-thread-count");
-                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
-                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
                         $(this).siblings(".count-comment").text(num);
-                        $(this).remove();
-                    })
+                    }
+                    $(this).remove();
                 })
+            } else {
+                $(".disqus-comment-count").remove();
             }
         </script>
-    
-
      
 
 

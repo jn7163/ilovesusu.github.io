@@ -306,8 +306,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/28/Debian-8-安装Shadowsocks-libev/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/11/28/Debian-8-安装Shadowsocks-libev/"></span>
         
     </a>
 
@@ -383,8 +383,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/26/开发者Debian里的十八般兵器/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/11/26/开发者Debian里的十八般兵器/"></span>
         
     </a>
 
@@ -460,8 +460,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/12/许嵩-苏格拉没有底-简介/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/11/12/许嵩-苏格拉没有底-简介/"></span>
         
     </a>
 
@@ -537,8 +537,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/11/01/改GNOME-3的屏幕录制的默认时间/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/11/01/改GNOME-3的屏幕录制的默认时间/"></span>
         
     </a>
 
@@ -614,8 +614,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/10/27/Eclipse-提示框背景色黑色解决方案/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/10/27/Eclipse-提示框背景色黑色解决方案/"></span>
         
     </a>
 
@@ -691,8 +691,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/10/18/linux-下使用-adb-fastboot-刷-CyanogenMod-ROM/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/10/18/linux-下使用-adb-fastboot-刷-CyanogenMod-ROM/"></span>
         
     </a>
 
@@ -768,8 +768,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/09/26/Android-Studio-常见问题总结/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/09/26/Android-Studio-常见问题总结/"></span>
         
     </a>
 
@@ -845,8 +845,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/"></span>
         
     </a>
 
@@ -922,8 +922,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/09/09/优秀npm镜像推荐及使用/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/09/09/优秀npm镜像推荐及使用/"></span>
         
     </a>
 
@@ -999,8 +999,8 @@
         <i class="fa fa-comments-o" aria-hidden="true"></i>
         <span class="count-comment"></span>
         
-            <span class="ds-thread-count"  data-thread-key="2016/08/26/跨平台远程协助软件推荐/" ></span>
         
+            <span class="disqus-comment-count" data-disqus-identifier="2016/08/26/跨平台远程协助软件推荐/"></span>
         
     </a>
 
@@ -1124,28 +1124,23 @@
 
 
     
+
+    
+        <script id="dsq-count-scr" src="//undefined.disqus.com/count.js" async></script>
         <script>
             if ($(".left-col").is(":visible")) {
-                var duoshuoQuery = {short_name:"ilovesusu"};
-                (function() {
-                    var d = document, s = d.createElement('script');
-                    s.src = 'http://static.duoshuo.com/embed.js';
-                    s.async = true; s.charset = 'UTF-8';
-                    (d.head || d.body).appendChild(s);
-                })();
-
-                $(document).ready(function(){
-                    var $duoshuoCount = $(".ds-thread-count");
-                    $duoshuoCount.bind("DOMNodeInserted", function(e) {
-                        var num = $(this).text().replace(/[^0-9]/ig,"");
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
                         $(this).siblings(".count-comment").text(num);
-                        $(this).remove();
-                    })
+                    }
+                    $(this).remove();
                 })
+            } else {
+                $(".disqus-comment-count").remove();
             }
         </script>
-    
-
      
 
 
