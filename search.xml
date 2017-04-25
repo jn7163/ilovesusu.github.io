@@ -325,7 +325,7 @@
 <li>scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。</li>
 </ul>
 <p>$ cd blog （进入blog目录）<br>$ npm install （通过npm的install命令安装hexo使用的一些node.js包，配置文件是package.json）<br>$ hexo g （生成静态页面，生成的内容在public文件夹下）<br>$ hexo server （启动本地服务，进行文章预览调试。hexo s –debug 命令可以用来调试）</p>
-<p>###修改主题<br>我使用的是yelee主题，下面只介绍怎么安装这种主题，其他主题可以在Hexo Themes、github里面寻找。<br>先进入你的Hexo文件夹。然后使用下面的命令clone下yelee主题。</p>
+<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>我使用的是yelee主题，下面只介绍怎么安装这种主题，其他主题可以在Hexo Themes、github里面寻找。<br>先进入你的Hexo文件夹。然后使用下面的命令clone下yelee主题。</p>
 <blockquote>
 <p>$ git clone <a href="https://github.com/MOxFIVE/hexo-theme-yelee.git" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee.git</a> themes/yelee</p>
 </blockquote>
@@ -333,7 +333,7 @@
 <blockquote>
 <p>theme: yelee</p>
 </blockquote>
-<p>###部署到github pages<br>先使用下面的命令对Git进行初始配置。</p>
+<h3 id="部署到github-pages"><a href="#部署到github-pages" class="headerlink" title="部署到github pages"></a>部署到github pages</h3><p>先使用下面的命令对Git进行初始配置。</p>
 <blockquote>
 <p>$ git config –global user.name “your name”<br>$ git config –global user.email “email@email.com”</p>
 </blockquote>
@@ -1064,68 +1064,6 @@
   
     
     <entry>
-      <title><![CDATA[404 Not Found：该页无法显示]]></title>
-      <url>https://ilovesusu.github.io//404.html</url>
-      <content type="html"><![CDATA[<style type="text/css">
-    .article-title {
-        font-size: 2.1em;
-    }
-    strong a {
-        color: #747474;
-    }
-    .player {
-        margin-left: -10px;
-    }
-    .sign {
-        text-align: right;
-        font-style: italic;
-    }
-    .share,
-    #page-visit,
-    .visit span:nth-child(2),
-    .pic br {
-        display: none;
-    }
-    .center {
-        text-align: center;
-        height: 2.5em;
-        font-weight: bold;
-    }
-    .search2 {
-        height: 2.2em;
-        font-size: 1em;
-        width: 50%;
-        margin: auto 24%;
-        color: #727272;
-        opacity: .6;
-        border: 2px solid lightgray;
-    }
-    .search2:hover {
-        opacity: 1;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
-        };
-    .article-entry hr {
-        margin: 0;
-    }
-    .pic {
-        text-align: center;
-        margin: 0;
-    }
-</style>
-
-<hr>
-<div class="pic"><br></div>
-
-<p class="center">很抱歉，您所访问的地址并不存在: </p>
-
-<p class="center"><a href="/">回主页</a> · <a href="/archives">所有文章</a> · <a href="/about">留言板</a></p>
-
-<p class="center">可在边栏搜索框中对本站进行检索，以获取相关信息。</p>
-
-<div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="http://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[心爱的书籍]]></title>
       <url>https://ilovesusu.github.io/Debian/index.html</url>
       <content type="html"><![CDATA[<p>读书是通往梦想的一个途径，读一本好书，让我们得以明净如水，开阔视野，丰富阅历，益于人生。人一生就是一条路，在这条路上的跋涉痕迹成为我们每个人一生唯一的轨迹，此路不可能走第二次，而在人生的道路上，我们所见的风景是有限的。书籍就是望远镜，书籍就是一盏明灯，让我们看得更远、更清晰。</p>
@@ -1198,9 +1136,65 @@
     </entry>
     
     <entry>
-      <title><![CDATA[标签]]></title>
-      <url>https://ilovesusu.github.io/tags/index.html</url>
-      <content type="html"></content>
+      <title><![CDATA[404 Not Found：该页无法显示]]></title>
+      <url>https://ilovesusu.github.io//404.html</url>
+      <content type="html"><![CDATA[<style type="text/css">
+    .article-title {
+        font-size: 2.1em;
+    }
+    strong a {
+        color: #747474;
+    }
+    .player {
+        margin-left: -10px;
+    }
+    .sign {
+        text-align: right;
+        font-style: italic;
+    }
+    .share,
+    #page-visit,
+    .visit span:nth-child(2),
+    .pic br {
+        display: none;
+    }
+    .center {
+        text-align: center;
+        height: 2.5em;
+        font-weight: bold;
+    }
+    .search2 {
+        height: 2.2em;
+        font-size: 1em;
+        width: 50%;
+        margin: auto 24%;
+        color: #727272;
+        opacity: .6;
+        border: 2px solid lightgray;
+    }
+    .search2:hover {
+        opacity: 1;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+        };
+    .article-entry hr {
+        margin: 0;
+    }
+    .pic {
+        text-align: center;
+        margin: 0;
+    }
+</style>
+
+<hr>
+<div class="pic"><br></div>
+
+<p class="center">很抱歉，您所访问的地址并不存在: </p>
+
+<p class="center"><a href="/">回主页</a> · <a href="/archives">所有文章</a> · <a href="/about">留言板</a></p>
+
+<p class="center">可在边栏搜索框中对本站进行检索，以获取相关信息。</p>
+
+<div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="http://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
     </entry>
     
     <entry>
@@ -1231,6 +1225,12 @@
 <li>开发工具: Eclipse,Android studio,Vim</li>
 </ul>
 <div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签]]></title>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
   

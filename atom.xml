@@ -428,7 +428,7 @@
     <link href="https://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>https://ilovesusu.github.io/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/</id>
     <published>2016-09-12T08:22:11.000Z</published>
-    <updated>2017-04-25T06:43:16.256Z</updated>
+    <updated>2017-04-25T06:45:43.961Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>最近Hexo + Github pages非常火,很多人都写了搭建方案,但是更多的人选择windows作为搭建的平台,因为我的工作环境是Debian Testing,所以我想写写怎么在Debian下搭建Hexo + Github pages<br><a id="more"></a></p>
 <h2 id="预先准备"><a href="#预先准备" class="headerlink" title="预先准备"></a>预先准备</h2><p>1.github帐号</p>
@@ -477,7 +477,7 @@
 <li>scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。</li>
 </ul>
 <p>$ cd blog （进入blog目录）<br>$ npm install （通过npm的install命令安装hexo使用的一些node.js包，配置文件是package.json）<br>$ hexo g （生成静态页面，生成的内容在public文件夹下）<br>$ hexo server （启动本地服务，进行文章预览调试。hexo s –debug 命令可以用来调试）</p>
-<p>###修改主题<br>我使用的是yelee主题，下面只介绍怎么安装这种主题，其他主题可以在Hexo Themes、github里面寻找。<br>先进入你的Hexo文件夹。然后使用下面的命令clone下yelee主题。</p>
+<h3 id="修改主题"><a href="#修改主题" class="headerlink" title="修改主题"></a>修改主题</h3><p>我使用的是yelee主题，下面只介绍怎么安装这种主题，其他主题可以在Hexo Themes、github里面寻找。<br>先进入你的Hexo文件夹。然后使用下面的命令clone下yelee主题。</p>
 <blockquote>
 <p>$ git clone <a href="https://github.com/MOxFIVE/hexo-theme-yelee.git" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee.git</a> themes/yelee</p>
 </blockquote>
@@ -485,7 +485,7 @@
 <blockquote>
 <p>theme: yelee</p>
 </blockquote>
-<p>###部署到github pages<br>先使用下面的命令对Git进行初始配置。</p>
+<h3 id="部署到github-pages"><a href="#部署到github-pages" class="headerlink" title="部署到github pages"></a>部署到github pages</h3><p>先使用下面的命令对Git进行初始配置。</p>
 <blockquote>
 <p>$ git config –global user.name “your name”<br>$ git config –global user.email “email@email.com”</p>
 </blockquote>
