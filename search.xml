@@ -349,6 +349,9 @@
 <blockquote>
 <p>$ hexo g （生成静态文件）<br>$ hexo d （部署到github）</p>
 </blockquote>
+<h3 id="创建一篇新博客"><a href="#创建一篇新博客" class="headerlink" title="创建一篇新博客"></a>创建一篇新博客</h3><blockquote>
+<p>$ hexo new “Hello Hexo”</p>
+</blockquote>
 <h2 id="Hexo的插件"><a href="#Hexo的插件" class="headerlink" title="Hexo的插件"></a>Hexo的插件</h2><p><a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo plugins</a></p>
 <p>Hexo有很多插件用来增强它的功能,比如RSS,SEO,资源文件…</p>
 <h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>hexo-generator-feed 用于生成RSS订阅</p>

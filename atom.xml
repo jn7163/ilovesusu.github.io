@@ -428,7 +428,7 @@
     <link href="https://ilovesusu.github.io/2016/09/12/Debian%E4%BD%BF%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E9%9D%99%E6%80%81%E5%8D%9A%E5%AE%A2/"/>
     <id>https://ilovesusu.github.io/2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/</id>
     <published>2016-09-12T08:22:11.000Z</published>
-    <updated>2017-04-25T06:45:43.961Z</updated>
+    <updated>2017-04-25T08:46:28.015Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>最近Hexo + Github pages非常火,很多人都写了搭建方案,但是更多的人选择windows作为搭建的平台,因为我的工作环境是Debian Testing,所以我想写写怎么在Debian下搭建Hexo + Github pages<br><a id="more"></a></p>
 <h2 id="预先准备"><a href="#预先准备" class="headerlink" title="预先准备"></a>预先准备</h2><p>1.github帐号</p>
@@ -500,6 +500,9 @@
 <p>安装完插件之后使用下面的命令进行部署：</p>
 <blockquote>
 <p>$ hexo g （生成静态文件）<br>$ hexo d （部署到github）</p>
+</blockquote>
+<h3 id="创建一篇新博客"><a href="#创建一篇新博客" class="headerlink" title="创建一篇新博客"></a>创建一篇新博客</h3><blockquote>
+<p>$ hexo new “Hello Hexo”</p>
 </blockquote>
 <h2 id="Hexo的插件"><a href="#Hexo的插件" class="headerlink" title="Hexo的插件"></a>Hexo的插件</h2><p><a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo plugins</a></p>
 <p>Hexo有很多插件用来增强它的功能,比如RSS,SEO,资源文件…</p>
