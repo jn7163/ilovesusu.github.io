@@ -21,10 +21,11 @@
 <p>#Debian 8<br>deb <a href="http://shadowsocks.org/debian" target="_blank" rel="external">http://shadowsocks.org/debian</a> wheezy main</p>
 </blockquote>
 <p><del>保存并关闭文件。现在更新本地包索引并安装shadowsocks-libev。</del></p>
-<p></p><p style="color:red;font-size:36px">看这里</p><p></p>
 <blockquote>
 <p>sudo apt-get update;sudo apt-get install shadowsocks-libev~~</p>
 </blockquote>
+<p style="color:red;font-size:36px">看这里</p>
+
 <p>所以，现在更新新的办法，就是使用Debian Backports。<br>切换为root并且使用你最顺手的编辑器打开文件 /etc/apt/sources.list :</p>
 <blockquote>
 <p>susu@debian:~$ su<br>Password:<br>debian:/home/human# nano /etc/apt/sources.list</p>
@@ -67,7 +68,11 @@
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>俗话说，工欲善其事，必先利其器，在开发者的世界里，熟练掌握各种辅助工具，可以达到事半功倍，快速提高工作效率的效果。<br><a id="more"></a></p>
 <h2 id="集成开发环境IDE"><a href="#集成开发环境IDE" class="headerlink" title="集成开发环境IDE"></a>集成开发环境IDE</h2><p>集成开发环境一般是集编辑，编译，链接，调试，版本管理和打包发布于一体的大型开发软件。它的特点是功能丰富，上手快，易操作。缺点也显而易见，笨重，运行速度慢，需要更多的CPU，内存资源。</p>
 <ul>
-<li>Eclipse</li>
+<li>IntelliJ IDEA</li>
+<li><p><img src="./IDEA.png" alt="IDEA"><br>IntelliJ IDEA被认为是当前Java开发效率最快的IDE工具。它集成了开发过程中实用的众多功能，几乎可以不用鼠标可以方便的完成你要做的任何事情，最大程度的加快开发的速度。简单而又功能强大。与其他的一些繁冗而复杂的IDE工具有鲜明的对比。<br><a href="https://www.jetbrains.com/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+<li><p>Eclipse</p>
+</li>
 <li><p><img src="./Eclipse.png" alt="Zeal"><br>是一个开放源代码的、基于Java的可扩展开发平台。就其本身而言，它只是一个框架和一组服务，用于通过插件组件构建开发环境。幸运的是，Eclipse 附带了一个标准的插件集，包括Java开发工具（Java Development Kit，JDK）。但是近几年使用人数在下滑，逐渐转向Android Studio和IntelliJ IDEA了。<br><a href="http://www.eclipse.org" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
 <li><p>Android Studio</p>
@@ -78,6 +83,8 @@
 <li>Zeal<br><img src="./Zeal.png" alt="Zeal"><br>热情是一个软件开发离线文档浏览器。Zeal目前有195个很棒的文档！<br><a href="https://zealdocs.org/" target="_blank" rel="external">软件主页以及下载地址</a></li>
 </ul>
 <h2 id="文本编辑器"><a href="#文本编辑器" class="headerlink" title="文本编辑器"></a>文本编辑器</h2><ul>
+<li><p>Atom<br><img src="./Atom.png" alt="Atom"><br>Atom是由GitHub开发的自由及开放源代码的文字与代码编辑器，支持OS X、Windows和Linux操作系统，支持Node.js所写的插件，并内置由Github提供的Git版本控制系统。多数的延伸包皆为开放源代码授权，并由社区建置与维护。Atom基于Electron（最初以Atom Shell知名）和许可使用Chromium和Node.js的跨平台应用框架，并使用CoffeeScript和Less撰写。Atom也可当作IDE使用。被它的开发者称为“给21世纪的黑客风格编辑器（hackable text editor for the 21st Century）”。自2014年5月6日起，Atom的核心程序、包管理器以及Atom基于Chromium的桌面程序框架皆使用MIT授权条款发布。<br><a href="https://atom.io/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
 <li><p>Visual Studio Code<br><img src="./vscode.png" alt="vscode"><br>VS Code是一种新型工具，它结合了代码编辑器的简单性和开发人员在核心编辑构建 - 调试周期中需要的工具。代码提供全面的编辑和调试支持，可扩展性模型，以及与现有工具的轻量级集成。<br><a href="http://code.visualstudio.com" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
 <li><p>Sublime Text<br><img src="./sublime.png" alt="Sublime"><br>Sublime Text具有漂亮的用户界面和强大的功能，例如代码缩略图，Python的插件，代码段等。还可自定义键绑定，菜单和工具栏。Sublime Text 的主要功能包括：拼写检查，书签，完整的 Python API ， Goto 功能，即时项目切换，多选择，多窗口等等。Sublime Text 是一个跨平台的编辑器，同时支持Windows、Linux、Mac OS X等操作系统。<br><a href="http://www.sublimetext.com/" target="_blank" rel="external">软件主页以及下载地址</a></p>
@@ -112,7 +119,9 @@
 <ul>
 <li><p>VirtualBox<br><img src="./VirtualBox.jpg" alt="VirtualBox"><br>老牌虚拟机软件，支持市面上几乎所有流行的操作系统。<br><a href="http://www.virtualbox.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
 </li>
-<li><p>Genymotion<br><img src="./Genymotion.jpg" alt="Genymotion"><br>安卓模拟器，运行安卓APP如同在手机上一样的速度。<br>[软件主页以及下载地址](<a href="http://www.genymotion.org" target="_blank" rel="external">http://www.genymotion.org</a></p>
+<li><p>Genymotion<br><img src="./Genymotion.jpg" alt="Genymotion"><br>安卓模拟器，运行安卓APP如同在手机上一样的速度。<br>[软件主页以及下载地址](<a href="http://www.genymotion.org）" target="_blank" rel="external">http://www.genymotion.org）</a></p>
+</li>
+<li><p>kvm<br><img src="./kvm.jpg" alt="kvm"><br>KVM（用于基于内核的虚拟机）是用于包含虚拟化扩展（Intel VT或AMD-V）的x86硬件上的Linux的完全虚拟化解决方案。它包含一个可加载的内核模块kvm.ko，它提供了核心虚拟化基础架构和一个特定于处理器的模块kvm-intel.ko或kvm-amd.ko。<br>[软件主页以及下载地址](<a href="https://www.linux-kvm.org/page/Main_Page）" target="_blank" rel="external">https://www.linux-kvm.org/page/Main_Page）</a></p>
 </li>
 </ul>
 <h2 id="翻墙利器"><a href="#翻墙利器" class="headerlink" title="翻墙利器"></a>翻墙利器</h2><p>我要上谷歌搜索最新的Android开发文档和API，可是目前在国内用不了谷歌，怎么办？翻墙吧！</p>
@@ -146,7 +155,19 @@
 </li>
 </ul>
 <h2 id="即时聊天"><a href="#即时聊天" class="headerlink" title="即时聊天"></a>即时聊天</h2><ul>
-<li>Telegram<br><img src="./Telegram.png" alt="Telegram"><br>Telegram Messenger 是一个跨平台的即时通信软件，它的客户端是自由及开放源代码软件，但是它的服务器是专有软件。用户可以相互交换加密与自析构的消息，以及照片、视频、文件，支持所有的文件类型。官方提供移动端(Android、iOS、Windows Phone)、桌面端(Windows、macOS、Linux)和网页端(官方在线版)应用；同时官方开放应用程序接口，因此会有一些第三方的客户端。<br><a href="https://telegram.org/" target="_blank" rel="external">软件主页以及下载地址</a></li>
+<li><p>Telegram<br><img src="./Telegram.png" alt="Telegram"><br>Telegram Messenger 是一个跨平台的即时通信软件，它的客户端是自由及开放源代码软件，但是它的服务器是专有软件。用户可以相互交换加密与自析构的消息，以及照片、视频、文件，支持所有的文件类型。官方提供移动端(Android、iOS、Windows Phone)、桌面端(Windows、macOS、Linux)和网页端(官方在线版)应用；同时官方开放应用程序接口，因此会有一些第三方的客户端。<br><a href="https://telegram.org/" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+<li><p>electronic-wechat-linux<br><img src="./wechat.png" alt="Telegram"><br>一个Mac OS X 和 Linux 下更好用的微信客户端. 更多功能, 更少bug. 使用Electron构建.<br><a href="https://github.com/geeeeeeeeek/electronic-wechat" target="_blank" rel="external">软件主页以及下载地址</a></p>
+</li>
+</ul>
+<h2 id="创建图书"><a href="#创建图书" class="headerlink" title="创建图书"></a>创建图书</h2><ul>
+<li>GitBook<br><img src="./GitBook.png" alt="GitBook"><br>GitBook可用于创建图书，公共文档，企业手册，论文，研究论文等。是使用GitHub or Git和Markdown（或AsciiDoc）构建漂亮书籍的命令行工具（和Node.js库）。<br><a href="https://github.com/GitbookIO/gitbook" target="_blank" rel="external">软件主页以及下载地址</a></li>
+</ul>
+<h2 id="博客框架"><a href="#博客框架" class="headerlink" title="博客框架"></a>博客框架</h2><ul>
+<li>Hexo<br><img src="./Hexo.jpg" alt="Hexo"><br>Hexo 是一个快速、简洁且高效的博客框架。 Hexo 使用Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。<br><a href="https://hexo.io/zh-cn/" target="_blank" rel="external">软件主页以及下载地址</a></li>
+</ul>
+<h2 id="录像和直播"><a href="#录像和直播" class="headerlink" title="录像和直播"></a>录像和直播</h2><ul>
+<li>OBS Studio<br><img src="./OBS-Studio.png" alt="OBS Studio"><br>免费和开源软件，用于录像和直播。在Windows，Mac或Linux上快速，轻松地下载并开始流式传输。<br><a href="https://obsproject.com/" target="_blank" rel="external">软件主页以及下载地址</a></li>
 </ul>
 ]]></content>
     </entry>
@@ -260,7 +281,21 @@
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>最近Hexo + Github pages非常火,很多人都写了搭建方案,但是更多的人选择windows作为搭建的平台,因为我的工作环境是Debian Testing,所以我想写写怎么在Debian下搭建Hexo + Github pages<br><a id="more"></a></p>
 <h2 id="预先准备"><a href="#预先准备" class="headerlink" title="预先准备"></a>预先准备</h2><p>1.github帐号</p>
 <blockquote>
-<p>注册github账号我想这就不用我教了吧！地址：<a href="https://github.com/join" target="_blank" rel="external">Github注册</a><br>2.Debian安装git<br>sudo apt install git git-core</p>
+<p><strong>注册</strong>github账号我想这就不用我教了吧！地址：<a href="https://github.com/join" target="_blank" rel="external">Github注册</a></p>
+</blockquote>
+<p>登录完成之后，在你的主页点击图标 New Repository 创建一个新的版本库，因为我们是使用 Github Pages 去搭建我们的静态博客，所以版本库的名称应该是你的用户名+.github.io。如：我的用户名是：ilovesusu，那么版本库的名字应该是： ilovesusu.github.io,之后你将要访问的你的博客地址就是： <a href="https://ilovesusu.github.io">https://ilovesusu.github.io</a></p>
+<p>2.Debian安装git</p>
+<blockquote>
+<p>sudo apt install git git-core</p>
+</blockquote>
+<p>3.配置SSH<br>打开 Git Bash ，执行下面的命令生成 SSH 访问私钥及公钥。</p>
+<blockquote>
+<p>$ ssh-keygen -t rsa -C “email@email.com”</p>
+</blockquote>
+<p>输入命令回车之后会提示你输入一些东西，就是设置密码，不想设置一直回车到底就好了。然后你的 ~/.ssh 文件下就会生成两个文件 id_rsa 和 id_rsa.pub 。</p>
+<p>打开你的 Github -&gt; setting -&gt; SSH Keys 。然后点击 New SSH Key 创建一个新的SSH Key。Title 可以用你的计算机名，可以用以区分。将文件 id_rsa.pub 中的所以内容复制粘贴到 Key 下面。然后使用下面的命令测试是否可以连接上 Github 。</p>
+<blockquote>
+<p>$ ssh -T git@github.com</p>
 </blockquote>
 <h2 id="安装Nodejs-npm管理工具"><a href="#安装Nodejs-npm管理工具" class="headerlink" title="安装Nodejs + npm管理工具"></a>安装Nodejs + npm管理工具</h2><p>在Debian8以上安装Nodejs非常方便,源里已经有了,所以直接通过apt安装.</p>
 <blockquote>
@@ -274,8 +309,47 @@
 <blockquote>
 <p>nodejs -v<br>npm -v</p>
 </blockquote>
-<h2 id="安装与配置Hexo"><a href="#安装与配置Hexo" class="headerlink" title="安装与配置Hexo"></a>安装与配置Hexo</h2><p>hexo的安装非常简单,但是需要注意的是命令中的-g参数.-g是全局安装安装，默认当前目录安装.</p>
-<h2 id="Hexo的主题"><a href="#Hexo的主题" class="headerlink" title="Hexo的主题"></a>Hexo的主题</h2><h2 id="Hexo的插件"><a href="#Hexo的插件" class="headerlink" title="Hexo的插件"></a>Hexo的插件</h2><p><a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo plugins</a></p>
+<h2 id="安装与配置Hexo"><a href="#安装与配置Hexo" class="headerlink" title="安装与配置Hexo"></a>安装与配置Hexo</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>hexo的安装非常简单,但是需要注意的是命令中的-g参数.-g是全局安装安装，默认当前目录安装.<br>执行下述命令即可全局安装</p>
+<blockquote>
+<p>npm install hexo-cli -g</p>
+</blockquote>
+<p>安装以后马上就能创建一个博客了<br>$ hexo init blog (这里通过init参数创建并初始化一个blog目录)<br>初始化完成后，文件夹下的目录如下：</p>
+<blockquote>
+<p>.<br>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>├── ├── _drafts<br>├── └── _posts<br>└── themes</p>
+</blockquote>
+<ul>
+<li>_config.yml 文件是网站的配置文件，可以在其中配置网站的大部分参数。</li>
+<li>package.json 文件是应用程序的信息。</li>
+<li>source 是资源文件夹，是用来存放用户资源的地方。</li>
+<li>themes 是主题文件夹，Hexo会根据主题来生成不同的静态页面。</li>
+<li>scaffolds是模板件夹，当新建文章的时候，Hexo会根据模板来建立文件。</li>
+</ul>
+<p>$ cd blog （进入blog目录）<br>$ npm install （通过npm的install命令安装hexo使用的一些node.js包，配置文件是package.json）<br>$ hexo g （生成静态页面，生成的内容在public文件夹下）<br>$ hexo server （启动本地服务，进行文章预览调试。hexo s –debug 命令可以用来调试）</p>
+<p>###修改主题<br>我使用的是yelee主题，下面只介绍怎么安装这种主题，其他主题可以在Hexo Themes、github里面寻找。<br>先进入你的Hexo文件夹。然后使用下面的命令clone下yelee主题。</p>
+<blockquote>
+<p>$ git clone <a href="https://github.com/MOxFIVE/hexo-theme-yelee.git" target="_blank" rel="external">https://github.com/MOxFIVE/hexo-theme-yelee.git</a> themes/yelee</p>
+</blockquote>
+<p>然后打开Hexo主文件夹下的_config.yml，修改其中的theme 属性。theme: 后面要加空格。</p>
+<blockquote>
+<p>theme: yelee</p>
+</blockquote>
+<p>###部署到github pages<br>先使用下面的命令对Git进行初始配置。</p>
+<blockquote>
+<p>$ git config –global user.name “your name”<br>$ git config –global user.email “email@email.com”</p>
+</blockquote>
+<p>然后打开Hexo主文件夹下的_config.yml，设置其中的deploy 参数，详细请查看Hexo官方文档中部署部分。<br>我的设置如下所示：</p>
+<blockquote>
+<p>deploy:<br>  type: git<br>  repo: git@github.com:ilovesusu/ilovesusu.github.io.git<br>  branch: master</p>
+</blockquote>
+<p>在上面的参数设置好了之后，使用下面的命令安装 hexo-deployer-git 插件，只有安装了插件之后才可以部署到Github Pages。</p>
+<blockquote>
+<p>$ npm install hexo-deployer-git –save</p>
+</blockquote>
+<p>安装完插件之后使用下面的命令进行部署：</p>
+<blockquote>
+<p>$ hexo g （生成静态文件）<br>$ hexo d （部署到github）</p>
+</blockquote>
+<h2 id="Hexo的插件"><a href="#Hexo的插件" class="headerlink" title="Hexo的插件"></a>Hexo的插件</h2><p><a href="https://hexo.io/plugins/" target="_blank" rel="external">Hexo plugins</a></p>
 <p>Hexo有很多插件用来增强它的功能,比如RSS,SEO,资源文件…</p>
 <h3 id="RSS"><a href="#RSS" class="headerlink" title="RSS"></a>RSS</h3><p>hexo-generator-feed 用于生成RSS订阅</p>
 <blockquote>
@@ -1124,6 +1198,12 @@
     </entry>
     
     <entry>
+      <title><![CDATA[标签]]></title>
+      <url>https://ilovesusu.github.io/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于&留言板]]></title>
       <url>https://ilovesusu.github.io/about/index.html</url>
       <content type="html"><![CDATA[<h2 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h2><ul>
@@ -1151,12 +1231,6 @@
 <li>开发工具: Eclipse,Android studio,Vim</li>
 </ul>
 <div style="text-align: center"><br>以下是博主喜欢的一些歌曲，可以听听，稍作休息~<br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=371374908&auto=1&height=430"></iframe><br></div>]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签]]></title>
-      <url>https://ilovesusu.github.io/tags/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
