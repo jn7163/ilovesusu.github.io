@@ -4,6 +4,34 @@
   
     
     <entry>
+      <title><![CDATA[Debian下 Genymotion黑屏解决方案总汇]]></title>
+      <url>https://ilovesusu.github.io/2017/08/13/Debian%E4%B8%8B-Genymotion%E9%BB%91%E5%B1%8F%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E6%80%BB%E6%B1%87/</url>
+      <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在日常使用 genymotion 的过程在，由于各种奇葩的<del>操作</del>,导致genymotion在使用的时候回黑屏<br><a id="more"></a><br>黑屏真的是很烦，毕竟工作可能就耽误了，所以这里总结一下黑屏原因及解决方案</p>
+<h2 id="Vbox-hostonly-network-broken导致黑屏"><a href="#Vbox-hostonly-network-broken导致黑屏" class="headerlink" title="Vbox hostonly network broken导致黑屏"></a>Vbox hostonly network broken导致黑屏</h2><p>打开Android虚拟机是这样的<br><img src="./geny1.png" alt=""><br>直接从Vbox中打开是这样的<br><img src="./geny2.png" alt=""><br>如上述图所示，这其实是Vbox自身的bug导致的，<a href="https://www.virtualbox.org/ticket/16911" target="_blank" rel="external">这里了解bug</a>发生在5.1.24版本，在5.1.26版本中修复了。<br>如果您还在使用vbox5.1.24那么解决方案是<a href="https://stackoverflow.com/questions/45226441/genymotion-black-screen-virtualbox-5-1-24/45226442#45226442" target="_blank" rel="external">这里简单修复</a></p>
+<h2 id="Vbox网络适配器配置错误"><a href="#Vbox网络适配器配置错误" class="headerlink" title="Vbox网络适配器配置错误"></a>Vbox网络适配器配置错误</h2><p>如果是这种情况，您应该尝试以下操作</p>
+<ol>
+<li>运行VirtualBox。</li>
+<li>打开文件&gt;首选项&gt;网络（或VirtualBox&gt; Mac OS X的首选项）。</li>
+<li>单击主编辑网络。</li>
+<li>检查适配器IPv4地址是否在与DHCP服务器地址相同的网络中（缺省为192.168.56.0/24）如果没有，您的虚拟设备无法启动</li>
+</ol>
+<p>可以参阅<a href="https://www.ptt.cc/bbs/ToS/M.1383049249.A.86E.html" target="_blank" rel="external">Vbox网络适配器配置</a><br>您也可以通过单击来删除主机专用网络。Genymotion将在下一个虚拟设备启动时自动重新创建它。</p>
+<h2 id="防火墙或其他程序阻止Genogotion"><a href="#防火墙或其他程序阻止Genogotion" class="headerlink" title="防火墙或其他程序阻止Genogotion"></a>防火墙或其他程序阻止Genogotion</h2><p>如果可能的话，可以尝试断开任何可能阻碍这种情况的vpn服务或其他软件，并确保genogotion能够通过本地网络连接到虚拟设备。</p>
+<p>如果您有防火墙，请确保您允许连接到Genymotion网络，默认设置为192.168.56.0/24。</p>
+<h2 id="Genymotion卡在-eula-acceptance导致黑屏"><a href="#Genymotion卡在-eula-acceptance导致黑屏" class="headerlink" title="Genymotion卡在 eula acceptance导致黑屏"></a>Genymotion卡在 eula acceptance导致黑屏</h2><p><img src="./geny3.jpg" alt=""><br>选定这个窗口（获取焦点）</p>
+<ol>
+<li>点击 TAB 两次</li>
+<li>点击 SPACE</li>
+<li>点击 TAB 两次</li>
+<li>点击SPACE</li>
+</ol>
+<p>这会点击确认复选框,默认接受EULA</p>
+<p>风险:你没有读EULA就接受了协议</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>遇到genymotion发生故障时，首先不能着急，要冷静的查阅排误，切记要冷静的回想自己进行了什么<del>骚</del>操作.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Debian 8 安装Shadowsocks-libev]]></title>
       <url>https://ilovesusu.github.io/2016/11/28/Debian-8-%E5%AE%89%E8%A3%85Shadowsocks-libev/</url>
       <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>现在我将向您展示如何在Debian 8安装shadowsocks-libev。由于它是用C编写的，所以它消耗非常少的内存，非常适合嵌入式设备和低端盒。<br><a id="more"></a><br>因为Debian8 默认是没有shadowsocks-libev包的。<br>查看所有架构下的<a href="https://packages.debian.org/search?suite=all&amp;arch=any&amp;searchon=names&amp;keywords=shadowsocks-libev" target="_blank" rel="external">shadowsocks-libev</a></p>
@@ -249,16 +277,45 @@
     </entry>
     
     <entry>
-      <title><![CDATA[linux 下使用 adb fastboot 刷 CyanogenMod ROM]]></title>
-      <url>https://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-CyanogenMod-ROM/</url>
+      <title><![CDATA[linux 下使用 adb fastboot 刷 LineageOS ROM]]></title>
+      <url>https://ilovesusu.github.io/2016/10/18/linux-%E4%B8%8B%E4%BD%BF%E7%94%A8-adb-fastboot-%E5%88%B7-LineageOS-ROM/</url>
       <content type="html"><![CDATA[<h2 id="简述"><a href="#简述" class="headerlink" title="简述"></a>简述</h2><p>linux环境下使用[Android SDK Platform-tools]中的adb fastboot工具刷机其实也是很简单的,有兴趣的同学可以学习一下.<br><a id="more"></a><br><img src="./shuaji.png" alt="android"></p>
 <h3 id="1-搭建-Android-SDK-Platform-tools-环境"><a href="#1-搭建-Android-SDK-Platform-tools-环境" class="headerlink" title="1.搭建 Android SDK Platform-tools 环境"></a>1.搭建 Android SDK Platform-tools 环境</h3><p>link:<a href="http://" target="_blank" rel="external">搭建 Android SDK环境</a></p>
-<h3 id="2-准备-Recovery-及-ROM"><a href="#2-准备-Recovery-及-ROM" class="headerlink" title="2.准备 Recovery 及 ROM"></a>2.准备 Recovery 及 ROM</h3><h3 id="3-刷入-ClockworkMod-Recovery"><a href="#3-刷入-ClockworkMod-Recovery" class="headerlink" title="3.刷入 ClockworkMod Recovery"></a>3.刷入 ClockworkMod Recovery</h3><h3 id="4-刷入-CyanogenMod-ROM"><a href="#4-刷入-CyanogenMod-ROM" class="headerlink" title="4.刷入 CyanogenMod ROM"></a>4.刷入 CyanogenMod ROM</h3><blockquote>
-<p>首先把刷机包放在sd卡中.(xxx为你的刷机包名称)</p>
-</blockquote>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo ./adb push xxx.zip /sdcard/</div></pre></td></tr></table></figure>
+<h3 id="2-准备-Recovery-及-ROM"><a href="#2-准备-Recovery-及-ROM" class="headerlink" title="2.准备 Recovery 及 ROM"></a>2.准备 Recovery 及 ROM</h3><h4 id="下载TWRP-Recovery"><a href="#下载TWRP-Recovery" class="headerlink" title="下载TWRP Recovery"></a>下载TWRP Recovery</h4><p>从<a href="https://twrp.me/Devices/" target="_blank" rel="external">这里</a>]<strong>选择对应的设备的 Recovery</strong>，我这里是<a href="https://twrp.me/devices/xiaomimimix.html" target="_blank" rel="external">小米mix</a> ，去<a href="https://dl.twrp.me/lithium/" target="_blank" rel="external">下载页面</a>下载：</p>
 <blockquote>
-<p>然后通过rec中的install手动选择刷机包进行安装</p>
+<p>$ wget <a href="https://dl.twrp.me/lithium/twrp-3.1.1-0-lithium.img" target="_blank" rel="external">https://dl.twrp.me/lithium/twrp-3.1.1-0-lithium.img</a></p>
+</blockquote>
+<h4 id="下载LineageOS-ROM"><a href="#下载LineageOS-ROM" class="headerlink" title="下载LineageOS ROM"></a>下载LineageOS ROM</h4><p>从<a href="https://download.lineageos.org/" target="_blank" rel="external">这里</a>选择对应设备的构建版本，我这里选了个 xiaomi mix 版本的，stable 版本还没跟上来，我这里选了个 nightly 版本的lineage-14.1-20170810-nightly-lithium-signed.zip，下载：</p>
+<blockquote>
+<p>$ wget <a href="https://mirrorbits.lineageos.org/full/lithium/20170810/lineage-14.1-20170810-nightly-lithium-signed.zip" target="_blank" rel="external">https://mirrorbits.lineageos.org/full/lithium/20170810/lineage-14.1-20170810-nightly-lithium-signed.zip</a></p>
+</blockquote>
+<p>官方给出的 md5sum: e842d7bdc988c4da799d31bbc205e243b05b059bc85c10ed5d80076cfd57fe95</p>
+<p>验证一下，确保下下来的包是完整的：</p>
+<p>$ md5 lineage-14.1-20170810-nightly-lithium-signed.zip<br>MD5 (lineage-14.1-20170810-nightly-lithium-signed.zip) = e842d7bdc988c4da799d31bbc205e243b05b059bc85c10ed5d80076cfd57fe95</p>
+<p>没问题，继续 ~<br>其他系统请采用相应的 md5sum 验证方式。</p>
+<h3 id="3-刷入-TWRP-Recovery"><a href="#3-刷入-TWRP-Recovery" class="headerlink" title="3.刷入 TWRP Recovery"></a>3.刷入 TWRP Recovery</h3><ol>
+<li>首先进入 fastboot 模式：<blockquote>
+<p>$ adb reboot bootloader</p>
+</blockquote>
+</li>
+<li>刷入 TWRP Recovery:<blockquote>
+<p>$ fastboot flash recovery twrp-3.1.1-0-lithium.img<br>sending ‘recovery’ (7122 KB)…<br>OKAY [  1.033s]<br>writing ‘recovery’…<br>OKAY [  1.196s]<br>finished. total time: 2.229s</p>
+</blockquote>
+</li>
+</ol>
+<p>此时使用音量键选择 Recovery Mode，按电源键，稍等片刻，系统会自动重启进入到 TWRP Recovery 模式。</p>
+<h3 id="4-刷入-LineageOS-ROM"><a href="#4-刷入-LineageOS-ROM" class="headerlink" title="4.刷入 LineageOS ROM"></a>4.刷入 LineageOS ROM</h3><p>进入 Recovery 模式后，先 双 wipe: wipe data/factory reset 和 wipe cache partition，以防出现一些不可预知的现象。</p>
+<h4 id="adb-刷入"><a href="#adb-刷入" class="headerlink" title="adb 刷入"></a>adb 刷入</h4><p>然后使用音量键选择 install zip 再选择 install zip from sideload，计算机上运行:</p>
+<blockquote>
+<p>$ adb sideload lineage-14.1-20170810-nightly-lithium-signed.zip<br>loading: ‘lineage-14.1-20170810-nightly-lithium-signed.zip’<br>sending: ‘lineage-14.1-20170810-nightly-lithium-signed.zip’  100%</p>
+</blockquote>
+<p>手机上执行完毕后，会自动退回到选择 zip 包的界面，手机下方会看到以下文字：</p>
+<blockquote>
+<p>Finding update package…<br>Opening update package…<br>Installing update…<br>fixing fs_size in crypto footer…</p>
+</blockquote>
+<p>最后一行不是 Instalation aborted. 表示成功。返回上一层，选择 reboot system now， 稍等片刻，就会进入到 LineageOS 的安装界面。</p>
+<h4 id="卡刷"><a href="#卡刷" class="headerlink" title="卡刷"></a>卡刷</h4><blockquote>
+<p>首先把刷机包放在sd卡中.(xxx为你的刷机包名称)<br>$sudo ./adb push xxx.zip /sdcard/<br>然后通过Recovery中的install手动选择刷机包进行安装</p>
 </blockquote>
 ]]></content>
     </entry>

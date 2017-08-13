@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="Susu" />
+
+
+
+<meta name="description" content="简介在日常使用 genymotion 的过程在，由于各种奇葩的操作,导致genymotion在使用的时候回黑屏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Debian下 Genymotion黑屏解决方案总汇">
+<meta property="og:url" content="https://ilovesusu.github.io/2017/08/13/Debian下-Genymotion黑屏解决方案总汇/index.html">
+<meta property="og:site_name" content="Susu的博客">
+<meta property="og:description" content="简介在日常使用 genymotion 的过程在，由于各种奇葩的操作,导致genymotion在使用的时候回黑屏">
+<meta property="og:image" content="https://ilovesusu.github.io/./geny1.png">
+<meta property="og:image" content="https://ilovesusu.github.io/./geny2.png">
+<meta property="og:image" content="https://ilovesusu.github.io/./geny3.jpg">
+<meta property="og:updated_time" content="2017-08-13T10:07:37.698Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Debian下 Genymotion黑屏解决方案总汇">
+<meta name="twitter:description" content="简介在日常使用 genymotion 的过程在，由于各种奇葩的操作,导致genymotion在使用的时候回黑屏">
+<meta name="twitter:image" content="https://ilovesusu.github.io/./geny1.png">
+
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="Susu的博客" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="../../../../css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Debian下 Genymotion黑屏解决方案总汇 | Susu的博客</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: true
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">Susu</a></h1>
+        </hgroup>
+
+        
+        <p class="header-subtitle">专注于Android、Java、移动互联网、Linux、网络安全</p>
+        
+
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true" />
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="../../../../index.html">主页</a></li>
+                        
+                            <li><a href="../../../../archives/">所有文章</a></li>
+                        
+                            <li><a href="../../../../categories/心情随笔/">心情随笔</a></li>
+                        
+                            <li><a href="../../../../tags/">标签云</a></li>
+                        
+                            <li><a href="../../../../Debian/">影视书籍</a></li>
+                        
+                            <li><a href="../../../../about/">关于我&amp;留言板</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:0x73757375@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="https://github.com/ilovesusu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="../../../../atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 网易云音乐" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
+                            
+                                <a class="fa Google" href="https://www.google.com.hk/" title="Google"></a>
+                            
+                                <a class="fa QQ" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
+                            
+                                <a class="fa Telegram" href="https://telegram.me/ilovesusu" title="Telegram"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/APT-使用/">APT 使用</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Android-studio/">Android studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Android-四大组件/">Android 四大组件</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Android-Studio/">Android-Studio</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Animation-合集/">Animation 合集</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Chrome/">Chrome</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/ContentProvider/">ContentProvider</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Debian/">Debian</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Debian-开发/">Debian 开发</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Drawable-Animation/">Drawable Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/DrawerLayout/">DrawerLayout</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Eclipse/">Eclipse</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Gnome/">Gnome</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Gnome-3/">Gnome 3</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/JavaHL-Library/">JavaHL Library</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Linux/">Linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/MaterialDrawer/">MaterialDrawer</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Music/">Music</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Nvidia驱动安装-双显卡切换/">Nvidia驱动安装(双显卡切换)</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Property-Animation/">Property Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/SQLite/">SQLite</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/SlidingMenu/">SlidingMenu</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/SunJdk/">SunJdk</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Testing-Stable/">Testing/Stable</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/Ubuntu/">Ubuntu</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/View-Animation/">View Animation</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/apt/">apt</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/eclipse/">eclipse</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/jdk/">jdk</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/linux/">linux</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/npm/">npm</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/npm-mirror/">npm mirror</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/shadowsocks/">shadowsocks</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/shadowsocks-libev/">shadowsocks-libev</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/subclipse/">subclipse</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/wine/">wine</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/侧滑菜单/">侧滑菜单</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/免费vpn/">免费vpn</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/友情/">友情</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/安装Jdk/">安装Jdk</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/安装QQ/">安装QQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/安装VirtualBox增强工具/">安装VirtualBox增强工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/开发工具/">开发工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/爱情/">爱情</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/科学上网/">科学上网</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/编码规范/">编码规范</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/翻墙/">翻墙</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/远程协助利器/">远程协助利器</a></li><li class="tag-list-item"><a class="tag-list-link" href="../../../../tags/随便/">随便</a></li></ul>
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">简单的程序猿一个，喜欢Linux、Android、网络安全、等技术。希望能找到组织。</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Susu</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">Susu</a></h1>
+            </hgroup>
+            
+            <p class="header-subtitle">专注于Android、Java、移动互联网、Linux、网络安全</p>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="../../../../index.html">主页</a></li>
+                
+                    <li><a href="../../../../archives/">所有文章</a></li>
+                
+                    <li><a href="../../../../categories/心情随笔/">心情随笔</a></li>
+                
+                    <li><a href="../../../../tags/">标签云</a></li>
+                
+                    <li><a href="../../../../Debian/">影视书籍</a></li>
+                
+                    <li><a href="../../../../about/">关于我&amp;留言板</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:0x73757375@gmail.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="https://github.com/ilovesusu" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="../../../../atom.xml" title="RSS"></a>
+                            
+                                <a class="fa 网易云音乐" target="_blank" href="http://music.163.com/#/user/home?id=271087874" title="网易云音乐"></a>
+                            
+                                <a class="fa Google" target="_blank" href="https://www.google.com.hk/" title="Google"></a>
+                            
+                                <a class="fa QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1368921017&site=qq&menu=yes" title="QQ"></a>
+                            
+                                <a class="fa Telegram" target="_blank" href="https://telegram.me/ilovesusu" title="Telegram"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap"><article id="post-Debian下-Genymotion黑屏解决方案总汇" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="" class="article-date">
+      <time datetime="2017-08-13T09:29:00.000Z" itemprop="datePublished">2017-08-13</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Debian下 Genymotion黑屏解决方案总汇
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="../../../../categories/Debian-GNU-Linux/">Debian GNU/Linux</a>
+    </div>
+
+
+        
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Debian/">Debian</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Testing-Stable/">Testing/Stable</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="../../../../tags/Ubuntu/">Ubuntu</a></li></ul>
+    </div>
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>在日常使用 genymotion 的过程在，由于各种奇葩的<del>操作</del>,导致genymotion在使用的时候回黑屏<br><a id="more"></a><br>黑屏真的是很烦，毕竟工作可能就耽误了，所以这里总结一下黑屏原因及解决方案</p>
+<h2 id="Vbox-hostonly-network-broken导致黑屏"><a href="#Vbox-hostonly-network-broken导致黑屏" class="headerlink" title="Vbox hostonly network broken导致黑屏"></a>Vbox hostonly network broken导致黑屏</h2><p>打开Android虚拟机是这样的<br><img src="./geny1.png" alt=""><br>直接从Vbox中打开是这样的<br><img src="./geny2.png" alt=""><br>如上述图所示，这其实是Vbox自身的bug导致的，<a href="https://www.virtualbox.org/ticket/16911" target="_blank" rel="external">这里了解bug</a>发生在5.1.24版本，在5.1.26版本中修复了。<br>如果您还在使用vbox5.1.24那么解决方案是<a href="https://stackoverflow.com/questions/45226441/genymotion-black-screen-virtualbox-5-1-24/45226442#45226442" target="_blank" rel="external">这里简单修复</a></p>
+<h2 id="Vbox网络适配器配置错误"><a href="#Vbox网络适配器配置错误" class="headerlink" title="Vbox网络适配器配置错误"></a>Vbox网络适配器配置错误</h2><p>如果是这种情况，您应该尝试以下操作</p>
+<ol>
+<li>运行VirtualBox。</li>
+<li>打开文件&gt;首选项&gt;网络（或VirtualBox&gt; Mac OS X的首选项）。</li>
+<li>单击主编辑网络。</li>
+<li>检查适配器IPv4地址是否在与DHCP服务器地址相同的网络中（缺省为192.168.56.0/24）如果没有，您的虚拟设备无法启动</li>
+</ol>
+<p>可以参阅<a href="https://www.ptt.cc/bbs/ToS/M.1383049249.A.86E.html" target="_blank" rel="external">Vbox网络适配器配置</a><br>您也可以通过单击来删除主机专用网络。Genymotion将在下一个虚拟设备启动时自动重新创建它。</p>
+<h2 id="防火墙或其他程序阻止Genogotion"><a href="#防火墙或其他程序阻止Genogotion" class="headerlink" title="防火墙或其他程序阻止Genogotion"></a>防火墙或其他程序阻止Genogotion</h2><p>如果可能的话，可以尝试断开任何可能阻碍这种情况的vpn服务或其他软件，并确保genogotion能够通过本地网络连接到虚拟设备。</p>
+<p>如果您有防火墙，请确保您允许连接到Genymotion网络，默认设置为192.168.56.0/24。</p>
+<h2 id="Genymotion卡在-eula-acceptance导致黑屏"><a href="#Genymotion卡在-eula-acceptance导致黑屏" class="headerlink" title="Genymotion卡在 eula acceptance导致黑屏"></a>Genymotion卡在 eula acceptance导致黑屏</h2><p><img src="./geny3.jpg" alt=""><br>选定这个窗口（获取焦点）</p>
+<ol>
+<li>点击 TAB 两次</li>
+<li>点击 SPACE</li>
+<li>点击 TAB 两次</li>
+<li>点击SPACE</li>
+</ol>
+<p>这会点击确认复选框,默认接受EULA</p>
+<p>风险:你没有读EULA就接受了协议</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>遇到genymotion发生故障时，首先不能着急，要冷静的查阅排误，切记要冷静的回想自己进行了什么<del>骚</del>操作.</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="">Debian下 Genymotion黑屏解决方案总汇</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">Susu</a></p>
+        <p><span>发布时间:</span>2017-08-13, 17:29:00</p>
+        <p><span>最后更新:</span>2017-08-13, 18:07:37</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="" title="Debian下 Genymotion黑屏解决方案总汇">https://ilovesusu.github.io/2017/08/13/Debian下-Genymotion黑屏解决方案总汇/</a>
+            <span class="copy-path" data-clipboard-text="原文: https://ilovesusu.github.io/2017/08/13/Debian下-Genymotion黑屏解决方案总汇/　　作者: Susu" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
+
+
+
+    <nav id="article-nav">
+        
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="../../../../2016/11/28/Debian-8-安装Shadowsocks-libev/">
+                    Debian 8 安装Shadowsocks-libev
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vbox-hostonly-network-broken导致黑屏"><span class="toc-number">2.</span> <span class="toc-text">Vbox hostonly network broken导致黑屏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Vbox网络适配器配置错误"><span class="toc-number">3.</span> <span class="toc-text">Vbox网络适配器配置错误</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#防火墙或其他程序阻止Genogotion"><span class="toc-number">4.</span> <span class="toc-text">防火墙或其他程序阻止Genogotion</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Genymotion卡在-eula-acceptance导致黑屏"><span class="toc-number">5.</span> <span class="toc-text">Genymotion卡在 eula acceptance导致黑屏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#总结"><span class="toc-number">6.</span> <span class="toc-text">总结</span></a></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录"  title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></i></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"Debian下 Genymotion黑屏解决方案总汇　| Susu的博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+        <section id="comments">
+    <style> aside.comment-bar { margin: auto 30px; }</style>
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function(){
+            this.page.url = 'https://ilovesusu.github.io/2017/08/13/Debian下-Genymotion黑屏解决方案总汇/';
+            this.page.identifier = '2017/08/13/Debian下-Genymotion黑屏解决方案总汇/';
+        };
+        var loadComment = function(){
+            var d = document, s = d.createElement('script');
+            s.src = '//ilovesusu.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        }
+    </script>
+    
+    <script> loadComment(); </script>
+
+</section>
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="../../../../2016/11/28/Debian-8-安装Shadowsocks-libev/" title="下一篇: Debian 8 安装Shadowsocks-libev">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="">Debian下 Genymotion黑屏解决方案总汇</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/11/28/Debian-8-安装Shadowsocks-libev/">Debian 8 安装Shadowsocks-libev</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/11/26/开发者Debian里的十八般兵器/">开发者Debian里的十八般兵器</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/11/12/许嵩-苏格拉没有底-简介/">许嵩-苏格拉没有底[简述]</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/11/01/改GNOME-3的屏幕录制的默认时间/">改GNOME 3的屏幕录制的默认时间</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/10/27/Eclipse-提示框背景色黑色解决方案/">Eclipse 提示框背景色黑色解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/10/18/linux-下使用-adb-fastboot-刷-LineageOS-ROM/">linux 下使用 adb fastboot 刷 LineageOS ROM</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/09/26/Android-Studio-常见问题总结/">Android-Studio-常见问题总结</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/09/12/Debian使用Hexo和GitHub搭建个人静态博客/">Debian使用Hexo和GitHub搭建个人静态博客</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/09/09/优秀npm镜像推荐及使用/">优秀npm镜像推荐及使用</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/26/跨平台远程协助软件推荐/">跨平台远程协助软件推荐</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/25/Debian-真丶NvidiaGraphicsDrivers安装/">Debian 真丶NvidiaGraphicsDrivers安装</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/24/Android-Studio更新时不小心点了ignore（忽略）解决方案/">Android Studio更新时不小心点了ignore（忽略）解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/24/Android-Studio中好用的插件收集-陆续更新/">Android Studio中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/22/Debian下可用的翻墙工具教程/">Debian下可用的翻墙工具教程</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/22/Chrome中好用的插件收集-陆续更新/">Chrome中好用的插件收集(陆续更新)</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/08/22/Debian安装VirtualBox增强工具/">Debian安装VirtualBox增强工具</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/30/新版apt简单使用指南/">新版apt简单使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/29/Android-编码规范/">Android 编码规范</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/09/终于，输给了时间/">终于，输给了时间</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/06/eclipse-svn插件subclipse安装报Failed-to-load-JavaHL-Library错误的解决方案/">eclipse svn插件subclipse安装报Failed to load JavaHL Library错误的解决方案</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/02/Android-基础之侧滑菜单的使用/">Android 基础之侧滑菜单的使用</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/01/Android-四大组件之Activity/">Android 四大组件之Activity</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/01/Android-动画合集/">Android 动画合集</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/01/Android-四大组件之Service服务/">Android 四大组件之Service服务</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/06/01/Android-四大组件之BroadcastReceiver/">Android 四大组件之BroadcastReceiver</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/05/26/Android-基础之Sqlite的使用/">Android 基础之SQLite的使用</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/05/25/Android-四大组件之ContentProvider-1/">Android 四大组件之ContentProvider(1)</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/05/24/Debian-8-安装-SunJdk/">Debian 8+ 安装 SunJdk</a></li><li class="post-list-item"><a class="post-list-link" href="../../../../2016/05/24/Debian安装QQ/">Debian安装QQ</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 Susu
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
+</body>
+</html>
